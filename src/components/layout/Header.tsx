@@ -35,14 +35,14 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
         isScrolled
-          ? "bg-white bg-opacity-95 shadow-md py-3"
+          ? "bg-black bg-opacity-95 shadow-md py-3"
           : "bg-transparent py-6"
       }`}
     >
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-playfair font-bold text-dental-dark">
-            Art<span className="text-dental-DEFAULT">Dental</span>
+          <span className="text-2xl font-playfair font-bold text-white">
+            Art<span className="text-dental-light">Dental</span>
           </span>
         </Link>
 
@@ -52,7 +52,7 @@ const Header = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="text-sm font-medium text-dental-dark hover:text-dental-DEFAULT transition-colors"
+              className="text-sm font-medium text-white hover:text-dental-light transition-colors"
             >
               {item.name}
             </Link>
@@ -61,7 +61,7 @@ const Header = () => {
 
         {/* Mobile Navigation Trigger */}
         <button
-          className="md:hidden text-dental-dark"
+          className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
@@ -74,13 +74,13 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white">
+        <div className="md:hidden bg-black">
           <div className="px-4 py-2">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className="block py-3 text-dental-dark hover:text-dental-DEFAULT border-b border-gray-100"
+                className="block py-3 text-white hover:text-dental-light border-b border-gray-800"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}

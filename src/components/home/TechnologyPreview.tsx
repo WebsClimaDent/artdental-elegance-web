@@ -7,7 +7,7 @@ const technologies = [
     id: 1,
     title: "Escáner 3D de Alta Precisión",
     description: "Digitalización de modelos con precisión micrométrica para garantizar ajustes perfectos.",
-    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=1769&auto=format&fit=crop",
+    image: "public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const technologies = [
 
 const TechnologyPreview = () => {
   return (
-    <section className="section-padding bg-dental-light" id="tecnologia">
+    <section className="section-padding bg-black" id="tecnologia">
       <div className="container-custom">
         <h2 className="section-title text-center">Nuestra Tecnología</h2>
         <p className="section-subtitle text-center">
@@ -31,7 +31,7 @@ const TechnologyPreview = () => {
           {technologies.map((tech) => (
             <div
               key={tech.id}
-              className="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden shadow-md reveal card-hover"
+              className="flex flex-col md:flex-row bg-dental-dark rounded-lg overflow-hidden shadow-md reveal card-hover"
             >
               <div className="md:w-2/5 h-64 md:h-auto overflow-hidden">
                 <img
@@ -41,10 +41,10 @@ const TechnologyPreview = () => {
                 />
               </div>
               <div className="md:w-3/5 p-6 flex flex-col justify-center">
-                <h3 className="text-xl font-semibold mb-2 font-playfair">
+                <h3 className="text-xl font-semibold mb-2 font-playfair text-white">
                   {tech.title}
                 </h3>
-                <p className="text-dental-DEFAULT mb-4">{tech.description}</p>
+                <p className="text-gray-300 mb-4">{tech.description}</p>
               </div>
             </div>
           ))}

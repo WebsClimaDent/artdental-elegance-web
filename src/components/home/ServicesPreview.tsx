@@ -7,14 +7,14 @@ const services = [
     id: 1,
     title: "Coronas y Puentes",
     description: "Restauraciones dentales personalizadas con materiales de alta calidad y precisión inigualable.",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1770&auto=format&fit=crop",
+    image: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
     link: "/servicios",
   },
   {
     id: 2,
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "https://images.unsplash.com/photo-1606818716176-32fa6bbe222b?q=80&w=1772&auto=format&fit=crop",
+    image: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
     link: "/servicios",
   },
   {
@@ -28,7 +28,7 @@ const services = [
 
 const ServicesPreview = () => {
   return (
-    <section className="section-padding bg-white" id="servicios">
+    <section className="section-padding bg-black" id="servicios">
       <div className="container-custom">
         <h2 className="section-title text-center">Nuestros Servicios</h2>
         <p className="section-subtitle text-center">
@@ -40,7 +40,7 @@ const ServicesPreview = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-lg overflow-hidden shadow-md card-hover reveal"
+              className="bg-dental-dark rounded-lg overflow-hidden shadow-md card-hover reveal"
             >
               <div className="h-48 overflow-hidden">
                 <img
@@ -50,13 +50,13 @@ const ServicesPreview = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 font-playfair">
+                <h3 className="text-xl font-semibold mb-2 font-playfair text-white">
                   {service.title}
                 </h3>
-                <p className="text-dental-DEFAULT mb-4">{service.description}</p>
+                <p className="text-gray-300 mb-4">{service.description}</p>
                 <Link
                   to={service.link}
-                  className="inline-flex items-center text-dental-dark font-medium hover:underline"
+                  className="inline-flex items-center text-white font-medium hover:underline"
                 >
                   Más información
                   <ArrowRight className="ml-1 h-4 w-4" />

@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				dental: {
-					DEFAULT: '#8E9196', // Neutral Gray
-					light: '#F1F0FB', // Soft Gray
-					dark: '#1A1F2C', // Dark Purple
-					accent: '#9F9EA1', // Silver Gray
+					DEFAULT: '#9F9EA1', // Silver Gray
+					light: '#F1F1F1', // Light Gray
+					dark: '#121212', // Almost Black
+					accent: '#FFFFFF', // Pure White
 				},
 			},
 			fontFamily: {

@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react
 
 const Footer = () => {
   return (
-    <footer className="bg-dental-dark text-white py-12">
+    <footer className="bg-black text-white py-12">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-400">
           <p>© {new Date().getFullYear()} ArtDental. Todos los derechos reservados.</p>
         </div>
       </div>

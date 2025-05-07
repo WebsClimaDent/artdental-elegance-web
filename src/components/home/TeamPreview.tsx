@@ -28,7 +28,7 @@ const teamMembers = [
 
 const TeamPreview = () => {
   return (
-    <section className="section-padding bg-dental-light" id="equipo">
+    <section className="section-padding bg-dental-dark" id="equipo">
       <div className="container-custom">
         <h2 className="section-title text-center">Nuestro Equipo</h2>
         <p className="section-subtitle text-center">
@@ -40,7 +40,7 @@ const TeamPreview = () => {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm card-hover reveal"
+              className="bg-black rounded-lg overflow-hidden shadow-sm card-hover reveal"
             >
               <div className="h-72 overflow-hidden">
                 <img
@@ -50,10 +50,10 @@ const TeamPreview = () => {
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-1 font-playfair">
+                <h3 className="text-xl font-semibold mb-1 font-playfair text-white">
                   {member.name}
                 </h3>
-                <p className="text-dental-DEFAULT mb-4">{member.role}</p>
+                <p className="text-gray-300 mb-4">{member.role}</p>
               </div>
             </div>
           ))}
