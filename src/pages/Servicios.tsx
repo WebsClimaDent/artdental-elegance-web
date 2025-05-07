@@ -14,19 +14,19 @@ const serviceCategories = [
         id: 1,
         title: "Coronas de Disilicato de Litio",
         description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
-        image: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+        image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
       },
       {
         id: 2,
         title: "Carillas de Porcelana",
         description: "Finas láminas de porcelana que transforman la apariencia dental con mínima invasión.",
-        image: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+        image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
       },
       {
         id: 3,
         title: "Incrustaciones",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-        image: "public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
+        image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
       }
     ]
   },
@@ -38,13 +38,13 @@ const serviceCategories = [
         id: 4,
         title: "Puentes sobre Dientes",
         description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
-        image: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+        image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
       },
       {
         id: 5,
         title: "Sobredentaduras",
         description: "Prótesis completas con sistemas de retención sobre implantes para mayor estabilidad y confort.",
-        image: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+        image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
       }
     ]
   },
@@ -56,13 +56,13 @@ const serviceCategories = [
         id: 6,
         title: "Coronas sobre Implantes",
         description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
-        image: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+        image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
       },
       {
         id: 7,
         title: "Rehabilitaciones Completas",
         description: "Reconstrucción total de la dentición con sistemas implantosoportados de última generación.",
-        image: "public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
+        image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
       }
     ]
   }
@@ -100,7 +100,7 @@ const Servicios = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" 
-                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)' }}>
+                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)' }}>
           <div className="container-custom text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4 text-white">Nuestros Servicios</h1>
             <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto text-white">
@@ -158,7 +158,7 @@ const Servicios = () => {
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-56 overflow-hidden">
                   <img 
-                    src="public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png" 
+                    src="/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png" 
                     alt="Disilicato de Litio"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
@@ -174,7 +174,7 @@ const Servicios = () => {
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-56 overflow-hidden">
                   <img 
-                    src="public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png" 
+                    src="/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png" 
                     alt="Zirconio"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
@@ -190,7 +190,7 @@ const Servicios = () => {
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-56 overflow-hidden">
                   <img 
-                    src="public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png" 
+                    src="/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png" 
                     alt="Composite"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />

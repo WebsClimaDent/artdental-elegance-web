@@ -7,21 +7,21 @@ const services = [
     id: 1,
     title: "Coronas y Puentes",
     description: "Restauraciones dentales personalizadas con materiales de alta calidad y precisión inigualable.",
-    image: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+    image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
     link: "/servicios",
   },
   {
     id: 2,
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
     link: "/servicios",
   },
   {
     id: 3,
     title: "Prótesis Removibles",
     description: "Soluciones funcionales y estéticas para reemplazar piezas dentales con comodidad y naturalidad.",
-    image: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1770&auto=format&fit=crop",
+    image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
     link: "/servicios",
   },
 ];
@@ -30,8 +30,8 @@ const ServicesPreview = () => {
   return (
     <section className="section-padding bg-black" id="servicios">
       <div className="container-custom">
-        <h2 className="section-title text-center">Nuestros Servicios</h2>
-        <p className="section-subtitle text-center">
+        <h2 className="section-title text-center text-white">Nuestros Servicios</h2>
+        <p className="section-subtitle text-center text-gray-300">
           Ofrecemos soluciones dentales avanzadas con un enfoque en la calidad,
           precisión y estética para resultados excepcionales.
         </p>
