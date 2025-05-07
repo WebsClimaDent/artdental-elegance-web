@@ -97,7 +97,7 @@
   }
 
   .section-subtitle {
-    @apply text-lg text-dental-DEFAULT mb-12 max-w-2xl mx-auto;
+    @apply text-lg text-gray-600 mb-12 max-w-2xl mx-auto;
   }
 
   .container-custom {
