@@ -4,6 +4,13 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext 
+} from "@/components/ui/carousel";
 
 const teamMembers = [
   {
@@ -95,32 +102,37 @@ const Equipo = () => {
           </div>
         </section>
 
-        {/* Team Members Grid */}
+        {/* Team Members Carousel */}
         <section className="section-padding">
           <div className="container-custom">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-              {teamMembers.map((member) => (
-                <div 
-                  key={member.id}
-                  className="reveal bg-dental-dark border border-gray-700 rounded-lg overflow-hidden card-hover"
-                >
-                  <div className="h-72 overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-1 font-playfair text-white">
-                      {member.name}
-                    </h3>
-                    <p className="text-gray-300 mb-4 font-medium">{member.role}</p>
-                    <p className="text-gray-400 mb-4 text-sm">{member.bio}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <Carousel className="w-full reveal">
+              <CarouselContent>
+                {teamMembers.map((member) => (
+                  <CarouselItem key={member.id} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="h-full bg-dental-dark border border-gray-700 rounded-lg overflow-hidden card-hover">
+                      <div className="h-72 overflow-hidden">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-6">
+                        <h3 className="text-xl font-semibold mb-1 font-playfair text-white">
+                          {member.name}
+                        </h3>
+                        <p className="text-gray-300 mb-4 font-medium">{member.role}</p>
+                        <p className="text-gray-400 mb-4 text-sm">{member.bio}</p>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="flex justify-center gap-4 mt-8">
+                <CarouselPrevious className="relative -left-0 top-0 translate-y-0" />
+                <CarouselNext className="relative -right-0 top-0 translate-y-0" />
+              </div>
+            </Carousel>
           </div>
         </section>
 
