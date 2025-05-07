@@ -58,7 +58,7 @@ const ServicesPreview = () => {
                   to={service.link}
                   className="inline-flex items-center text-white font-medium hover:underline"
                 >
-                  Más información
+                  Saber más
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
