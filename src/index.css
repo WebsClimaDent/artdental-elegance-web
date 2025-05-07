@@ -98,3 +98,18 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Text gradient effects */
+.text-gradient {
+  @apply bg-gradient-to-r from-white via-white/90 to-gray-300 bg-clip-text text-transparent;
+}
+
+/* Animation for scroll elements */
+.animate-on-scroll {
+  transition: all 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.animate-on-scroll.active {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}

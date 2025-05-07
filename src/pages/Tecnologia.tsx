@@ -3,7 +3,28 @@ import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Info, Layers, Zap, Gauge } from "lucide-react";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const technologies = [
   {
@@ -16,6 +37,8 @@ const technologies = [
       "Reducción del tiempo de trabajo"
     ],
     image: "public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
+    icon: <Zap className="h-12 w-12" />,
+    color: "from-blue-500 to-indigo-700",
   },
   {
     id: 2,
@@ -27,6 +50,8 @@ const technologies = [
       "Planificación de casos complejos"
     ],
     image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1770&auto=format&fit=crop",
+    icon: <Layers className="h-12 w-12" />,
+    color: "from-purple-500 to-pink-700",
   },
   {
     id: 3,
@@ -38,6 +63,8 @@ const technologies = [
       "Producción rápida y consistente"
     ],
     image: "https://images.unsplash.com/photo-1633094167399-c53af8f24070?q=80&w=1932&auto=format&fit=crop",
+    icon: <Gauge className="h-12 w-12" />,
+    color: "from-green-500 to-emerald-700",
   },
   {
     id: 4,
@@ -49,99 +76,243 @@ const technologies = [
       "Resultados consistentes"
     ],
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop",
+    icon: <Info className="h-12 w-12" />,
+    color: "from-amber-500 to-orange-700",
   },
 ];
+
+const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
+  <div 
+    className={`flex flex-col overflow-hidden rounded-xl shadow-xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl`}
+  >
+    <div 
+      className={`relative h-64 overflow-hidden bg-gradient-to-r ${tech.color}`}
+    >
+      <div className="absolute inset-0 opacity-30">
+        <img 
+          src={tech.image} 
+          alt={tech.title} 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center p-6">
+        <div className="text-white text-center">
+          <div className="mb-4 mx-auto bg-white bg-opacity-20 p-4 rounded-full">
+            {tech.icon}
+          </div>
+          <h3 className="text-3xl font-playfair font-bold">{tech.title}</h3>
+        </div>
+      </div>
+    </div>
+    <div className="bg-dental-dark p-6 flex-grow">
+      <p className="text-gray-300 mb-6">{tech.description}</p>
+      <ul className="space-y-2">
+        {tech.features.map((feature: string, idx: number) => (
+          <li key={idx} className="flex items-center text-gray-300">
+            <span className="mr-2 text-white">•</span> {feature}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
 
 const Tecnologia = () => {
   useEffect(() => {
     document.title = "Nuestra Tecnología - ArtDental";
     
-    const revealElements = document.querySelectorAll(".reveal");
-    
-    const revealOnScroll = () => {
-      for (let i = 0; i < revealElements.length; i++) {
-        const windowHeight = window.innerHeight;
-        const elementTop = revealElements[i].getBoundingClientRect().top;
-        const elementVisible = 150;
-        
-        if (elementTop < windowHeight - elementVisible) {
-          revealElements[i].classList.add("active");
+    // Animation for elements
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
         }
-      }
-    };
+      });
+    }, { threshold: 0.1 });
     
-    window.addEventListener("scroll", revealOnScroll);
-    revealOnScroll();
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+      observer.observe(el);
+    });
     
     return () => {
-      window.removeEventListener("scroll", revealOnScroll);
+      observer.disconnect();
     };
   }, []);
 
   return (
     <>
       <Header />
-      <main className="bg-dental-dark min-h-screen pt-24">
+      <main className="bg-black min-h-screen pt-24 overflow-hidden">
         {/* Hero Section */}
-        <section className="py-16 bg-cover bg-center relative" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)' }}>
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4">Nuestra Tecnología</h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
-              Equipamiento de vanguardia que nos permite alcanzar los más altos estándares 
-              de precisión y calidad en cada trabajo dental.
-            </p>
-          </div>
-        </section>
-
-        {/* Technologies Section */}
-        <section className="section-padding">
-          <div className="container-custom">
-            <div className="space-y-20">
-              {technologies.map((tech, index) => (
-                <div 
-                  key={tech.id} 
-                  className={`reveal flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}
-                >
-                  <div className="lg:w-1/2">
-                    <div className="rounded-lg overflow-hidden shadow-lg">
-                      <img 
-                        src={tech.image} 
-                        alt={tech.title}
-                        className="w-full h-auto object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="lg:w-1/2">
-                    <h2 className="text-2xl font-playfair font-semibold mb-4 text-white">{tech.title}</h2>
-                    <p className="text-gray-300 mb-6">{tech.description}</p>
-                    <ul className="space-y-2 mb-6">
-                      {tech.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-gray-300">
-                          <span className="mr-2 text-white">•</span> {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
+        <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center z-0" 
+            style={{ 
+              backgroundImage: 'url(public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)',
+              filter: 'blur(2px) brightness(0.4)'
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/40 z-10"></div>
+          
+          <div className="container-custom relative z-20 text-center">
+            <div className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6 text-gradient">
+                Innovación Tecnológica
+              </h1>
+              <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
+                La excelencia de nuestro trabajo está cimentada en la combinación de artesanía 
+                experta y tecnología de vanguardia.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Laboratory Tour Section */}
-        <section className="section-padding bg-black">
-          <div className="container-custom text-center">
-            <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6">
-              Conozca Nuestro Laboratorio
-            </h2>
-            <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Le invitamos a visitar nuestras instalaciones y conocer de primera mano
-              cómo nuestra tecnología avanzada transforma la odontología moderna.
-            </p>
-            <Link to="/contacto" className="btn-primary">
-              Programar una visita
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+        {/* Overview Section */}
+        <section className="py-20 bg-gradient-to-b from-black to-dental-dark">
+          <div className="container-custom">
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+              <div className="lg:w-1/2 animate-on-scroll opacity-0 transform translate-x-[-50px] transition-all duration-1000">
+                <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6">
+                  Tecnología de Vanguardia para Resultados Excepcionales
+                </h2>
+                <p className="text-gray-300 mb-8 text-lg">
+                  En ArtDental hemos invertido en las más avanzadas tecnologías del sector odontológico 
+                  para garantizar que cada pieza que sale de nuestro laboratorio cumple con los más 
+                  altos estándares de precisión, estética y durabilidad.
+                </p>
+                <p className="text-gray-300 mb-8 text-lg">
+                  Nuestro flujo de trabajo digital integra perfectamente todas las etapas del proceso 
+                  de fabricación, desde el escaneo hasta el acabado final, asegurando resultados consistentes 
+                  que superan las expectativas de clínicos y pacientes.
+                </p>
+              </div>
+              <div className="lg:w-1/2 animate-on-scroll opacity-0 transform translate-x-[50px] transition-all duration-1000">
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070&auto=format&fit=crop"
+                    alt="Tecnología dental avanzada"
+                    className="w-full h-auto transform transition-all duration-700 hover:scale-105"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Tech Carousel Section */}
+        <section className="py-24 bg-dental-dark">
+          <div className="container-custom">
+            <div className="text-center mb-16 animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
+              <h2 className="text-3xl md:text-5xl font-playfair font-semibold mb-6">
+                Nuestro Equipamiento
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Descubra las tecnologías que nos permiten ofrecer soluciones dentales 
+                de precisión excepcional.
+              </p>
+            </div>
+            
+            <Tabs defaultValue="carousel" className="w-full">
+              <TabsList className="w-full flex justify-center mb-8 bg-transparent">
+                <TabsTrigger value="carousel" className="data-[state=active]:bg-white data-[state=active]:text-dental-dark px-8 py-3">
+                  Carrusel
+                </TabsTrigger>
+                <TabsTrigger value="cards" className="data-[state=active]:bg-white data-[state=active]:text-dental-dark px-8 py-3">
+                  Tarjetas
+                </TabsTrigger>
+              </TabsList>
+              
+              <TabsContent value="carousel" className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    {technologies.map((tech) => (
+                      <CarouselItem key={tech.id} className="md:basis-1/2 lg:basis-1/3">
+                        <div className="p-2">
+                          <Card className="bg-black border-gray-800 overflow-hidden h-full">
+                            <div className="h-48 overflow-hidden">
+                              <img 
+                                src={tech.image}
+                                alt={tech.title}
+                                className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+                              />
+                            </div>
+                            <CardHeader>
+                              <CardTitle className="text-white">{tech.title}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                              <p className="text-gray-300">{tech.description}</p>
+                            </CardContent>
+                            <CardFooter>
+                              <HoverCard>
+                                <HoverCardTrigger asChild>
+                                  <button className="text-white underline text-sm flex items-center gap-1">
+                                    Ver características <Info className="h-3 w-3" />
+                                  </button>
+                                </HoverCardTrigger>
+                                <HoverCardContent className="w-80 bg-black text-white border-gray-800">
+                                  <h4 className="font-bold mb-2">Características</h4>
+                                  <ul className="space-y-1">
+                                    {tech.features.map((feature: string, i: number) => (
+                                      <li key={i} className="text-sm flex items-start">
+                                        <span className="mr-2">•</span> {feature}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </HoverCardContent>
+                              </HoverCard>
+                            </CardFooter>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <div className="flex justify-center mt-8 gap-4">
+                    <CarouselPrevious className="relative static transform-none bg-white text-dental-dark hover:bg-gray-200" />
+                    <CarouselNext className="relative static transform-none bg-white text-dental-dark hover:bg-gray-200" />
+                  </div>
+                </Carousel>
+              </TabsContent>
+              
+              <TabsContent value="cards" className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {technologies.map((tech, index) => (
+                    <TechnologyCard key={tech.id} tech={tech} index={index} />
+                  ))}
+                </div>
+              </TabsContent>
+            </Tabs>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="py-24 relative overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-30" 
+            style={{ 
+              backgroundImage: "url(https://images.unsplash.com/photo-1606213050828-b7c66510ce51?q=80&w=2070&auto=format&fit=crop)",
+              filter: "blur(3px)"
+            }}
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+          <div className="container-custom relative z-10 text-center">
+            <div className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
+              <h2 className="text-3xl md:text-5xl font-playfair font-semibold mb-6">
+                Descubra el Futuro de la Odontología
+              </h2>
+              <p className="text-xl text-gray-200 mb-12 max-w-3xl mx-auto">
+                Le invitamos a visitar nuestras instalaciones para conocer de primera mano
+                cómo nuestra tecnología puede transformar la experiencia de sus pacientes.
+              </p>
+              <div className="flex flex-wrap gap-6 justify-center">
+                <Link to="/contacto" className="btn-primary">
+                  Programar una visita
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+                <Link to="/casos" className="btn-secondary">
+                  Ver casos clínicos
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -151,3 +322,4 @@ const Tecnologia = () => {
 };
 
 export default Tecnologia;
+
