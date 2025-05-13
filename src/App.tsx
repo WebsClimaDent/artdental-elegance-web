@@ -11,6 +11,7 @@ import Servicios from "./pages/Servicios";
 import Tecnologia from "./pages/Tecnologia";
 import Casos from "./pages/Casos";
 import Contacto from "./pages/Contacto";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/tecnologia" element={<Tecnologia />} />
           <Route path="/casos" element={<Casos />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/blog" element={<Blog />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

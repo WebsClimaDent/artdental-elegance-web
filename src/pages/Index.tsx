@@ -8,6 +8,7 @@ import TeamPreview from "../components/home/TeamPreview";
 import CasesPreview from "../components/home/CasesPreview";
 import TechnologyPreview from "../components/home/TechnologyPreview";
 import ContactCTA from "../components/home/ContactCTA";
+import BlogPreview from "../components/home/BlogPreview";
 
 const Index = () => {
   useEffect(() => {
@@ -48,6 +49,7 @@ const Index = () => {
         <TeamPreview />
         <CasesPreview />
         <TechnologyPreview />
+        <BlogPreview />
         <ContactCTA />
       </main>
       <Footer />

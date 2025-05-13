@@ -5,20 +5,27 @@ import { Link } from "react-router-dom";
 const services = [
   {
     id: 1,
-    title: "Coronas y Puentes",
-    description: "Restauraciones dentales personalizadas con materiales de alta calidad y precisión inigualable.",
+    title: "Coronas",
+    description: "Restauraciones unitarias personalizadas con materiales de alta calidad y precisión inigualable.",
     image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
     link: "/servicios",
   },
   {
     id: 2,
+    title: "Puentes",
+    description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
+    image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    link: "/servicios",
+  },
+  {
+    id: 3,
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
     image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
     link: "/servicios",
   },
   {
-    id: 3,
+    id: 4,
     title: "Prótesis Removibles",
     description: "Soluciones funcionales y estéticas para reemplazar piezas dentales con comodidad y naturalidad.",
     image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
@@ -36,7 +43,7 @@ const ServicesPreview = () => {
           precisión y estética para resultados excepcionales.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {services.map((service) => (
             <div
               key={service.id}
@@ -47,6 +54,7 @@ const ServicesPreview = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
                 />
               </div>
               <div className="p-6">
