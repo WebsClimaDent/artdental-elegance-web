@@ -1,9 +1,9 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import BackButton from "@/components/ui/back-button";
 import { 
   Carousel,
   CarouselContent,
@@ -93,12 +93,17 @@ const Equipo = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1615109398623-41219dca10a3?q=80&w=1974&auto=format&fit=crop)' }}>
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4">Nuestro Equipo</h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
-              Profesionales apasionados por la estética dental que combinan experiencia, talento artístico y 
-              conocimientos técnicos para crear sonrisas perfectas.
-            </p>
+          <div className="container-custom">
+            <div className="mb-6">
+              <BackButton className="text-white hover:text-dental-light" />
+            </div>
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4">Nuestro Equipo</h1>
+              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
+                Profesionales apasionados por la estética dental que combinan experiencia, talento artístico y 
+                conocimientos técnicos para crear sonrisas perfectas.
+              </p>
+            </div>
           </div>
         </section>
 

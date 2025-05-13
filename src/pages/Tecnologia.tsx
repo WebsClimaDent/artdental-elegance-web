@@ -4,6 +4,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight, Info, Layers, Zap, Gauge } from "lucide-react";
+import BackButton from "@/components/ui/back-button";
 import {
   HoverCard,
   HoverCardContent,
@@ -154,8 +155,11 @@ const Tecnologia = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/40 z-10"></div>
           
-          <div className="container-custom relative z-20 text-center">
-            <div className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
+          <div className="container-custom relative z-20">
+            <div className="mb-6">
+              <BackButton className="text-white hover:text-dental-light" />
+            </div>
+            <div className="text-center animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6 text-gradient">
                 Innovación Tecnológica
               </h1>
@@ -322,4 +326,3 @@ const Tecnologia = () => {
 };
 
 export default Tecnologia;
-

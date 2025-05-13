@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import BackButton from "@/components/ui/back-button";
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -75,11 +76,16 @@ const Contacto = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop)' }}>
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4">Contacto</h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
-              Estamos aquí para responder a sus preguntas y ayudarle a conseguir los mejores resultados para sus pacientes.
-            </p>
+          <div className="container-custom">
+            <div className="mb-6">
+              <BackButton className="text-white hover:text-dental-light" />
+            </div>
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4">Contacto</h1>
+              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
+                Estamos aquí para responder a sus preguntas y ayudarle a conseguir los mejores resultados para sus pacientes.
+              </p>
+            </div>
           </div>
         </section>
 

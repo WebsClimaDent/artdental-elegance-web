@@ -1,10 +1,10 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import ServiceDialog from "../components/services/ServiceDialog";
+import BackButton from "@/components/ui/back-button";
 
 // Extended service data with additional information for popups
 const serviceCategories = [
@@ -265,12 +265,17 @@ const Servicios = () => {
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" 
                 style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)' }}>
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4 text-white">Nuestros Servicios</h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto text-white">
-              Soluciones dentales de precisión que combinan artesanía tradicional con 
-              tecnología avanzada para resultados excepcionales.
-            </p>
+          <div className="container-custom">
+            <div className="mb-6">
+              <BackButton className="text-white hover:text-dental-light" />
+            </div>
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4 text-white">Nuestros Servicios</h1>
+              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto text-white">
+                Soluciones dentales de precisión que combinan artesanía tradicional con 
+                tecnología avanzada para resultados excepcionales.
+              </p>
+            </div>
           </div>
         </section>
 
