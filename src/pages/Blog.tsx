@@ -4,6 +4,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import BackButton from "../components/ui/back-button";
 
 const blogPosts = [
   {
@@ -104,12 +105,17 @@ const Blog = () => {
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" 
                 style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)' }}>
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4 text-white">Blog Dental</h1>
-            <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto text-white">
-              Artículos, casos clínicos y tendencias en laboratorio dental protésico.
-              Conocimiento compartido para profesionales del sector.
-            </p>
+          <div className="container-custom">
+            <div className="mb-6">
+              <BackButton className="text-white hover:text-dental-light" />
+            </div>
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4 text-white">Blog Dental</h1>
+              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto text-white">
+                Artículos, casos clínicos y tendencias en laboratorio dental protésico.
+                Conocimiento compartido para profesionales del sector.
+              </p>
+            </div>
           </div>
         </section>
 
