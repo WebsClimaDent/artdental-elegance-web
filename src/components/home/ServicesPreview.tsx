@@ -49,7 +49,7 @@ const ServicesPreview = () => {
               key={service.id}
               className="bg-dental-dark rounded-lg overflow-hidden shadow-md card-hover reveal"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-43 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}

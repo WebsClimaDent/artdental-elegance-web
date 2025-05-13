@@ -12,7 +12,7 @@ const Hero = () => {
         <img
           src="/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png"
           alt="Laboratorio dental"
-          className="w-full h-full object-cover opacity-25"
+          className="w-full h-full object-cover opacity-20"
         />
       </div>
 
