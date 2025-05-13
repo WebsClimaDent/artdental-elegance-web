@@ -13,6 +13,7 @@ const Header = () => {
     { name: "Nuestro Equipo", path: "/equipo" },
     { name: "Tecnología", path: "/tecnologia" },
     { name: "Casos de Éxito", path: "/casos" },
+    { name: "Blog", path: "/blog" },
     { name: "Contacto", path: "/contacto" },
   ];
 
