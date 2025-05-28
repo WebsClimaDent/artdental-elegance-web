@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -16,7 +17,7 @@ const serviceCategories = [
         id: 1,
         title: "Coronas de Disilicato de Litio",
         description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
-        image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+        image: "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png",
         detailedDescription: "Las coronas de disilicato de litio representan la fusión perfecta entre estética y funcionalidad. Fabricadas con materiales de última generación, estas restauraciones ofrecen una translucidez natural que imita perfectamente el esmalte dental, mientras mantienen una resistencia excepcional para soportar las fuerzas masticatorias. En ArtDental, personalizamos cada corona considerando la morfología dental del paciente y la armonía con el resto de su sonrisa.",
         benefits: [
           "Estética superior con apariencia natural",
@@ -36,15 +37,15 @@ const serviceCategories = [
           clinic: "Clínica Dental Avanza"
         },
         additionalImages: [
-          "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
-          "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png"
+          "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png",
+          "/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png"
         ]
       },
       {
         id: 2,
         title: "Carillas de Porcelana",
         description: "Finas láminas de porcelana que transforman la apariencia dental con mínima invasión.",
-        image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+        image: "/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png",
         detailedDescription: "Nuestras carillas de porcelana son verdaderas joyas dentales, diseñadas para transformar sonrisas con la mínima invasión posible. Cada lámina es meticulosamente elaborada, capa por capa, para lograr efectos de profundidad, translucidez y color que emulan perfectamente la naturaleza. En ArtDental nos especializamos en conseguir resultados imperceptibles que realzan la belleza natural de cada paciente.",
         benefits: [
           "Transformación estética inmediata",
@@ -64,15 +65,15 @@ const serviceCategories = [
           clinic: "Estética Dental Barcelona"
         },
         additionalImages: [
-          "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
-          "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png"
+          "/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png",
+          "/lovable-uploads/66ce2cfc-9580-4502-aa51-4a917444c38b.png"
         ]
       },
       {
         id: 3,
         title: "Incrustaciones",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-        image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
+        image: "/lovable-uploads/66ce2cfc-9580-4502-aa51-4a917444c38b.png",
         detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
         benefits: [
           "Preservación máxima de estructura dental sana",
@@ -92,8 +93,8 @@ const serviceCategories = [
           clinic: "Centro Odontológico Valencia"
         },
         additionalImages: [
-          "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
-          "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png"
+          "/lovable-uploads/66ce2cfc-9580-4502-aa51-4a917444c38b.png",
+          "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
         ]
       }
     ]
@@ -106,7 +107,7 @@ const serviceCategories = [
         id: 4,
         title: "Puentes sobre Dientes",
         description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
-        image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+        image: "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
         detailedDescription: "Nuestros puentes dentales combinan ingeniería de precisión con artesanía estética para reemplazar dientes ausentes de forma permanente. Utilizando tecnología CAD/CAM y materiales de última generación, creamos estructuras de soporte invisible que sostienen piezas de reemplazo indistinguibles de los dientes naturales. El resultado es una restauración que devuelve la función masticatoria y la estética sin compromisos.",
         benefits: [
           "Restauración completa de la función masticatoria",
@@ -126,15 +127,15 @@ const serviceCategories = [
           clinic: "Instituto Dental Especializado"
         },
         additionalImages: [
-          "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
-          "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png"
+          "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
+          "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
         ]
       },
       {
         id: 5,
         title: "Sobredentaduras",
         description: "Prótesis completas con sistemas de retención sobre implantes para mayor estabilidad y confort.",
-        image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+        image: "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
         detailedDescription: "Las sobredentaduras representan la evolución de las prótesis removibles tradicionales. Mediante sistemas de anclaje precisos sobre implantes, ofrecemos soluciones que combinan la estabilidad de restauraciones fijas con la facilidad de mantenimiento de las removibles. En ArtDental, cada sobredentadura es diseñada considerando la anatomía facial, la fonética y la estética para devolver confianza y calidad de vida a los pacientes.",
         benefits: [
           "Mayor estabilidad que prótesis convencionales",
@@ -154,8 +155,8 @@ const serviceCategories = [
           clinic: "Clínica Odontológica Integral"
         },
         additionalImages: [
-          "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
-          "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png"
+          "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
+          "/lovable-uploads/66ce2cfc-9580-4502-aa51-4a917444c38b.png"
         ]
       }
     ]
@@ -168,7 +169,7 @@ const serviceCategories = [
         id: 6,
         title: "Coronas sobre Implantes",
         description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
-        image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+        image: "/lovable-uploads/63566d09-c0cf-4a02-ae75-ce322884aae5.png",
         detailedDescription: "Las coronas sobre implantes representan el estándar más alto en la reposición de dientes unitarios. Diseñadas con precisión digital y fabricadas con materiales de última generación, estas restauraciones se integran perfectamente con la dentición natural, tanto en forma como en función. En ArtDental, prestamos especial atención al perfil de emergencia y la interfaz con el tejido gingival para lograr resultados que desafían la detección.",
         benefits: [
           "Reemplazo dental sin afectar dientes adyacentes",
@@ -188,15 +189,15 @@ const serviceCategories = [
           clinic: "Clínica Implantológica Avanzada"
         },
         additionalImages: [
-          "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
-          "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png"
+          "/lovable-uploads/63566d09-c0cf-4a02-ae75-ce322884aae5.png",
+          "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
         ]
       },
       {
         id: 7,
         title: "Rehabilitaciones Completas",
         description: "Reconstrucción total de la dentición con sistemas implantosoportados de última generación.",
-        image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
+        image: "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
         detailedDescription: "Las rehabilitaciones completas sobre implantes representan la cumbre de la odontología restauradora moderna. Combinando planificación quirúrgica 3D, diseño digital avanzado y materiales de vanguardia, ofrecemos soluciones definitivas para pacientes con pérdida dental extensa. Cada caso es abordado como un proyecto integral donde función, estética y longevidad se consideran en cada detalle del proceso.",
         benefits: [
           "Restauración completa de función masticatoria",
@@ -216,8 +217,8 @@ const serviceCategories = [
           clinic: "Centro de Implantología Avanzada"
         },
         additionalImages: [
-          "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
-          "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png"
+          "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
+          "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
         ]
       }
     ]
@@ -292,11 +293,11 @@ const Servicios = () => {
                     className={`reveal flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}
                   >
                     <div className="lg:w-1/2">
-                      <div className="rounded-lg overflow-hidden shadow-2xl">
+                      <div className="rounded-lg overflow-hidden shadow-2xl h-80">
                         <img 
                           src={service.image} 
                           alt={service.title}
-                          className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                         />
                       </div>
                     </div>
@@ -325,9 +326,9 @@ const Servicios = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
-                <div className="h-56 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png" 
+                    src="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png" 
                     alt="Disilicato de Litio"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
@@ -341,9 +342,9 @@ const Servicios = () => {
               </div>
               
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
-                <div className="h-56 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png" 
+                    src="/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png" 
                     alt="Zirconio"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
@@ -357,9 +358,9 @@ const Servicios = () => {
               </div>
               
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
-                <div className="h-56 overflow-hidden">
+                <div className="h-64 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png" 
+                    src="/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png" 
                     alt="Composite"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />

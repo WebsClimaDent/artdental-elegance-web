@@ -7,28 +7,28 @@ const services = [
     id: 1,
     title: "Coronas",
     description: "Restauraciones unitarias personalizadas con materiales de alta calidad y precisión inigualable.",
-    image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+    image: "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png",
     link: "/servicios",
   },
   {
     id: 2,
     title: "Puentes",
     description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
-    image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    image: "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
     link: "/servicios",
   },
   {
     id: 3,
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    image: "/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png",
     link: "/servicios",
   },
   {
     id: 4,
     title: "Prótesis Removibles",
     description: "Soluciones funcionales y estéticas para reemplazar piezas dentales con comodidad y naturalidad.",
-    image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
+    image: "/lovable-uploads/66ce2cfc-9580-4502-aa51-4a917444c38b.png",
     link: "/servicios",
   },
 ];
@@ -49,7 +49,7 @@ const ServicesPreview = () => {
               key={service.id}
               className="bg-dental-dark rounded-lg overflow-hidden shadow-md card-hover reveal"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-64 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
