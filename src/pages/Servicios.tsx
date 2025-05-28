@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -107,7 +106,7 @@ const serviceCategories = [
         id: 4,
         title: "Puentes sobre Dientes",
         description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
-        image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+        image: "/lovable-uploads/f996a1e6-22ae-4be8-a0c0-ec1aaaec28a9.png",
         detailedDescription: "Nuestros puentes dentales combinan ingeniería de precisión con artesanía estética para reemplazar dientes ausentes de forma permanente. Utilizando tecnología CAD/CAM y materiales de última generación, creamos estructuras de soporte invisible que sostienen piezas de reemplazo indistinguibles de los dientes naturales. El resultado es una restauración que devuelve la función masticatoria y la estética sin compromisos.",
         benefits: [
           "Restauración completa de la función masticatoria",
@@ -127,7 +126,7 @@ const serviceCategories = [
           clinic: "Instituto Dental Especializado"
         },
         additionalImages: [
-          "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+          "/lovable-uploads/f996a1e6-22ae-4be8-a0c0-ec1aaaec28a9.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       },

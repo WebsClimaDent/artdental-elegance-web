@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -14,7 +13,7 @@ const services = [
     id: 2,
     title: "Puentes",
     description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
-    image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+    image: "/lovable-uploads/f996a1e6-22ae-4be8-a0c0-ec1aaaec28a9.png",
     link: "/servicios",
   },
   {
