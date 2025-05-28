@@ -14,7 +14,7 @@ const services = [
     id: 2,
     title: "Puentes",
     description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
-    image: "/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png",
+    image: "/lovable-uploads/07576b71-d3cf-4df6-ad9e-205787194f35.png",
     link: "/servicios",
   },
   {
