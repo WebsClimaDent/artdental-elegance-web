@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -168,7 +169,7 @@ const serviceCategories = [
         id: 6,
         title: "Coronas sobre Implantes",
         description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
-        image: "/lovable-uploads/f996a1e6-22ae-4be8-a0c0-ec1aaaec28a9.png",
+        image: "/lovable-uploads/79c58425-63b9-4c29-968f-0a91936b1160.png",
         detailedDescription: "Las coronas sobre implantes representan el estándar más alto en la reposición de dientes unitarios. Diseñadas con precisión digital y fabricadas con materiales de última generación, estas restauraciones se integran perfectamente con la dentición natural, tanto en forma como en función. En ArtDental, prestamos especial atención al perfil de emergencia y la interfaz con el tejido gingival para lograr resultados que desafían la detección.",
         benefits: [
           "Reemplazo dental sin afectar dientes adyacentes",
@@ -188,7 +189,7 @@ const serviceCategories = [
           clinic: "Clínica Implantológica Avanzada"
         },
         additionalImages: [
-          "/lovable-uploads/f996a1e6-22ae-4be8-a0c0-ec1aaaec28a9.png",
+          "/lovable-uploads/79c58425-63b9-4c29-968f-0a91936b1160.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       },
