@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -14,7 +15,7 @@ const cases = [
     solution: "Rehabilitación oral completa con coronas de disilicato de litio, previo análisis funcional y aumento de dimensión vertical.",
     materials: "Disilicato de litio e.max, sistema adhesivo de última generación.",
     before: "https://images.unsplash.com/photo-1627483262769-04d0a1401487?q=80&w=1770&auto=format&fit=crop",
-    after: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+    after: "/lovable-uploads/852950f3-6582-4f88-9837-a21c47c31cc0.png",
   },
   {
     id: 2,
@@ -34,7 +35,7 @@ const cases = [
     solution: "Colocación estratégica de implantes con carga inmediata de coronas provisionales y posterior restauración definitiva.",
     materials: "Implantes de titanio grado 5, coronas de zirconio multicapa.",
     before: "https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?q=80&w=1770&auto=format&fit=crop",
-    after: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+    after: "/lovable-uploads/852950f3-6582-4f88-9837-a21c47c31cc0.png",
   },
   {
     id: 4,

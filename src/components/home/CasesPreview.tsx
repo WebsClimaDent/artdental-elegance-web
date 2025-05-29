@@ -8,7 +8,7 @@ const cases = [
     title: "Rehabilitación completa",
     description: "Restauración completa de la dentición con coronas de disilicato de litio para un resultado estético y funcional óptimo.",
     before: "https://images.unsplash.com/photo-1627483262769-04d0a1401487?q=80&w=1770&auto=format&fit=crop",
-    after: "public/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+    after: "/lovable-uploads/852950f3-6582-4f88-9837-a21c47c31cc0.png",
     link: "/casos",
   },
   {
