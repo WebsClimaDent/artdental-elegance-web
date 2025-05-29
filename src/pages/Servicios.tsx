@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -17,7 +16,7 @@ const serviceCategories = [
         id: 1,
         title: "Coronas de Disilicato de Litio",
         description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
-        image: "/lovable-uploads/ffea444a-33f5-4622-be46-fb3bb47eb5d3.png",
+        image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
         detailedDescription: "Las coronas de disilicato de litio representan la fusión perfecta entre estética y funcionalidad. Fabricadas con materiales de última generación, estas restauraciones ofrecen una translucidez natural que imita perfectamente el esmalte dental, mientras mantienen una resistencia excepcional para soportar las fuerzas masticatorias. En ArtDental, personalizamos cada corona considerando la morfología dental del paciente y la armonía con el resto de su sonrisa.",
         benefits: [
           "Estética superior con apariencia natural",
@@ -37,7 +36,7 @@ const serviceCategories = [
           clinic: "Clínica Dental Avanza"
         },
         additionalImages: [
-          "/lovable-uploads/ffea444a-33f5-4622-be46-fb3bb47eb5d3.png",
+          "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       },
@@ -73,7 +72,7 @@ const serviceCategories = [
         id: 3,
         title: "Incrustaciones",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-        image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+        image: "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
         detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
         benefits: [
           "Preservación máxima de estructura dental sana",
@@ -93,7 +92,7 @@ const serviceCategories = [
           clinic: "Centro Odontológico Valencia"
         },
         additionalImages: [
-          "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+          "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       }
