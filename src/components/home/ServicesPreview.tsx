@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const services = [
     id: 4,
     title: "Prótesis Removibles",
     description: "Soluciones funcionales y estéticas para reemplazar piezas dentales con comodidad y naturalidad.",
-    image: "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
+    image: "/lovable-uploads/af154a7d-1db9-44d6-9be8-0c11031d96e0.png",
     link: "/servicios",
   },
 ];
