@@ -28,8 +28,8 @@ const TechnologyPreview = () => {
       <div className="container-custom">
         <h2 className="section-title text-center">Nuestra Tecnología</h2>
         <p className="section-subtitle text-center">
-          Utilizamos las tecnologías más avanzadas del sector para ofrecer
-          resultados excepcionales con precisión micrométrica.
+          Nuestro laboratorio dental Valencia utiliza las tecnologías más avanzadas del sector 
+          para ofrecer resultados excepcionales con precisión micrométrica.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">

@@ -39,8 +39,8 @@ const TeamPreview = () => {
       <div className="container-custom">
         <h2 className="section-title text-center">Nuestro Equipo</h2>
         <p className="section-subtitle text-center">
-          Profesionales apasionados y altamente cualificados dedicados a crear
-          sonrisas perfectas con precisión y elegancia.
+          En nuestro laboratorio dental Valencia contamos con profesionales apasionados 
+          y altamente cualificados, dedicados a crear sonrisas perfectas con precisión y elegancia.
         </p>
 
         <Carousel className="w-full reveal">

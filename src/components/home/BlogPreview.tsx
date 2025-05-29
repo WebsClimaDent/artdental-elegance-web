@@ -35,8 +35,8 @@ const BlogPreview = () => {
       <div className="container-custom">
         <h2 className="section-title text-center text-white">Blog dental</h2>
         <p className="section-subtitle text-center text-gray-300">
-          Artículos, casos clínicos y tendencias en laboratorio dental protésico.
-          Conocimiento compartido para profesionales del sector.
+          Desde nuestro laboratorio dental Valencia compartimos artículos, casos clínicos 
+          y tendencias en prótesis dental. Conocimiento especializado para profesionales del sector.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
