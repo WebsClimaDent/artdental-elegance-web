@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -292,7 +293,7 @@ const Servicios = () => {
                     className={`reveal flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}
                   >
                     <div className="lg:w-1/2">
-                      <div className="rounded-lg overflow-hidden shadow-2xl h-80">
+                      <div className="rounded-lg overflow-hidden shadow-2xl h-96">
                         <img 
                           src={service.image} 
                           alt={service.title}
@@ -325,7 +326,7 @@ const Servicios = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
-                <div className="h-64 overflow-hidden">
+                <div className="h-72 overflow-hidden">
                   <img 
                     src="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png" 
                     alt="Disilicato de Litio"
@@ -341,7 +342,7 @@ const Servicios = () => {
               </div>
               
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
-                <div className="h-64 overflow-hidden">
+                <div className="h-72 overflow-hidden">
                   <img 
                     src="/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png" 
                     alt="Zirconio"
@@ -357,7 +358,7 @@ const Servicios = () => {
               </div>
               
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
-                <div className="h-64 overflow-hidden">
+                <div className="h-72 overflow-hidden">
                   <img 
                     src="/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png" 
                     alt="Composite"
