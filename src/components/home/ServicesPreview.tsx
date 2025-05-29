@@ -52,7 +52,9 @@ const ServicesPreview = () => {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className={`w-full h-full transition-transform duration-500 hover:scale-105 ${
+                    service.id === 1 ? 'object-cover object-bottom' : 'object-cover'
+                  }`}
                   loading="lazy"
                 />
               </div>
