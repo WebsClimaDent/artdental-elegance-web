@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,7 @@ const services = [
     id: 1,
     title: "Coronas",
     description: "Restauraciones unitarias personalizadas con materiales de alta calidad y precisión inigualable.",
-    image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+    image: "/lovable-uploads/ffea444a-33f5-4622-be46-fb3bb47eb5d3.png",
     link: "/servicios",
   },
   {
