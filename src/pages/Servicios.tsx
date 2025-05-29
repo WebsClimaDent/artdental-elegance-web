@@ -16,7 +16,7 @@ const serviceCategories = [
         id: 1,
         title: "Coronas de Disilicato de Litio",
         description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
-        image: "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
+        image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
         detailedDescription: "Las coronas de disilicato de litio representan la fusión perfecta entre estética y funcionalidad. Fabricadas con materiales de última generación, estas restauraciones ofrecen una translucidez natural que imita perfectamente el esmalte dental, mientras mantienen una resistencia excepcional para soportar las fuerzas masticatorias. En ArtDental, personalizamos cada corona considerando la morfología dental del paciente y la armonía con el resto de su sonrisa.",
         benefits: [
           "Estética superior con apariencia natural",
@@ -36,15 +36,15 @@ const serviceCategories = [
           clinic: "Clínica Dental Avanza"
         },
         additionalImages: [
-          "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
-          "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png"
+          "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+          "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       },
       {
         id: 2,
         title: "Carillas de Porcelana",
         description: "Finas láminas de porcelana que transforman la apariencia dental con mínima invasión.",
-        image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+        image: "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
         detailedDescription: "Nuestras carillas de porcelana son verdaderas joyas dentales, diseñadas para transformar sonrisas con la mínima invasión posible. Cada lámina es meticulosamente elaborada, capa por capa, para lograr efectos de profundidad, translucidez y color que emulan perfectamente la naturaleza. En ArtDental nos especializamos en conseguir resultados imperceptibles que realzan la belleza natural de cada paciente.",
         benefits: [
           "Transformación estética inmediata",
@@ -64,7 +64,7 @@ const serviceCategories = [
           clinic: "Estética Dental Barcelona"
         },
         additionalImages: [
-          "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+          "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
           "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png"
         ]
       },

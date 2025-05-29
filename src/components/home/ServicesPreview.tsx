@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -6,7 +7,7 @@ const services = [
     id: 1,
     title: "Coronas",
     description: "Restauraciones unitarias personalizadas con materiales de alta calidad y precisión inigualable.",
-    image: "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
+    image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
     link: "/servicios",
   },
   {
@@ -20,7 +21,7 @@ const services = [
     id: 3,
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
+    image: "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
     link: "/servicios",
   },
   {
