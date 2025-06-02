@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -36,7 +35,7 @@ const reviews = [
     rating: 5,
     comment: "Trabajo excelente con tecnología de vanguardia, trabajando completamente digitalmente, sin necesidad de modelos y minimizando la posibilidad de error. Excelentes profesionales a un precio muy competitivo. ¡Su maquillaje es espectacular!",
     date: "Hace 3 semanas",
-    position: { top: "10%", left: "5%" }
+    position: { top: "5%", left: "5%" }
   },
   {
     id: 2,
@@ -44,7 +43,7 @@ const reviews = [
     rating: 5,
     comment: "Una clínica de 10. Para mí ha sido una experiencia que repetiré y la recomiendo al 100%. Todos muy cariñosos y atentos, especialmente Marta, Alicia y Natalia. Me salvaron una muela que otra clínica quería extraer. Si buscas una clínica dental, no dudes en ir a Artdental.",
     date: "Hace 1 mes",
-    position: { top: "65%", right: "5%" }
+    position: { top: "70%", right: "5%" }
   },
   {
     id: 3,
@@ -52,7 +51,7 @@ const reviews = [
     rating: 5,
     comment: "Trabajan muy rápido y bien. Tienen una tecnología extraordinaria. Son excelentes profesionales. Los recomiendo totalmente.",
     date: "Hace 2 semanas",
-    position: { top: "25%", left: "70%" }
+    position: { top: "15%", right: "25%" }
   },
   {
     id: 4,
@@ -60,7 +59,7 @@ const reviews = [
     rating: 5,
     comment: "Profesionales excepcionales. Mi rehabilitación completa fue un éxito total. Muy satisfecho con los resultados.",
     date: "Hace 2 meses",
-    position: { top: "80%", right: "35%" }
+    position: { top: "45%", left: "10%" }
   },
   {
     id: 5,
@@ -68,7 +67,7 @@ const reviews = [
     rating: 5,
     comment: "La mejor decisión fue elegir ArtDental. Calidad, profesionalismo y resultados extraordinarios. Mi sonrisa nunca se vio mejor.",
     date: "Hace 1 semana",
-    position: { top: "45%", right: "60%" }
+    position: { top: "30%", right: "40%" }
   }
 ];
 
@@ -221,11 +220,11 @@ const Casos = () => {
             </div>
 
             {/* Floating Reviews Container */}
-            <div className="relative h-96 w-full">
+            <div className="relative h-[500px] w-full">
               {reviews.map((review, index) => (
                 <div
                   key={review.id}
-                  className={`absolute bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 max-w-xs shadow-lg transition-all duration-1000 ${
+                  className={`absolute bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 w-80 shadow-lg transition-all duration-1000 ${
                     index === 0 ? 'z-50' : 
                     index === 1 ? 'z-40' : 
                     index === 2 ? 'z-30' : 
