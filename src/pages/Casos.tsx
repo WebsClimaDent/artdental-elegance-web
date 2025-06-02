@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -48,10 +47,10 @@ const reviews = [
   },
   {
     id: 3,
-    name: "Ana Ruiz",
+    name: "Roger Solo Lo Hayuno",
     rating: 5,
-    comment: "Las carillas me cambiaron la vida. Trabajo impecable y atención de primera. Definitivamente volvería para otros tratamientos.",
-    date: "Hace 3 semanas",
+    comment: "Trabajan muy rápido y bien. Tienen una tecnología extraordinaria. Son excelentes profesionales. Los recomiendo totalmente.",
+    date: "Hace 2 semanas",
     position: { top: "40%", left: "25%" }
   },
   {
