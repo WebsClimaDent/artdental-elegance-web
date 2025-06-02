@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -27,25 +26,15 @@ const cases = [
     before: "/lovable-uploads/c4cf566d-2328-48e1-b231-33556c92e7a1.png",
     after: "/lovable-uploads/ad874c0d-0400-46d7-adae-294ab063ef29.png",
   },
-  {
-    id: 3,
-    title: "Implantes con carga inmediata",
-    description: "Paciente con ausencia de múltiples piezas dentales. Se realizaron implantes con carga inmediata, permitiendo la recuperación estética desde el primer día.",
-    challenge: "Pérdida de múltiples piezas dentales, estética comprometida y función masticatoria reducida.",
-    solution: "Colocación estratégica de implantes con carga inmediata de coronas provisionales y posterior restauración definitiva.",
-    materials: "Implantes de titanio grado 5, coronas de zirconio multicapa.",
-    before: "/lovable-uploads/91cb8f91-073b-4419-b103-d825f23e1b20.png",
-    after: "/lovable-uploads/58c86be2-0efc-4891-a35c-b7afa01b41c7.png",
-  },
 ];
 
 const reviews = [
   {
     id: 1,
-    name: "María González",
+    name: "Antonio Vidal",
     rating: 5,
-    comment: "Excelente atención y profesionalismo. Mi sonrisa quedó perfecta, superó todas mis expectativas. El equipo es muy cálido y profesional.",
-    date: "Hace 2 semanas",
+    comment: "Trabajo excelente con tecnología de vanguardia, trabajando completamente digitalmente, sin necesidad de modelos y minimizando la posibilidad de error. Excelentes profesionales a un precio muy competitivo. ¡Su maquillaje es espectacular!",
+    date: "Hace 3 semanas",
     position: { top: "20%", left: "15%" }
   },
   {
