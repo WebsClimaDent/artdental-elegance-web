@@ -29,11 +29,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-dental-light" />
-                <span className="text-sm">+34 91 123 45 67</span>
+                <div className="text-sm">
+                  <div>+34 963 587 411</div>
+                  <div>+34 609 976 027</div>
+                </div>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-dental-light" />
-                <span className="text-sm">info@artdental.com</span>
+                <span className="text-sm">Info@artdentalvlc.com</span>
               </li>
             </ul>
           </div>
@@ -77,7 +80,7 @@ const Footer = () => {
               <a href="#" className="hover:text-dental-light transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-dental-light transition-colors">
+              <a href="https://www.instagram.com/polromanceartdental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-dental-light transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="hover:text-dental-light transition-colors">

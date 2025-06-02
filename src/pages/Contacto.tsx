@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -217,7 +216,8 @@ const Contacto = () => {
                       <div>
                         <h4 className="font-semibold text-white mb-1">Teléfono</h4>
                         <p className="text-gray-300">
-                          <a href="tel:+34911234567" className="hover:text-white transition-colors">+34 91 123 45 67</a>
+                          <a href="tel:+34963587411" className="hover:text-white transition-colors">+34 963 587 411</a><br/>
+                          <a href="tel:+34609976027" className="hover:text-white transition-colors">+34 609 976 027</a>
                         </p>
                       </div>
                     </li>
@@ -226,7 +226,7 @@ const Contacto = () => {
                       <div>
                         <h4 className="font-semibold text-white mb-1">Email</h4>
                         <p className="text-gray-300">
-                          <a href="mailto:info@artdental.com" className="hover:text-white transition-colors">info@artdental.com</a>
+                          <a href="mailto:Info@artdentalvlc.com" className="hover:text-white transition-colors">Info@artdentalvlc.com</a>
                         </p>
                       </div>
                     </li>
