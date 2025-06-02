@@ -45,7 +45,7 @@ const CasesPreview = () => {
                   <img
                     src={caseItem.before}
                     alt={`${caseItem.title} - Antes`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="h-64 overflow-hidden relative">
@@ -55,7 +55,7 @@ const CasesPreview = () => {
                   <img
                     src={caseItem.after}
                     alt={`${caseItem.title} - Después`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
