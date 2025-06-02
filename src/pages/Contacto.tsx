@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -236,9 +235,8 @@ const Contacto = () => {
                       <div>
                         <h4 className="font-semibold text-white mb-1">Horario</h4>
                         <p className="text-gray-300">
-                          Lunes - Viernes: 9:00 - 19:00<br/>
-                          Sábados: 9:00 - 14:00<br/>
-                          Domingos: Cerrado
+                          Lunes - Viernes: 7:00 - 19:30<br/>
+                          Sábado y Domingo: Cerrado
                         </p>
                       </div>
                     </li>
