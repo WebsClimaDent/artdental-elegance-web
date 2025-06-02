@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const technologies = [
   {
     id: 1,
-    title: "Escáner 3D de Alta Precisión",
-    description: "Digitalización de modelos con precisión micrométrica para garantizar ajustes perfectos.",
-    image: "public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
+    title: "Digitalización y Moldeado",
+    description: "Utilizamos sistemas de escaneado 3D de alta precisión para realizar tomas digitales exactas, que nos permiten planificar cada caso con total fiabilidad. Gracias a nuestro proceso de encerado digital y planificación digital avanzada, conseguimos una reproducción fiel de la anatomía dental y una adaptación perfecta en restauraciones, sin las limitaciones de los métodos tradicionales. Innovación, precisión y estética, al servicio de tu sonrisa.",
+    image: "/lovable-uploads/1a03ebf9-cc99-404d-a0d0-c58cb8360d8f.png",
     icon: <Zap className="h-5 w-5" />,
     color: "from-blue-600 to-indigo-800",
   },
