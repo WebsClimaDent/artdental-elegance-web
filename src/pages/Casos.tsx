@@ -24,8 +24,8 @@ const cases = [
     challenge: "Diastemas, forma irregular de los dientes y tinción del esmalte resistente al blanqueamiento.",
     solution: "Carillas ultrafinas con mínima preparación dental, preservando la mayor cantidad de esmalte posible.",
     materials: "Porcelana feldespática estratificada a mano, espesor de 0.3mm.",
-    before: "https://images.unsplash.com/photo-1595005322046-2482839d80b7?q=80&w=1770&auto=format&fit=crop",
-    after: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    before: "/lovable-uploads/c4cf566d-2328-48e1-b231-33556c92e7a1.png",
+    after: "/lovable-uploads/ad874c0d-0400-46d7-adae-294ab063ef29.png",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const cases = [
     solution: "Protocolo de extracción-implante inmediato con regeneración ósea guiada y rehabilitación fija completa.",
     materials: "Implantes con superficie tratada, estructura de zirconio multicapa y cerámica estratificada.",
     before: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1774&auto=format&fit=crop",
-    after: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    after: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
   },
 ];
 
