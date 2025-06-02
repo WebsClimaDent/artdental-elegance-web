@@ -1,74 +1,58 @@
 
+import { Monitor, Cpu, Zap, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Layers, Zap } from "lucide-react";
-import { motion } from "framer-motion";
 
 const technologies = [
   {
-    id: 1,
-    title: "Digitalización y Moldeado",
-    description: "Utilizamos sistemas de escaneado 3D de alta precisión para realizar tomas digitales exactas, que nos permiten planificar cada caso con total fiabilidad. Gracias a nuestro proceso de encerado digital y planificación digital avanzada, conseguimos una reproducción fiel de la anatomía dental y una adaptación perfecta en restauraciones, sin las limitaciones de los métodos tradicionales. Innovación, precisión y estética, al servicio de tu sonrisa.",
-    image: "/lovable-uploads/1a03ebf9-cc99-404d-a0d0-c58cb8360d8f.png",
-    icon: <Zap className="h-5 w-5" />,
-    color: "from-blue-600 to-indigo-800",
+    icon: Monitor,
+    title: "Escáner intraoral 3D",
+    description: "Captura digital precisa para impresiones perfectas sin molestias para el paciente.",
   },
   {
-    id: 2,
-    title: "Sistema CAD/CAM Avanzado",
-    description: "Diseño y fabricación asistidos por ordenador para resultados precisos y personalizados.",
-    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1770&auto=format&fit=crop",
-    icon: <Layers className="h-5 w-5" />,
-    color: "from-purple-600 to-pink-800",
+    icon: Cpu,
+    title: "Fresado CAD/CAM",
+    description: "Fabricación automatizada de alta precisión para restauraciones dentales perfectas.",
+  },
+  {
+    icon: Zap,
+    title: "Sinterización avanzada",
+    description: "Procesos de cocción controlados digitalmente para máxima resistencia y estética.",
+  },
+  {
+    icon: Shield,
+    title: "Control de calidad digital",
+    description: "Verificación automatizada en cada etapa del proceso de fabricación.",
   },
 ];
 
 const TechnologyPreview = () => {
   return (
-    <section className="section-padding bg-black" id="tecnologia">
+    <section className="section-padding bg-white" id="tecnologia">
       <div className="container-custom">
-        <h2 className="section-title text-center">Nuestra Tecnología</h2>
+        <h2 className="section-title text-center">Descubra el Futuro del arte dental</h2>
         <p className="section-subtitle text-center">
-          Nuestro laboratorio dental Valencia utiliza las tecnologías más avanzadas del sector 
-          para ofrecer resultados excepcionales con precisión micrométrica.
+          Utilizamos la tecnología más avanzada del mercado para garantizar precisión,
+          rapidez y resultados excepcionales en cada trabajo.
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-          {technologies.map((tech) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          {technologies.map((tech, index) => (
             <div
-              key={tech.id}
-              className="group overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500"
+              key={index}
+              className="text-center p-6 rounded-lg border border-gray-100 card-hover reveal"
             >
-              <div className={`bg-gradient-to-r ${tech.color} p-1`}>
-                <div className="flex flex-col md:flex-row bg-dental-dark rounded-lg overflow-hidden">
-                  <div className="md:w-2/5 h-64 md:h-auto overflow-hidden relative">
-                    <img
-                      src={tech.image}
-                      alt={tech.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                  </div>
-                  <div className="md:w-3/5 p-6 flex flex-col justify-center">
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="bg-white bg-opacity-10 p-2 rounded-full">
-                        {tech.icon}
-                      </div>
-                      <h3 className="text-xl font-semibold font-playfair text-white">
-                        {tech.title}
-                      </h3>
-                    </div>
-                    <p className="text-gray-300 mb-4">{tech.description}</p>
-                  </div>
-                </div>
+              <div className="w-16 h-16 bg-dental-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <tech.icon className="h-8 w-8 text-dental-primary" />
               </div>
+              <h3 className="text-xl font-semibold mb-3 font-playfair">{tech.title}</h3>
+              <p className="text-gray-600">{tech.description}</p>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-12">
           <Link to="/tecnologia" className="btn-primary">
-            Conocer nuestras instalaciones
-            <ArrowRight className="ml-2 h-5 w-5" />
+            Conocer nuestra tecnología
           </Link>
         </div>
       </div>
