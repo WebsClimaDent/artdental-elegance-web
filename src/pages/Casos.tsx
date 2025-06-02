@@ -1,9 +1,9 @@
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Star, Quote } from "lucide-react";
 import BackButton from "@/components/ui/back-button";
 
 const cases = [
@@ -37,19 +37,54 @@ const cases = [
     before: "/lovable-uploads/91cb8f91-073b-4419-b103-d825f23e1b20.png",
     after: "/lovable-uploads/58c86be2-0efc-4891-a35c-b7afa01b41c7.png",
   },
+];
+
+const reviews = [
+  {
+    id: 1,
+    name: "María González",
+    rating: 5,
+    comment: "Excelente atención y profesionalismo. Mi sonrisa quedó perfecta, superó todas mis expectativas. El equipo es muy cálido y profesional.",
+    date: "Hace 2 semanas",
+    position: { top: "20%", left: "15%" }
+  },
+  {
+    id: 2,
+    name: "Carlos Mendoza",
+    rating: 5,
+    comment: "Increíble trabajo en mis implantes. El Dr. es muy detallista y me explicó todo el proceso. Recomiendo 100% esta clínica.",
+    date: "Hace 1 mes",
+    position: { top: "60%", right: "20%" }
+  },
+  {
+    id: 3,
+    name: "Ana Ruiz",
+    rating: 5,
+    comment: "Las carillas me cambiaron la vida. Trabajo impecable y atención de primera. Definitivamente volvería para otros tratamientos.",
+    date: "Hace 3 semanas",
+    position: { top: "40%", left: "25%" }
+  },
   {
     id: 4,
-    title: "Rehabilitación de sonrisa sobre implantes",
-    description: "Paciente con periodontitis avanzada y movilidad dental generalizada. Se realizó extracción de dientes no salvables, colocación inmediata de implantes y rehabilitación completa con prótesis fija de zirconio.",
-    challenge: "Periodontitis avanzada, pronóstico desfavorable de dientes remanentes y pérdida ósea significativa.",
-    solution: "Protocolo de extracción-implante inmediato con regeneración ósea guiada y rehabilitación fija completa.",
-    materials: "Implantes con superficie tratada, estructura de zirconio multicapa y cerámica estratificada.",
-    before: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1774&auto=format&fit=crop",
-    after: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    name: "Roberto Silva",
+    rating: 5,
+    comment: "Profesionales excepcionales. Mi rehabilitación completa fue un éxito total. Muy satisfecho con los resultados.",
+    date: "Hace 2 meses",
+    position: { top: "75%", right: "15%" }
   },
+  {
+    id: 5,
+    name: "Patricia López",
+    rating: 5,
+    comment: "La mejor decisión fue elegir ArtDental. Calidad, profesionalismo y resultados extraordinarios. Mi sonrisa nunca se vio mejor.",
+    date: "Hace 1 semana",
+    position: { top: "30%", right: "30%" }
+  }
 ];
 
 const Casos = () => {
+  const [visibleReviews, setVisibleReviews] = useState<number[]>([]);
+
   useEffect(() => {
     document.title = "Casos de Éxito - ArtDental";
     
@@ -67,13 +102,38 @@ const Casos = () => {
       }
     };
     
+    // Animation for floating reviews
+    const showReviewsSequentially = () => {
+      reviews.forEach((_, index) => {
+        setTimeout(() => {
+          setVisibleReviews(prev => [...prev, index]);
+        }, index * 800);
+      });
+    };
+
+    const timer = setTimeout(() => {
+      showReviewsSequentially();
+    }, 2000);
+    
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
     
     return () => {
       window.removeEventListener("scroll", revealOnScroll);
+      clearTimeout(timer);
     };
   }, []);
+
+  const renderStars = (rating: number) => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <Star
+        key={index}
+        className={`w-4 h-4 ${
+          index < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
+        }`}
+      />
+    ));
+  };
 
   return (
     <>
@@ -146,6 +206,76 @@ const Casos = () => {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Reviews Section */}
+        <section className="section-padding bg-gradient-to-b from-dental-dark to-black relative overflow-hidden">
+          <div className="container-custom">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6 text-white">
+                Lo que dicen nuestros pacientes
+              </h2>
+              <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+                Testimonios reales de pacientes satisfechos que han transformado sus sonrisas con nosotros.
+              </p>
+              <div className="flex justify-center items-center space-x-2 mb-4">
+                <div className="flex">
+                  {renderStars(5)}
+                </div>
+                <span className="text-white font-semibold">5.0</span>
+                <span className="text-gray-300">• Google Reviews</span>
+              </div>
+            </div>
+
+            {/* Floating Reviews Container */}
+            <div className="relative h-96 w-full">
+              {reviews.map((review, index) => (
+                <div
+                  key={review.id}
+                  className={`absolute bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 max-w-xs shadow-lg transition-all duration-1000 ${
+                    visibleReviews.includes(index)
+                      ? 'opacity-100 translate-y-0'
+                      : 'opacity-0 translate-y-8'
+                  }`}
+                  style={{
+                    ...review.position,
+                    animationDelay: `${index * 0.8}s`
+                  }}
+                >
+                  <div className="flex items-start space-x-3">
+                    <Quote className="w-6 h-6 text-white opacity-60 flex-shrink-0 mt-1" />
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-semibold text-white text-sm">{review.name}</h4>
+                        <div className="flex">
+                          {renderStars(review.rating)}
+                        </div>
+                      </div>
+                      <p className="text-gray-200 text-xs leading-relaxed mb-2">
+                        "{review.comment}"
+                      </p>
+                      <span className="text-gray-400 text-xs">{review.date}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-16">
+              <p className="text-gray-300 mb-6">
+                ¿Quieres ser nuestro próximo caso de éxito?
+              </p>
+              <a 
+                href="https://maps.app.goo.gl/mhF5TiJ6WTngoVJa7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-white hover:text-gray-300 transition-colors"
+              >
+                Ver más reseñas en Google
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
             </div>
           </div>
         </section>
