@@ -181,7 +181,7 @@ const Tecnologia = () => {
                   <img 
                     src="/lovable-uploads/1db6d1c9-9179-4b43-bc6c-b74bc7353c1d.png"
                     alt="Tecnología dental avanzada"
-                    className="w-full h-auto transform transition-all duration-700 hover:scale-105"
+                    className="w-full h-auto transform transition-transform duration-500 hover:scale-105"
                   />
                 </div>
               </div>
@@ -287,7 +287,7 @@ const Tecnologia = () => {
           <div className="container-custom relative z-10 text-center">
             <div className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
               <h2 className="text-3xl md:text-5xl font-playfair font-semibold mb-6">
-                Descubra el Futuro de la Odontología
+                Descubra el Futuro del arte dental
               </h2>
               <p className="text-xl text-gray-200 mb-12 max-w-3xl mx-auto">
                 Le invitamos a visitar nuestras instalaciones para conocer de primera mano
