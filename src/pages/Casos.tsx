@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -34,7 +35,7 @@ const cases = [
     solution: "Colocación de implantes de titanio con coronas de circonio, planificación digital previa.",
     materials: "Implantes de titanio, coronas de circonio, pilares personalizados.",
     before: "/lovable-uploads/b44b9bcc-1d0d-43da-a6b6-c1525792fdc9.png",
-    after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
+    after: "/lovable-uploads/e2080422-f897-4e44-89cb-fe17b4ccecbc.png",
   },
 ];
 
