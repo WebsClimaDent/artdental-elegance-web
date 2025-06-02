@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -15,10 +16,10 @@ import {
 const teamMembers = [
   {
     id: 1,
-    name: "Dr. Carlos Martínez",
+    name: "Dr. Leopoldo Romance",
     role: "Director Técnico",
-    image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=1770&auto=format&fit=crop",
-    bio: "Con más de 15 años de experiencia en el sector dental, el Dr. Martínez lidera nuestro equipo técnico con un enfoque en la precisión y la excelencia. Especializado en restauraciones complejas y estética avanzada.",
+    image: "/lovable-uploads/4ff54fe0-8806-4880-8c6f-fb5b5cd34025.png",
+    bio: "Dr. Leopoldo Romance lidera nuestro equipo técnico con un enfoque en la precisión y la excelencia. Especializado en restauraciones complejas y estética avanzada.",
   },
   {
     id: 2,

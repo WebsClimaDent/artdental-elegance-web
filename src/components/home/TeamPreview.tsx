@@ -12,9 +12,9 @@ import {
 const teamMembers = [
   {
     id: 1,
-    name: "Dr. Carlos Martínez",
+    name: "Dr. Leopoldo Romance",
     role: "Director Técnico",
-    image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=1770&auto=format&fit=crop",
+    image: "/lovable-uploads/4ff54fe0-8806-4880-8c6f-fb5b5cd34025.png",
     link: "/equipo",
   },
   {
