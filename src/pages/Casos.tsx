@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -39,9 +40,9 @@ const reviews = [
   },
   {
     id: 2,
-    name: "Carlos Mendoza",
+    name: "Alicia Sánchez",
     rating: 5,
-    comment: "Increíble trabajo en mis implantes. El Dr. es muy detallista y me explicó todo el proceso. Recomiendo 100% esta clínica.",
+    comment: "Una clínica de 10. Para mí ha sido una experiencia que repetiré y la recomiendo al 100%. Todos muy cariñosos y atentos, especialmente Marta, Alicia y Natalia. Me salvaron una muela que otra clínica quería extraer. Si buscas una clínica dental, no dudes en ir a Artdental.",
     date: "Hace 1 mes",
     position: { top: "60%", right: "20%" }
   },
