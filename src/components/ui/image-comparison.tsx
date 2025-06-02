@@ -28,7 +28,7 @@ const ImageComparison = ({ beforeImage, afterImage, title }: ImageComparisonProp
   };
 
   return (
-    <div className="relative w-full h-72 overflow-hidden rounded-lg cursor-col-resize select-none">
+    <div className="relative w-full h-48 overflow-hidden rounded-lg cursor-col-resize select-none">
       {/* Imagen del después (fondo) */}
       <img
         src={afterImage}
