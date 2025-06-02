@@ -296,7 +296,7 @@ const Servicios = () => {
                     className={`reveal flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}
                   >
                     <div className="lg:w-1/2">
-                      <div className="rounded-lg overflow-hidden shadow-2xl h-96">
+                      <div className={`rounded-lg overflow-hidden shadow-2xl ${category.id === 2 ? 'h-[500px]' : 'h-96'}`}>
                         <img 
                           src={service.image} 
                           alt={service.title}
