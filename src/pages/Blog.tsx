@@ -1,7 +1,8 @@
+
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import { ArrowRight, Instagram, Facebook, Linkedin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import BackButton from "../components/ui/back-button";
 
@@ -114,113 +115,6 @@ const Blog = () => {
                 Artículos, casos clínicos y tendencias en laboratorio dental protésico.
                 Conocimiento compartido para profesionales del sector.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Social Media Section */}
-        <section className="section-padding bg-black/30">
-          <div className="container-custom">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-4 text-white">
-                Síguenos en Redes Sociales
-              </h2>
-              <p className="text-gray-300 max-w-2xl mx-auto">
-                Mantente al día con nuestros últimos trabajos, técnicas y novedades del laboratorio dental.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Video from Threads */}
-              <div className="reveal">
-                <div className="bg-dental-dark rounded-lg overflow-hidden shadow-lg p-6">
-                  <h3 className="text-xl font-playfair font-semibold mb-4 text-white">
-                    Último contenido en Threads
-                  </h3>
-                  <div className="aspect-video rounded-lg overflow-hidden bg-black/50">
-                    <iframe
-                      src="https://www.threads.net/embed/DE7NuYatTmK"
-                      width="100%"
-                      height="100%"
-                      frameBorder="0"
-                      scrolling="no"
-                      allowTransparency={true}
-                      className="rounded-lg"
-                      title="Video de Threads - ArtDental"
-                    />
-                  </div>
-                  <p className="text-gray-300 mt-4 text-sm">
-                    Conoce más sobre nuestro proceso de trabajo en el laboratorio dental.
-                  </p>
-                </div>
-              </div>
-
-              {/* Social Media Links */}
-              <div className="reveal space-y-6">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6">
-                  Conéctate con nosotros
-                </h3>
-                
-                <div className="space-y-4">
-                  <a
-                    href="https://www.threads.com/@polromanceartdental"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 bg-dental-dark rounded-lg hover:bg-dental-dark/80 transition-colors group"
-                  >
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">@</span>
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold group-hover:underline">Threads</h4>
-                      <p className="text-gray-400 text-sm">@polromanceartdental</p>
-                    </div>
-                    <ArrowRight className="ml-auto text-gray-400 group-hover:text-white transition-colors" />
-                  </a>
-
-                  <a
-                    href="#"
-                    className="flex items-center gap-4 p-4 bg-dental-dark rounded-lg hover:bg-dental-dark/80 transition-colors group"
-                  >
-                    <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full flex items-center justify-center">
-                      <Instagram className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold group-hover:underline">Instagram</h4>
-                      <p className="text-gray-400 text-sm">Casos clínicos y procesos</p>
-                    </div>
-                    <ArrowRight className="ml-auto text-gray-400 group-hover:text-white transition-colors" />
-                  </a>
-
-                  <a
-                    href="#"
-                    className="flex items-center gap-4 p-4 bg-dental-dark rounded-lg hover:bg-dental-dark/80 transition-colors group"
-                  >
-                    <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Facebook className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold group-hover:underline">Facebook</h4>
-                      <p className="text-gray-400 text-sm">Comunidad dental profesional</p>
-                    </div>
-                    <ArrowRight className="ml-auto text-gray-400 group-hover:text-white transition-colors" />
-                  </a>
-
-                  <a
-                    href="#"
-                    className="flex items-center gap-4 p-4 bg-dental-dark rounded-lg hover:bg-dental-dark/80 transition-colors group"
-                  >
-                    <div className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center">
-                      <Linkedin className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="text-white font-semibold group-hover:underline">LinkedIn</h4>
-                      <p className="text-gray-400 text-sm">Red profesional dental</p>
-                    </div>
-                    <ArrowRight className="ml-auto text-gray-400 group-hover:text-white transition-colors" />
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
