@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -112,7 +113,7 @@ const Casos = () => {
     return Array.from({ length: 5 }, (_, index) => (
       <Star
         key={index}
-        className={`w-4 h-4 ${
+        className={`w-4 h-4 transition-all duration-200 ${
           index < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
         }`}
       />
@@ -219,7 +220,7 @@ const Casos = () => {
               {reviews.map((review, index) => (
                 <div
                   key={review.id}
-                  className={`bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-6 shadow-lg transition-all duration-1000 ${
+                  className={`group bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-6 shadow-lg transition-all duration-1000 hover:bg-opacity-15 hover:border-opacity-30 ${
                     visibleReviews.includes(index)
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-8'
@@ -233,8 +234,20 @@ const Casos = () => {
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-3">
                         <h4 className="font-semibold text-white">{review.name}</h4>
-                        <div className="flex">
-                          {renderStars(review.rating)}
+                        <div className="flex space-x-0.5">
+                          {Array.from({ length: 5 }, (_, starIndex) => (
+                            <Star
+                              key={starIndex}
+                              className={`w-4 h-4 transition-all duration-200 group-hover:animate-bounce ${
+                                starIndex < review.rating 
+                                  ? "fill-yellow-400 text-yellow-400" 
+                                  : "text-gray-300"
+                              }`}
+                              style={{
+                                animationDelay: `${starIndex * 100}ms`
+                              }}
+                            />
+                          ))}
                         </div>
                       </div>
                       <p className="text-gray-200 text-sm leading-relaxed mb-3">
