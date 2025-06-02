@@ -25,7 +25,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-dental-light" />
-                <span className="text-sm">Calle Principal 123, Ciudad, CP 28001</span>
+                <span className="text-sm">Av. de Joan XXIII, 48, bajo, Benicalap, 46025 Valencia</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-dental-light" />

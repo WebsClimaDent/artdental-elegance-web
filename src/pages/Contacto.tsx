@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -205,8 +206,8 @@ const Contacto = () => {
                       <div>
                         <h4 className="font-semibold text-white mb-1">Dirección</h4>
                         <p className="text-gray-300">
-                          Calle Principal 123<br/>
-                          28001, Madrid<br/>
+                          Av. de Joan XXIII, 48, bajo<br/>
+                          Benicalap, 46025 Valencia<br/>
                           España
                         </p>
                       </div>
@@ -247,7 +248,7 @@ const Contacto = () => {
                 {/* Google Map */}
                 <div className="h-64 rounded-lg overflow-hidden">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24304.523907688272!2d-3.7037974!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1sen!2ses!4v1618308992271!5m2!1sen!2ses" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.9987612829885!2d-0.3968932!3d39.4894676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06b%3A0x40929d4c9b7d3b26!2sAv.%20de%20Joan%20XXIII%2C%2048%2C%20bajo%2C%20Benicalap%2C%2046025%20Valencia!5e0!3m2!1sen!2ses!4v1618308992271!5m2!1sen!2ses" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
