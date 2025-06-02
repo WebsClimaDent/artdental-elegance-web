@@ -10,7 +10,7 @@ const blogPosts = [
     id: 1,
     title: "Avances en materiales cerámicos para restauraciones dentales",
     excerpt: "Exploramos cómo los nuevos materiales cerámicos están revolucionando la estética y durabilidad de las restauraciones dentales modernas.",
-    image: "/lovable-uploads/ce1c3f7d-1d21-43e8-a94f-9822f13d35fb.png",
+    image: "/lovable-uploads/38ca02d3-c8eb-4e8f-bc94-d3893c143b90.png",
     category: "Materiales",
     date: "12 Mayo, 2025",
     author: "Dr. Miguel Sánchez"
