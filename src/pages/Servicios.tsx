@@ -347,7 +347,7 @@ const Servicios = () => {
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-72 overflow-hidden">
                   <img 
-                    src="/lovable-uploads/2d62c58a-c567-46f0-b750-87913a275b9e.png" 
+                    src="/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png" 
                     alt="Zirconio"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
