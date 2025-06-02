@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -8,7 +7,7 @@ const cases = [
     title: "Rehabilitación completa",
     description: "Restauración completa de la dentición con coronas de disilicato de litio para un resultado estético y funcional óptimo.",
     before: "/lovable-uploads/d689cf97-8199-44bb-ae83-8f97311e4112.png",
-    after: "/lovable-uploads/852950f3-6582-4f88-9837-a21c47c31cc0.png",
+    after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
     link: "/casos",
   },
   {
