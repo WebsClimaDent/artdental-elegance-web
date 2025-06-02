@@ -267,7 +267,7 @@ const Servicios = () => {
         <section className="py-16 bg-cover bg-center relative" 
                 style={{ backgroundImage: 'url(/lovable-uploads/6a622db5-244e-4a95-8f73-97d3f318efe8.png)' }}>
           {/* Dark overlay for opacity */}
-          <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-80 z-0"></div>
           
           <div className="container-custom relative z-10">
             <div className="mb-6">
