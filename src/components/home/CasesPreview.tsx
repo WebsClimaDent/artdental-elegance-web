@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -14,7 +15,7 @@ const cases = [
     id: 2,
     title: "Carillas mínimamente invasivas",
     description: "Transformación estética con carillas ultra finas que respetan la estructura dental natural.",
-    before: "https://images.unsplash.com/photo-1595005322046-2482839d80b7?q=80&w=1770&auto=format&fit=crop",
+    before: "/lovable-uploads/c4cf566d-2328-48e1-b231-33556c92e7a1.png",
     after: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
     link: "/casos",
   },
