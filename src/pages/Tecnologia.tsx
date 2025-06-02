@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -145,7 +144,7 @@ const Tecnologia = () => {
       <Header />
       <main className="bg-black min-h-screen pt-24 overflow-hidden">
         {/* Hero Section */}
-        <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center z-0" 
             style={{ 
