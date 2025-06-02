@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -35,7 +36,7 @@ const reviews = [
     rating: 5,
     comment: "Trabajo excelente con tecnología de vanguardia, trabajando completamente digitalmente, sin necesidad de modelos y minimizando la posibilidad de error. Excelentes profesionales a un precio muy competitivo. ¡Su maquillaje es espectacular!",
     date: "Hace 3 semanas",
-    position: { top: "20%", left: "15%" }
+    position: { top: "15%", left: "10%" }
   },
   {
     id: 2,
@@ -43,7 +44,7 @@ const reviews = [
     rating: 5,
     comment: "Una clínica de 10. Para mí ha sido una experiencia que repetiré y la recomiendo al 100%. Todos muy cariñosos y atentos, especialmente Marta, Alicia y Natalia. Me salvaron una muela que otra clínica quería extraer. Si buscas una clínica dental, no dudes en ir a Artdental.",
     date: "Hace 1 mes",
-    position: { top: "60%", right: "20%" }
+    position: { top: "60%", right: "15%" }
   },
   {
     id: 3,
@@ -51,7 +52,7 @@ const reviews = [
     rating: 5,
     comment: "Trabajan muy rápido y bien. Tienen una tecnología extraordinaria. Son excelentes profesionales. Los recomiendo totalmente.",
     date: "Hace 2 semanas",
-    position: { top: "40%", left: "25%" }
+    position: { top: "35%", left: "60%" }
   },
   {
     id: 4,
@@ -59,7 +60,7 @@ const reviews = [
     rating: 5,
     comment: "Profesionales excepcionales. Mi rehabilitación completa fue un éxito total. Muy satisfecho con los resultados.",
     date: "Hace 2 meses",
-    position: { top: "75%", right: "15%" }
+    position: { top: "75%", right: "25%" }
   },
   {
     id: 5,
@@ -67,7 +68,7 @@ const reviews = [
     rating: 5,
     comment: "La mejor decisión fue elegir ArtDental. Calidad, profesionalismo y resultados extraordinarios. Mi sonrisa nunca se vio mejor.",
     date: "Hace 1 semana",
-    position: { top: "30%", right: "30%" }
+    position: { top: "20%", right: "45%" }
   }
 ];
 
@@ -75,7 +76,7 @@ const Casos = () => {
   const [visibleReviews, setVisibleReviews] = useState<number[]>([]);
 
   useEffect(() => {
-    document.title = "Casos de Éxito - ArtDental";
+    document.title = "Casos de Éxito - ArtDental - Laboratorio Dental en Valencia";
     
     const revealElements = document.querySelectorAll(".reveal");
     
@@ -204,10 +205,11 @@ const Casos = () => {
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6 text-white">
-                Lo que dicen nuestros pacientes
+                Lo que dicen nuestros clientes
               </h2>
               <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Testimonios reales de pacientes satisfechos que han transformado sus sonrisas con nosotros.
+                Testimonios reales de clientes satisfechos que han transformado sus trabajos con nosotros. 
+                Como laboratorio dental en Valencia, nos enorgullecemos de brindar resultados excepcionales.
               </p>
               <div className="flex justify-center items-center space-x-2 mb-4">
                 <div className="flex">
@@ -223,7 +225,7 @@ const Casos = () => {
               {reviews.map((review, index) => (
                 <div
                   key={review.id}
-                  className={`absolute bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 max-w-xs shadow-lg transition-all duration-1000 ${
+                  className={`absolute bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 max-w-xs shadow-lg transition-all duration-1000 z-${10 + index} ${
                     visibleReviews.includes(index)
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-8'
