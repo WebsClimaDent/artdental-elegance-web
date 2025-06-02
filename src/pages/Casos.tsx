@@ -158,53 +158,24 @@ const Casos = () => {
                 <div key={caseItem.id} className="reveal">
                   <h2 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-white">{caseItem.title}</h2>
                   
-                  {/* Special hover effect for implants case (id 3) */}
-                  {caseItem.id === 3 ? (
-                    <div className="group relative rounded-lg overflow-hidden mb-8 cursor-pointer">
-                      <div className="relative h-72">
-                        {/* Before image */}
-                        <img 
-                          src={caseItem.before} 
-                          alt={`${caseItem.title} - Antes`}
-                          className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700 group-hover:translate-x-full"
-                        />
-                        {/* After image */}
-                        <img 
-                          src={caseItem.after} 
-                          alt={`${caseItem.title} - Después`}
-                          className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700 translate-x-full group-hover:translate-x-0"
-                        />
-                        {/* Labels */}
-                        <span className="absolute top-4 left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10 transition-opacity duration-700 group-hover:opacity-0">
-                          Antes
-                        </span>
-                        <span className="absolute top-4 right-4 bg-white text-black text-sm px-3 py-1 rounded-md z-10 opacity-0 transition-opacity duration-700 group-hover:opacity-100">
-                          Después
-                        </span>
-                        {/* Divider line */}
-                        <div className="absolute inset-y-0 left-1/2 w-0.5 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-20"></div>
-                      </div>
+                  <div className="grid grid-cols-2 gap-6 mb-8">
+                    <div className="relative rounded-lg overflow-hidden">
+                      <span className="absolute top-4 left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10">Antes</span>
+                      <img 
+                        src={caseItem.before} 
+                        alt={`${caseItem.title} - Antes`}
+                        className="w-full h-72 object-cover object-center"
+                      />
                     </div>
-                  ) : (
-                    <div className="grid grid-cols-2 gap-6 mb-8">
-                      <div className="relative rounded-lg overflow-hidden">
-                        <span className="absolute top-4 left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10">Antes</span>
-                        <img 
-                          src={caseItem.before} 
-                          alt={`${caseItem.title} - Antes`}
-                          className="w-full h-72 object-cover object-center"
-                        />
-                      </div>
-                      <div className="relative rounded-lg overflow-hidden">
-                        <span className="absolute top-4 right-4 bg-white text-black text-sm px-3 py-1 rounded-md z-10">Después</span>
-                        <img 
-                          src={caseItem.after} 
-                          alt={`${caseItem.title} - Después`}
-                          className="w-full h-72 object-cover object-center"
-                        />
-                      </div>
+                    <div className="relative rounded-lg overflow-hidden">
+                      <span className="absolute top-4 right-4 bg-white text-black text-sm px-3 py-1 rounded-md z-10">Después</span>
+                      <img 
+                        src={caseItem.after} 
+                        alt={`${caseItem.title} - Después`}
+                        className="w-full h-72 object-cover object-center"
+                      />
                     </div>
-                  )}
+                  </div>
                   
                   <div className="max-w-4xl">
                     <p className="text-gray-300 mb-6">{caseItem.description}</p>
