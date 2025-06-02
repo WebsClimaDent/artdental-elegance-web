@@ -265,8 +265,11 @@ const Servicios = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" 
-                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)' }}>
-          <div className="container-custom">
+                style={{ backgroundImage: 'url(/lovable-uploads/6a622db5-244e-4a95-8f73-97d3f318efe8.png)' }}>
+          {/* Dark overlay for opacity */}
+          <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+          
+          <div className="container-custom relative z-10">
             <div className="mb-6">
               <BackButton className="text-white hover:text-dental-light" />
             </div>
