@@ -105,19 +105,19 @@ const Casos = () => {
                   
                   <div className="grid grid-cols-2 gap-6 mb-8">
                     <div className="relative rounded-lg overflow-hidden">
-                      <span className="absolute top-4 left-4 bg-black text-white text-sm px-3 py-1 rounded-md">Antes</span>
+                      <span className="absolute top-4 left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10">Antes</span>
                       <img 
                         src={caseItem.before} 
                         alt={`${caseItem.title} - Antes`}
-                        className="w-full h-72 object-cover"
+                        className="w-full h-72 object-cover object-center"
                       />
                     </div>
                     <div className="relative rounded-lg overflow-hidden">
-                      <span className="absolute top-4 right-4 bg-white text-black text-sm px-3 py-1 rounded-md">Después</span>
+                      <span className="absolute top-4 right-4 bg-white text-black text-sm px-3 py-1 rounded-md z-10">Después</span>
                       <img 
                         src={caseItem.after} 
                         alt={`${caseItem.title} - Después`}
-                        className="w-full h-72 object-cover"
+                        className="w-full h-72 object-cover object-center"
                       />
                     </div>
                   </div>
