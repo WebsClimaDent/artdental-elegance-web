@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -130,9 +129,9 @@ const Tecnologia = () => {
   return (
     <>
       <Header />
-      <main className="bg-black min-h-screen pt-20 overflow-hidden">
+      <main className="bg-black min-h-screen pt-32 overflow-hidden">
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
           <div 
             className="absolute inset-0 bg-cover bg-center z-0" 
             style={{ 
@@ -147,7 +146,7 @@ const Tecnologia = () => {
               <BackButton className="text-white hover:text-dental-light" />
             </div>
             <div className="text-center animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold mb-4 text-gradient">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold mb-6 text-gradient">
                 Innovación Tecnológica
               </h1>
               <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
