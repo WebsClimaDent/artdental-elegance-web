@@ -16,7 +16,7 @@ const cases = [
     title: "Carillas mínimamente invasivas",
     description: "Transformación estética con carillas ultra finas que respetan la estructura dental natural.",
     before: "/lovable-uploads/c4cf566d-2328-48e1-b231-33556c92e7a1.png",
-    after: "public/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
+    after: "/lovable-uploads/ad874c0d-0400-46d7-adae-294ab063ef29.png",
     link: "/casos",
   },
 ];
