@@ -19,6 +19,11 @@ const Hero = () => {
       {/* Content */}
       <div className="container-custom relative z-20 text-white">
         <div className="max-w-2xl md:max-w-3xl animate-fade-in">
+          <div className="text-left mb-4">
+            <span className="text-2xl md:text-3xl font-playfair font-bold text-white">
+              Artdental
+            </span>
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6">
             Elegancia y precisión en laboratorio dental
           </h1>
