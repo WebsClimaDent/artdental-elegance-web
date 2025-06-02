@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -66,19 +65,6 @@ const technologies = [
     image: "/lovable-uploads/069ad0c7-077a-490b-99f6-baf811d9ad74.png",
     icon: <Gauge className="h-12 w-12" />,
     color: "from-green-500 to-emerald-700",
-  },
-  {
-    id: 4,
-    title: "Hornos de Sinterización Programables",
-    description: "Equipos de última generación para la cocción y sinterización de cerámicas y zirconio, con curvas de temperatura precisas que garantizan resultados óptimos en resistencia y estética.",
-    features: [
-      "Control preciso de temperatura y tiempos",
-      "Programas personalizados por material",
-      "Resultados consistentes"
-    ],
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1964&auto=format&fit=crop",
-    icon: <Info className="h-12 w-12" />,
-    color: "from-amber-500 to-orange-700",
   },
 ];
 
