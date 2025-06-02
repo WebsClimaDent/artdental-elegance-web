@@ -41,32 +41,14 @@ const blogPosts = [
     category: "Técnicas",
     date: "20 Abril, 2025",
     author: "Dra. Ana González"
-  },
-  {
-    id: 5,
-    title: "El futuro de los materiales híbridos en prótesis fija",
-    excerpt: "Los materiales híbridos ofrecen una combinación única de propiedades que los hacen ideales para determinadas restauraciones.",
-    image: "/lovable-uploads/e80c87be-4317-4b7f-bdc9-8ff7830a7b3c.png",
-    category: "Materiales",
-    date: "15 Abril, 2025",
-    author: "Dr. Javier Ruiz"
-  },
-  {
-    id: 6,
-    title: "Comunicación clínica-laboratorio: la clave del éxito restaurador",
-    excerpt: "Una comunicación efectiva entre el dentista y el laboratorio es fundamental para conseguir resultados predecibles.",
-    image: "/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png",
-    category: "Gestión",
-    date: "10 Abril, 2025",
-    author: "Dra. Elena Torres"
   }
 ];
 
 const categories = [
-  { name: "Materiales", count: 2 },
+  { name: "Materiales", count: 1 },
   { name: "Técnicas", count: 2 },
   { name: "Tecnología", count: 1 },
-  { name: "Gestión", count: 1 },
+  { name: "Gestión", count: 0 },
   { name: "Casos Clínicos", count: 0 },
   { name: "Formación", count: 0 },
 ];
