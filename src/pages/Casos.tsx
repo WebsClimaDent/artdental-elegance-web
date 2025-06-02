@@ -33,7 +33,7 @@ const cases = [
     challenge: "Pérdida de múltiples piezas dentales, necesidad de restaurar función masticatoria y estética.",
     solution: "Colocación de implantes de titanio con coronas de circonio, planificación digital previa.",
     materials: "Implantes de titanio, coronas de circonio, pilares personalizados.",
-    before: "/lovable-uploads/d689cf97-8199-44bb-ae83-8f97311e4112.png",
+    before: "/lovable-uploads/b44b9bcc-1d0d-43da-a6b6-c1525792fdc9.png",
     after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
   },
 ];

@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -22,7 +23,7 @@ const cases = [
     id: 3,
     title: "Implantes con circonio",
     description: "Solución permanente con implantes de titanio y coronas de circonio para una estética natural.",
-    before: "/lovable-uploads/d689cf97-8199-44bb-ae83-8f97311e4112.png",
+    before: "/lovable-uploads/b44b9bcc-1d0d-43da-a6b6-c1525792fdc9.png",
     after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
     link: "/casos",
   },
