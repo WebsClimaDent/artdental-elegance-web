@@ -35,8 +35,13 @@ const services = [
 
 const ServicesPreview = () => {
   return (
-    <section className="section-padding bg-black" id="servicios">
-      <div className="container-custom">
+    <section className="section-padding relative bg-cover bg-center" 
+             style={{ backgroundImage: 'url(/lovable-uploads/e9ec3cb5-ecf6-462e-9300-2bb74b772644.png)' }}
+             id="servicios">
+      {/* Dark overlay for opacity */}
+      <div className="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+      
+      <div className="container-custom relative z-10">
         <h2 className="section-title text-center text-white">Nuestros Servicios</h2>
         <p className="section-subtitle text-center text-gray-300">
           Ofrecemos soluciones dentales avanzadas con un enfoque en la calidad,
