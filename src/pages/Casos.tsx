@@ -35,7 +35,6 @@ const reviews = [
     rating: 5,
     comment: "Trabajo excelente con tecnología de vanguardia, trabajando completamente digitalmente, sin necesidad de modelos y minimizando la posibilidad de error. Excelentes profesionales a un precio muy competitivo. ¡Su maquillaje es espectacular!",
     date: "Hace 3 semanas",
-    position: { top: "5%", left: "5%" }
   },
   {
     id: 2,
@@ -43,7 +42,6 @@ const reviews = [
     rating: 5,
     comment: "Una clínica de 10. Para mí ha sido una experiencia que repetiré y la recomiendo al 100%. Todos muy cariñosos y atentos, especialmente Marta, Alicia y Natalia. Me salvaron una muela que otra clínica quería extraer. Si buscas una clínica dental, no dudes en ir a Artdental.",
     date: "Hace 1 mes",
-    position: { top: "70%", right: "5%" }
   },
   {
     id: 3,
@@ -51,7 +49,6 @@ const reviews = [
     rating: 5,
     comment: "Trabajan muy rápido y bien. Tienen una tecnología extraordinaria. Son excelentes profesionales. Los recomiendo totalmente.",
     date: "Hace 2 semanas",
-    position: { top: "15%", right: "25%" }
   },
   {
     id: 4,
@@ -59,7 +56,6 @@ const reviews = [
     rating: 5,
     comment: "Profesionales excepcionales. Mi rehabilitación completa fue un éxito total. Muy satisfecho con los resultados.",
     date: "Hace 2 meses",
-    position: { top: "45%", left: "10%" }
   },
   {
     id: 5,
@@ -67,7 +63,6 @@ const reviews = [
     rating: 5,
     comment: "La mejor decisión fue elegir ArtDental. Calidad, profesionalismo y resultados extraordinarios. Mi sonrisa nunca se vio mejor.",
     date: "Hace 1 semana",
-    position: { top: "30%", right: "40%" }
   }
 ];
 
@@ -91,18 +86,18 @@ const Casos = () => {
       }
     };
     
-    // Animation for floating reviews
+    // Animation for reviews
     const showReviewsSequentially = () => {
       reviews.forEach((_, index) => {
         setTimeout(() => {
           setVisibleReviews(prev => [...prev, index]);
-        }, index * 800);
+        }, index * 200);
       });
     };
 
     const timer = setTimeout(() => {
       showReviewsSequentially();
-    }, 2000);
+    }, 1000);
     
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
@@ -219,36 +214,30 @@ const Casos = () => {
               </div>
             </div>
 
-            {/* Floating Reviews Container */}
-            <div className="relative h-[500px] w-full">
+            {/* Reviews Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {reviews.map((review, index) => (
                 <div
                   key={review.id}
-                  className={`absolute bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 w-80 shadow-lg transition-all duration-1000 ${
-                    index === 0 ? 'z-50' : 
-                    index === 1 ? 'z-40' : 
-                    index === 2 ? 'z-30' : 
-                    index === 3 ? 'z-20' : 'z-10'
-                  } ${
+                  className={`bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-6 shadow-lg transition-all duration-1000 ${
                     visibleReviews.includes(index)
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-8'
-                  }`}
+                  } ${index === 2 ? 'md:col-span-2 lg:col-span-1' : ''}`}
                   style={{
-                    ...review.position,
-                    animationDelay: `${index * 0.8}s`
+                    animationDelay: `${index * 0.2}s`
                   }}
                 >
                   <div className="flex items-start space-x-3">
                     <Quote className="w-6 h-6 text-white opacity-60 flex-shrink-0 mt-1" />
                     <div className="flex-1">
-                      <div className="flex items-center justify-between mb-2">
-                        <h4 className="font-semibold text-white text-sm">{review.name}</h4>
+                      <div className="flex items-center justify-between mb-3">
+                        <h4 className="font-semibold text-white">{review.name}</h4>
                         <div className="flex">
                           {renderStars(review.rating)}
                         </div>
                       </div>
-                      <p className="text-gray-200 text-xs leading-relaxed mb-2">
+                      <p className="text-gray-200 text-sm leading-relaxed mb-3">
                         "{review.comment}"
                       </p>
                       <span className="text-gray-400 text-xs">{review.date}</span>
