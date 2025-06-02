@@ -193,7 +193,7 @@ const Tecnologia = () => {
               <div className="lg:w-1/2 animate-on-scroll opacity-0 transform translate-x-[50px] transition-all duration-1000">
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070&auto=format&fit=crop"
+                    src="/lovable-uploads/1db6d1c9-9179-4b43-bc6c-b74bc7353c1d.png"
                     alt="Tecnología dental avanzada"
                     className="w-full h-auto transform transition-all duration-700 hover:scale-105"
                   />
