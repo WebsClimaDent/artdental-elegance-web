@@ -104,7 +104,7 @@ const Blog = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" 
-                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)' }}>
+                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/1ab6e286-fa12-4bc9-8642-2266335f3355.png)' }}>
           <div className="container-custom">
             <div className="mb-6">
               <BackButton className="text-white hover:text-dental-light" />
