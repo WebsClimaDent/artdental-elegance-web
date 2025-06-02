@@ -34,8 +34,8 @@ const cases = [
     challenge: "Pérdida de múltiples piezas dentales, estética comprometida y función masticatoria reducida.",
     solution: "Colocación estratégica de implantes con carga inmediata de coronas provisionales y posterior restauración definitiva.",
     materials: "Implantes de titanio grado 5, coronas de zirconio multicapa.",
-    before: "https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?q=80&w=1770&auto=format&fit=crop",
-    after: "/lovable-uploads/852950f3-6582-4f88-9837-a21c47c31cc0.png",
+    before: "/lovable-uploads/58c86be2-0efc-4891-a35c-b7afa01b41c7.png",
+    after: "/lovable-uploads/91cb8f91-073b-4419-b103-d825f23e1b20.png",
   },
   {
     id: 4,
