@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -146,10 +147,10 @@ const Tecnologia = () => {
               <BackButton className="text-white hover:text-dental-light" />
             </div>
             <div className="text-center animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold mb-6 text-gradient">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-6 text-gradient">
                 Innovación Tecnológica
               </h1>
-              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
                 La excelencia de nuestro trabajo está cimentada en la combinación de artesanía 
                 experta y tecnología de vanguardia.
               </p>
