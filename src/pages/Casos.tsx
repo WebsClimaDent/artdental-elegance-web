@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -26,6 +25,16 @@ const cases = [
     materials: "Porcelana feldespática estratificada a mano, espesor de 0.3mm.",
     before: "/lovable-uploads/c4cf566d-2328-48e1-b231-33556c92e7a1.png",
     after: "/lovable-uploads/ad874c0d-0400-46d7-adae-294ab063ef29.png",
+  },
+  {
+    id: 3,
+    title: "Implantes dentales con coronas de circonio",
+    description: "Paciente con pérdida de varios dientes. Se colocaron implantes de titanio con coronas de circonio para una solución permanente y estéticamente natural.",
+    challenge: "Pérdida de múltiples piezas dentales, necesidad de restaurar función masticatoria y estética.",
+    solution: "Colocación de implantes de titanio con coronas de circonio, planificación digital previa.",
+    materials: "Implantes de titanio, coronas de circonio, pilares personalizados.",
+    before: "/lovable-uploads/d689cf97-8199-44bb-ae83-8f97311e4112.png",
+    after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
   },
 ];
 

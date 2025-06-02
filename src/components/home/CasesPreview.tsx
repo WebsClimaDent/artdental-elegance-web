@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -17,6 +16,14 @@ const cases = [
     description: "Transformación estética con carillas ultra finas que respetan la estructura dental natural.",
     before: "/lovable-uploads/c4cf566d-2328-48e1-b231-33556c92e7a1.png",
     after: "/lovable-uploads/ad874c0d-0400-46d7-adae-294ab063ef29.png",
+    link: "/casos",
+  },
+  {
+    id: 3,
+    title: "Implantes con circonio",
+    description: "Solución permanente con implantes de titanio y coronas de circonio para una estética natural.",
+    before: "/lovable-uploads/d689cf97-8199-44bb-ae83-8f97311e4112.png",
+    after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
     link: "/casos",
   },
 ];
