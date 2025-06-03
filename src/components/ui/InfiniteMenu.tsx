@@ -975,8 +975,8 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               top-1/2
               transform -translate-y-1/2
               z-30
-              w-72 md:w-80 lg:w-96
-              space-y-4
+              w-64 md:w-72 lg:w-80
+              space-y-3
               transition-all
               duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -987,16 +987,16 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             `}
           >
             {/* Title */}
-            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-2xl p-4 lg:p-6 border border-white/20 shadow-2xl">
-              <h2 className="font-playfair font-bold text-2xl md:text-3xl lg:text-4xl text-white leading-tight mb-3">
+            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
+              <h2 className="font-playfair font-bold text-xl md:text-2xl lg:text-3xl text-white leading-tight mb-2">
                 {activeItem.title}
               </h2>
-              <div className="w-12 h-1 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
+              <div className="w-10 h-0.5 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
             </div>
 
             {/* Description */}
-            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-2xl p-4 lg:p-6 border border-white/20 shadow-2xl">
-              <p className="text-white/90 text-sm md:text-base lg:text-lg leading-relaxed font-inter">
+            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
+              <p className="text-white/90 text-xs md:text-sm lg:text-base leading-relaxed font-inter">
                 {activeItem.description}
               </p>
             </div>
