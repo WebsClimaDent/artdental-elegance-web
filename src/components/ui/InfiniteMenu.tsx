@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -967,12 +968,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Moved even further down to give maximum space for images */}
+          {/* Content Container - Moved down to give 10px more space for corona image */}
           <div
             className={`
               absolute
               left-4 md:left-6 lg:left-8
-              bottom-28 md:bottom-32 lg:bottom-36
+              bottom-32 md:bottom-36 lg:bottom-40
               z-30
               w-64 md:w-72 lg:w-80
               space-y-2
