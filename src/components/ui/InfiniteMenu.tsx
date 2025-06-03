@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -597,7 +596,7 @@ class InfiniteGridMenu {
     );
 
     const gl = this.gl;
-    const needsResize = resizeCanvasToDisplaySize(gl.canvas);
+    const needsResize = resizeCanvasToDisplaySize(this.canvas);
     if (needsResize) {
       gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
     }
@@ -618,7 +617,7 @@ class InfiniteGridMenu {
   }
 
   #init(onInit?: ((instance: InfiniteGridMenu) => void) | null) {
-    const gl = this.canvas.getContext('webgl2', { antialias: true, alpha: false });
+    const gl = this.canvas.getContext('webgl2', { antialias: true, alpha: false }) as WebGL2RenderingContext;
     if (!gl) {
       throw new Error('No WebGL 2 context!');
     }
@@ -726,7 +725,7 @@ class InfiniteGridMenu {
     }
     gl.bindVertexArray(this.discVAO);
     gl.bindBuffer(gl.ARRAY_BUFFER, this.discInstances.buffer);
-    gl.bufferData(gl.ARRAY_BUFFER, this.discInstances.matricesArray.byteLength, gl.DYNAMIC_DRAW);
+    gl.bufferData(gl.ARRAY_BUFFER, this.discInstances.matricesArray, gl.DYNAMIC_DRAW);
     const mat4AttribSlotCount = 4;
     const bytesPerMatrix = 16 * 4;
     for (let j = 0; j < mat4AttribSlotCount; ++j) {
@@ -819,7 +818,7 @@ class InfiniteGridMenu {
   }
 
   #updateProjectionMatrix(gl: WebGL2RenderingContext) {
-    this.camera.aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
+    this.camera.aspect = this.canvas.clientWidth / this.canvas.clientHeight;
     const height = this.SPHERE_RADIUS * 0.35;
     const distance = this.camera.position[2];
     if (this.camera.aspect > 1) {
