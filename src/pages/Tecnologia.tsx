@@ -1,10 +1,10 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight, Info, Layers, Zap, Gauge } from "lucide-react";
 import BackButton from "@/components/ui/back-button";
+import TiltedCard from "@/components/ui/TiltedCard";
 import {
   HoverCard,
   HoverCardContent,
@@ -77,10 +77,18 @@ const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
       className={`relative h-64 overflow-hidden bg-gradient-to-r ${tech.color}`}
     >
       <div className="absolute inset-0 opacity-30">
-        <img 
-          src={tech.image} 
-          alt={tech.title} 
-          className="w-full h-full object-cover"
+        <TiltedCard
+          imageSrc={tech.image}
+          altText={tech.title}
+          captionText={tech.title}
+          containerWidth="100%"
+          containerHeight="100%"
+          imageWidth="100%"
+          imageHeight="100%"
+          scaleOnHover={1.05}
+          rotateAmplitude={8}
+          showTooltip={false}
+          className="w-full h-full"
         />
       </div>
       <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center p-6">
@@ -179,10 +187,16 @@ const Tecnologia = () => {
               </div>
               <div className="lg:w-1/2 animate-on-scroll opacity-0 transform translate-x-[50px] transition-all duration-1000">
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
-                    src="/lovable-uploads/1db6d1c9-9179-4b43-bc6c-b74bc7353c1d.png"
-                    alt="Tecnología dental avanzada"
-                    className="w-full h-auto transform transition-transform duration-500 hover:scale-105"
+                  <TiltedCard
+                    imageSrc="/lovable-uploads/1db6d1c9-9179-4b43-bc6c-b74bc7353c1d.png"
+                    altText="Tecnología dental avanzada"
+                    captionText="Tecnología de Precisión"
+                    containerWidth="100%"
+                    containerHeight="400px"
+                    imageWidth="100%"
+                    imageHeight="400px"
+                    scaleOnHover={1.08}
+                    rotateAmplitude={12}
                   />
                 </div>
               </div>
@@ -221,10 +235,17 @@ const Tecnologia = () => {
                         <div className="p-2">
                           <Card className="bg-black border-gray-800 overflow-hidden h-full">
                             <div className="h-48 overflow-hidden">
-                              <img 
-                                src={tech.image}
-                                alt={tech.title}
-                                className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+                              <TiltedCard
+                                imageSrc={tech.image}
+                                altText={tech.title}
+                                captionText={tech.title}
+                                containerWidth="100%"
+                                containerHeight="100%"
+                                imageWidth="100%"
+                                imageHeight="100%"
+                                scaleOnHover={1.1}
+                                rotateAmplitude={10}
+                                showTooltip={false}
                               />
                             </div>
                             <CardHeader>

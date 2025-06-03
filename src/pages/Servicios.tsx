@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -6,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import ServiceDialog from "../components/services/ServiceDialog";
 import BackButton from "@/components/ui/back-button";
+import TiltedCard from "@/components/ui/TiltedCard";
 
 // Extended service data with additional information for popups
 const serviceCategories = [
@@ -301,12 +301,17 @@ const Servicios = () => {
                         category.id === 2 ? 'h-[500px]' : 
                         service.id === 6 ? 'h-[420px]' : 'h-96'
                       }`}>
-                        <img 
-                          src={service.image} 
-                          alt={service.title}
-                          className={`w-full h-full transition-transform duration-500 hover:scale-105 ${
-                            service.id === 6 ? 'object-cover object-center' : 'object-cover'
-                          }`}
+                        <TiltedCard
+                          imageSrc={service.image}
+                          altText={service.title}
+                          captionText={service.title}
+                          containerWidth="100%"
+                          containerHeight="100%"
+                          imageWidth="100%"
+                          imageHeight="100%"
+                          scaleOnHover={1.08}
+                          rotateAmplitude={12}
+                          className={service.id === 6 ? 'object-cover object-center' : 'object-cover'}
                         />
                       </div>
                     </div>
@@ -336,10 +341,16 @@ const Servicios = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-72 overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png" 
-                    alt="Disilicato de Litio"
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  <TiltedCard
+                    imageSrc="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
+                    altText="Disilicato de Litio"
+                    captionText="Disilicato de Litio"
+                    containerWidth="100%"
+                    containerHeight="100%"
+                    imageWidth="100%"
+                    imageHeight="100%"
+                    scaleOnHover={1.1}
+                    rotateAmplitude={10}
                   />
                 </div>
                 <div className="p-6">
@@ -352,10 +363,16 @@ const Servicios = () => {
               
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-72 overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png" 
-                    alt="Zirconio"
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  <TiltedCard
+                    imageSrc="/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png"
+                    altText="Zirconio"
+                    captionText="Zirconio"
+                    containerWidth="100%"
+                    containerHeight="100%"
+                    imageWidth="100%"
+                    imageHeight="100%"
+                    scaleOnHover={1.1}
+                    rotateAmplitude={10}
                   />
                 </div>
                 <div className="p-6">
@@ -368,10 +385,16 @@ const Servicios = () => {
               
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-72 overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png" 
-                    alt="Composite"
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  <TiltedCard
+                    imageSrc="/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png"
+                    altText="Composite"
+                    captionText="Composite Avanzado"
+                    containerWidth="100%"
+                    containerHeight="100%"
+                    imageWidth="100%"
+                    imageHeight="100%"
+                    scaleOnHover={1.1}
+                    rotateAmplitude={10}
                   />
                 </div>
                 <div className="p-6">

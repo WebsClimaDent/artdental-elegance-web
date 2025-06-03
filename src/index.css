@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import TiltedCard styles */
+@import './components/ui/TiltedCard.css';
+
 @layer base {
   :root {
     --background: 220 13% 10%;
