@@ -91,6 +91,7 @@ const ImageComparison = ({ beforeImage, afterImage, title }: ImageComparisonProp
           alt={`${title} - Después`}
           className="w-full h-full object-cover object-center transition-all duration-300"
           draggable={false}
+          style={{ objectFit: 'cover' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
@@ -107,6 +108,7 @@ const ImageComparison = ({ beforeImage, afterImage, title }: ImageComparisonProp
           alt={`${title} - Antes`}
           className="w-full h-full object-cover object-center"
           draggable={false}
+          style={{ objectFit: 'cover' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
