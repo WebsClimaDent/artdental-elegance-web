@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -965,8 +964,8 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
       {/* Background overlay with subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
 
-      {/* Instructions - Made smaller */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+      {/* Instructions - Moved much lower with more spacing */}
+      <div className="absolute bottom-16 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 px-4">
         <div className={`
           bg-black/60 backdrop-blur-md rounded-full px-4 py-2 border border-white/20
           transition-all duration-300 ease-out
@@ -975,7 +974,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             : 'opacity-100 translate-y-0 scale-100'
           }
         `}>
-          <p className="text-white/80 text-xs font-medium">
+          <p className="text-white/80 text-xs font-medium text-center">
             Arrastra para explorar • Haz clic en el centro para continuar
           </p>
         </div>
@@ -983,12 +982,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Moved much lower to give maximum space for corona image on mobile */}
+          {/* Content Container - Better spacing for mobile */}
           <div
             className={`
               absolute
               left-4 md:left-6 lg:left-8
-              bottom-20 md:bottom-28 lg:bottom-32
+              bottom-32 md:bottom-28 lg:bottom-32
               z-30
               w-64 md:w-72 lg:w-80
               space-y-2
@@ -1002,7 +1001,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             `}
           >
             {/* Title */}
-            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-xl p-2 lg:p-3 border border-white/20 shadow-2xl">
+            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
               <h2 className="font-playfair font-bold text-lg md:text-xl lg:text-2xl text-white leading-tight mb-1">
                 {activeItem.title}
               </h2>
@@ -1010,20 +1009,20 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             </div>
 
             {/* Description */}
-            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-xl p-2 lg:p-3 border border-white/20 shadow-2xl">
+            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
               <p className="text-white/90 text-xs md:text-sm lg:text-base leading-relaxed font-inter">
                 {activeItem.description}
               </p>
             </div>
           </div>
 
-          {/* Enhanced action button */}
+          {/* Enhanced action button - Better spacing */}
           <div
             onClick={handleButtonClick}
             className={`
               absolute
               right-6 lg:right-12
-              bottom-12 lg:bottom-20
+              bottom-24 lg:bottom-20
               z-40
               w-16 h-16 lg:w-20 lg:h-20
               transition-all
