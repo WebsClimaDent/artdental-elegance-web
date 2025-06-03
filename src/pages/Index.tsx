@@ -6,7 +6,6 @@ import Hero from "../components/home/Hero";
 import ServicesInfiniteMenu from "../components/home/ServicesInfiniteMenu";
 import TeamPreview from "../components/home/TeamPreview";
 import CasesPreview from "../components/home/CasesPreview";
-import TechnologyPreview from "../components/home/TechnologyPreview";
 import ContactCTA from "../components/home/ContactCTA";
 import BlogPreview from "../components/home/BlogPreview";
 
@@ -48,7 +47,6 @@ const Index = () => {
         <ServicesInfiniteMenu />
         <TeamPreview />
         <CasesPreview />
-        <TechnologyPreview />
         <BlogPreview />
         <ContactCTA />
       </main>
