@@ -93,6 +93,13 @@ export default function TiltedCard({
     rotateFigcaption.set(0);
   }
 
+  // Create style object with proper typing
+  const imageStyles: React.CSSProperties = {
+    width: "100%",
+    height: "100%",
+    objectFit: objectFit,
+  };
+
   return (
     <figure
       ref={ref}
@@ -125,11 +132,7 @@ export default function TiltedCard({
           src={imageSrc}
           alt={altText}
           className="tilted-card-img"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: objectFit as React.CSSProperties['objectFit'],
-          }}
+          style={imageStyles}
         />
 
         {displayOverlayContent && overlayContent && (
