@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import Hero from "../components/home/Hero";
-import ServicesPreview from "../components/home/ServicesPreview";
+import ServicesInfiniteMenu from "../components/home/ServicesInfiniteMenu";
 import TeamPreview from "../components/home/TeamPreview";
 import CasesPreview from "../components/home/CasesPreview";
 import TechnologyPreview from "../components/home/TechnologyPreview";
@@ -45,7 +45,7 @@ const Index = () => {
       <Header />
       <main className="min-h-screen">
         <Hero />
-        <ServicesPreview />
+        <ServicesInfiniteMenu />
         <TeamPreview />
         <CasesPreview />
         <TechnologyPreview />
