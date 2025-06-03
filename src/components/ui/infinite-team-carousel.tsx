@@ -88,9 +88,9 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
   };
 
   return (
-    <div className="relative w-full h-96 overflow-hidden">
+    <div className="relative w-full">
       {/* Contenedor principal del carrusel */}
-      <div className="relative h-full flex items-center justify-center">
+      <div className="relative h-96 flex items-center justify-center overflow-hidden">
         {/* Cards del equipo */}
         <div className="relative w-80 h-80">
           {members.map((member, index) => {
@@ -153,35 +153,39 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
       </div>
 
       {/* Indicadores de navegación */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
-        {members.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            disabled={isTransitioning}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === activeIndex
-                ? 'bg-white scale-125 shadow-lg'
-                : 'bg-white/40 hover:bg-white/60'
-            }`}
-          />
-        ))}
+      <div className="flex justify-center mt-6 mb-8">
+        <div className="flex space-x-2">
+          {members.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              disabled={isTransitioning}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === activeIndex
+                  ? 'bg-white scale-125 shadow-lg'
+                  : 'bg-white/40 hover:bg-white/60'
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
-      {/* Información del miembro activo */}
-      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20 max-w-md">
-        <div className="bg-black/80 backdrop-blur-sm rounded-lg p-4 text-center border border-white/20">
-          <h3 className="text-xl font-semibold mb-2 font-playfair text-white">
-            {members[activeIndex]?.name}
-          </h3>
-          <p className="text-gray-300 mb-2 font-medium">
-            {members[activeIndex]?.role}
-          </p>
-          {members[activeIndex]?.bio && (
-            <p className="text-gray-400 text-sm leading-relaxed">
-              {members[activeIndex].bio}
+      {/* Información del miembro activo - Movida más abajo */}
+      <div className="flex justify-center">
+        <div className="max-w-2xl">
+          <div className="bg-black/80 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
+            <h3 className="text-2xl font-semibold mb-3 font-playfair text-white">
+              {members[activeIndex]?.name}
+            </h3>
+            <p className="text-gray-300 mb-4 font-medium text-lg">
+              {members[activeIndex]?.role}
             </p>
-          )}
+            {members[activeIndex]?.bio && (
+              <p className="text-gray-400 leading-relaxed">
+                {members[activeIndex].bio}
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </div>
