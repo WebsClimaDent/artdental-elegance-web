@@ -949,17 +949,17 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
       {/* Background overlay with subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
 
-      {/* Instructions */}
+      {/* Instructions - Made smaller */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
         <div className={`
-          bg-black/60 backdrop-blur-md rounded-full px-6 py-3 border border-white/20
+          bg-black/60 backdrop-blur-md rounded-full px-4 py-2 border border-white/20
           transition-all duration-300 ease-out
           ${isMoving 
             ? 'opacity-0 translate-y-4 scale-95' 
             : 'opacity-100 translate-y-0 scale-100'
           }
         `}>
-          <p className="text-white/80 text-sm font-medium">
+          <p className="text-white/80 text-xs font-medium">
             Arrastra para explorar • Haz clic en el centro para continuar
           </p>
         </div>
@@ -967,12 +967,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Moved to bottom left to avoid covering 3D images */}
+          {/* Content Container - Adjusted position to give more space for corona image */}
           <div
             className={`
               absolute
               left-4 md:left-6 lg:left-8
-              bottom-16 md:bottom-20 lg:bottom-24
+              bottom-20 md:bottom-24 lg:bottom-28
               z-30
               w-64 md:w-72 lg:w-80
               space-y-2
@@ -1021,6 +1021,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               }
             `}
           >
+            {/* ... keep existing code (button structure) the same ... */}
             <div className="relative w-full h-full">
               {/* Outer ring with pulse effect */}
               <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-pulse"></div>
