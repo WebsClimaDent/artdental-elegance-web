@@ -1,4 +1,5 @@
 
+
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -965,11 +966,17 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
               text-white
               font-playfair
+              z-20
+              drop-shadow-2xl
+              text-shadow-lg
               ${isMoving
                 ? 'opacity-0 pointer-events-none duration-[100ms]'
                 : 'opacity-100 pointer-events-auto duration-[500ms]'
               }
             `}
+            style={{
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5)'
+            }}
           >
             {activeItem.title}
           </h2>
@@ -985,12 +992,17 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               right-4 md:right-8
               transition-all
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-              text-gray-300
+              text-white
+              z-20
+              drop-shadow-xl
               ${isMoving
                 ? 'opacity-0 pointer-events-none duration-[100ms] translate-x-[-60%] -translate-y-1/2'
                 : 'opacity-100 pointer-events-auto duration-[500ms] translate-x-[-90%] -translate-y-1/2'
               }
             `}
+            style={{
+              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.5)'
+            }}
           >
             {activeItem.description}
           </p>
@@ -1001,7 +1013,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             className={`
               absolute
               left-1/2
-              z-10
+              z-30
               w-12 h-12 md:w-16 md:h-16
               grid
               place-items-center
@@ -1013,6 +1025,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               transition-all
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
               hover:scale-110
+              shadow-2xl
               ${isMoving
                 ? 'bottom-[-80px] opacity-0 pointer-events-none duration-[100ms] scale-0 -translate-x-1/2'
                 : 'bottom-8 md:bottom-16 opacity-100 pointer-events-auto duration-[500ms] scale-100 -translate-x-1/2'
@@ -1028,3 +1041,4 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
     </div>
   );
 }
+
