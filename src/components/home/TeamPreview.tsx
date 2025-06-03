@@ -1,13 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext
-} from "@/components/ui/carousel";
+import InfiniteTeamCarousel from "@/components/ui/infinite-team-carousel";
 
 const teamMembers = [
   {
@@ -15,21 +9,21 @@ const teamMembers = [
     name: "Dr. Leopoldo Romance",
     role: "Director Técnico",
     image: "/lovable-uploads/4ff54fe0-8806-4880-8c6f-fb5b5cd34025.png",
-    link: "/equipo",
+    bio: "Dr. Leopoldo Romance lidera nuestro equipo técnico con un enfoque en la precisión y la excelencia. Especializado en restauraciones complejas y estética avanzada.",
   },
   {
     id: 2,
     name: "Dra. Laura Sánchez",
     role: "Especialista CAD/CAM",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1770&auto=format&fit=crop",
-    link: "/equipo",
+    bio: "Experta en tecnología digital y diseño asistido por ordenador. La Dra. Sánchez transforma conceptos en realidad con precisión micrométrica.",
   },
   {
     id: 3,
     name: "Dr. Miguel Fernández",
     role: "Técnico de Cerámica",
     image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop",
-    link: "/equipo",
+    bio: "Artista de la cerámica dental con un ojo excepcional para el detalle y el color. Crea restauraciones indistinguibles de los dientes naturales.",
   },
 ];
 
@@ -43,33 +37,9 @@ const TeamPreview = () => {
           y altamente cualificados, dedicados a crear sonrisas perfectas con precisión y elegancia.
         </p>
 
-        <Carousel className="w-full reveal">
-          <CarouselContent>
-            {teamMembers.map((member) => (
-              <CarouselItem key={member.id} className="md:basis-1/2 lg:basis-1/3">
-                <div className="bg-black rounded-lg overflow-hidden shadow-sm card-hover">
-                  <div className="h-72 overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-xl font-semibold mb-1 font-playfair text-white">
-                      {member.name}
-                    </h3>
-                    <p className="text-gray-300 mb-4">{member.role}</p>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="flex justify-center gap-4 mt-8">
-            <CarouselPrevious className="relative -left-0 top-0 translate-y-0" />
-            <CarouselNext className="relative -right-0 top-0 translate-y-0" />
-          </div>
-        </Carousel>
+        <div className="reveal">
+          <InfiniteTeamCarousel members={teamMembers} />
+        </div>
 
         <div className="text-center mt-12">
           <Link to="/equipo" className="btn-primary">
