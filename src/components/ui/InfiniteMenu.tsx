@@ -953,6 +953,9 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
     }
   };
 
+  // Check if current item is "Coronas de Disilicato de Litio"
+  const isCoronasService = activeItem?.title === "Coronas de Disilicato de Litio";
+
   return (
     <div className="relative w-full h-full overflow-hidden bg-gradient-to-br from-dental-dark via-gray-900 to-black">
       {/* Canvas */}
@@ -982,12 +985,15 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Moved much higher */}
+          {/* Content Container - Special positioning for Coronas service */}
           <div
             className={`
               absolute
               left-2 md:left-6 lg:left-8
-              bottom-28 md:bottom-40 lg:bottom-48
+              ${isCoronasService 
+                ? 'bottom-36 md:bottom-48 lg:bottom-56' 
+                : 'bottom-28 md:bottom-40 lg:bottom-48'
+              }
               z-30
               w-[calc(100vw-5rem)] md:w-72 lg:w-80
               max-w-[280px] md:max-w-none
@@ -1017,13 +1023,16 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             </div>
           </div>
 
-          {/* Enhanced action button - Moved higher */}
+          {/* Enhanced action button - Special positioning for Coronas service */}
           <div
             onClick={handleButtonClick}
             className={`
               absolute
               right-2 md:right-6 lg:right-12
-              bottom-28 md:bottom-40 lg:bottom-44
+              ${isCoronasService 
+                ? 'bottom-36 md:bottom-48 lg:bottom-52' 
+                : 'bottom-28 md:bottom-40 lg:bottom-44'
+              }
               z-40
               w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20
               transition-all
