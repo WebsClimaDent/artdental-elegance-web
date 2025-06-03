@@ -964,7 +964,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
       {/* Background overlay with subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
 
-      {/* Instructions - Positioned at bottom with better mobile spacing */}
+      {/* Instructions - Fixed at bottom */}
       <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 px-4">
         <div className={`
           bg-black/60 backdrop-blur-md rounded-full px-3 py-1.5 md:px-4 md:py-2 border border-white/20
@@ -982,12 +982,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Better mobile positioning */}
+          {/* Content Container - Moved much higher */}
           <div
             className={`
               absolute
               left-2 md:left-6 lg:left-8
-              bottom-16 md:bottom-20 lg:bottom-32
+              bottom-28 md:bottom-40 lg:bottom-48
               z-30
               w-[calc(100vw-5rem)] md:w-72 lg:w-80
               max-w-[280px] md:max-w-none
@@ -1017,13 +1017,13 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             </div>
           </div>
 
-          {/* Enhanced action button - Better mobile positioning */}
+          {/* Enhanced action button - Moved higher */}
           <div
             onClick={handleButtonClick}
             className={`
               absolute
               right-2 md:right-6 lg:right-12
-              bottom-16 md:bottom-20 lg:bottom-20
+              bottom-28 md:bottom-40 lg:bottom-44
               z-40
               w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20
               transition-all
@@ -1053,7 +1053,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             </div>
           </div>
 
-          {/* Service indicator - better mobile positioning */}
+          {/* Service indicator - keep same position */}
           <div
             className={`
               absolute
