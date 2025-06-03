@@ -29,25 +29,25 @@ const services = [
   {
     title: "Coronas de Disilicato de Litio",
     description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
-    image: "/lovable-uploads/61566fc0-d12c-4ace-acbc-eaa1a908ee8b.png",
+    image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
     link: "/servicios#corona-disilicato",
   },
   {
     title: "Incrustaciones",
     description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-    image: "/lovable-uploads/25a0dcf5-7f98-4fbd-aad2-50651a0bb8a8.png",
+    image: "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
     link: "/servicios#incrustaciones",
   },
   {
     title: "Coronas sobre Implantes",
     description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
-    image: "/lovable-uploads/fc5099e9-252b-49b0-a960-7e33b203281c.png",
+    image: "/lovable-uploads/79c58425-63b9-4c29-968f-0a91936b1160.png",
     link: "/servicios#coronas-implantes",
   },
   {
     title: "Rehabilitaciones Completas",
     description: "Reconstrucción total de la dentición con sistemas implantosoportados de última generación.",
-    image: "/lovable-uploads/8bf46b38-df0a-45d2-aaf1-05964863dc8b.png",
+    image: "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
     link: "/servicios#rehabilitaciones-completas",
   },
 ];
