@@ -967,12 +967,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Adjusted position to give more space for corona image */}
+          {/* Content Container - Moved further down to give more space for corona image */}
           <div
             className={`
               absolute
               left-4 md:left-6 lg:left-8
-              bottom-20 md:bottom-24 lg:bottom-28
+              bottom-24 md:bottom-28 lg:bottom-32
               z-30
               w-64 md:w-72 lg:w-80
               space-y-2
@@ -1021,7 +1021,6 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               }
             `}
           >
-            {/* ... keep existing code (button structure) the same ... */}
             <div className="relative w-full h-full">
               {/* Outer ring with pulse effect */}
               <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-pulse"></div>
