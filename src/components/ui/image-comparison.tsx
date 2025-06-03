@@ -53,7 +53,7 @@ export default function ImageComparison({ beforeImage, afterImage, title }: Imag
           }`}
           draggable={false}
         />
-        <span className={`absolute ${isCarillas ? 'bottom-4' : 'top-4'} right-4 bg-white text-black text-sm px-3 py-1 rounded-md z-10`}>
+        <span className="absolute top-4 right-4 bg-white text-black text-sm px-3 py-1 rounded-md z-10">
           Después
         </span>
       </div>
@@ -71,7 +71,7 @@ export default function ImageComparison({ beforeImage, afterImage, title }: Imag
           }`}
           draggable={false}
         />
-        <span className={`absolute ${isCarillas ? 'bottom-4' : 'top-4'} left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10`}>
+        <span className="absolute top-4 left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10">
           Antes
         </span>
       </div>
