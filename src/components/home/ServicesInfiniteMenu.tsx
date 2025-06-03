@@ -6,25 +6,49 @@ const services = [
     title: "Coronas",
     description: "Restauraciones unitarias personalizadas con materiales de alta calidad y precisión inigualable.",
     image: "/lovable-uploads/c1bcb91a-1fa3-4566-a5b3-80f6435e153f.png",
-    link: "/servicios",
+    link: "/servicios#corona-disilicato",
   },
   {
     title: "Puentes",
     description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
     image: "/lovable-uploads/b733e484-2f98-47ad-861a-7651eaab8342.png",
-    link: "/servicios",
+    link: "/servicios#puentes-dientes",
   },
   {
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
     image: "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
-    link: "/servicios",
+    link: "/servicios#carillas-porcelana",
   },
   {
     title: "Prótesis Removibles",
     description: "Soluciones funcionales y estéticas para reemplazar piezas dentales con comodidad y naturalidad.",
     image: "/lovable-uploads/af154a7d-1db9-44d6-9be8-0c11031d96e0.png",
-    link: "/servicios",
+    link: "/servicios#sobredentaduras",
+  },
+  {
+    title: "Coronas de Disilicato de Litio",
+    description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
+    image: "/lovable-uploads/61566fc0-d12c-4ace-acbc-eaa1a908ee8b.png",
+    link: "/servicios#corona-disilicato",
+  },
+  {
+    title: "Incrustaciones",
+    description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
+    image: "/lovable-uploads/25a0dcf5-7f98-4fbd-aad2-50651a0bb8a8.png",
+    link: "/servicios#incrustaciones",
+  },
+  {
+    title: "Coronas sobre Implantes",
+    description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
+    image: "/lovable-uploads/fc5099e9-252b-49b0-a960-7e33b203281c.png",
+    link: "/servicios#coronas-implantes",
+  },
+  {
+    title: "Rehabilitaciones Completas",
+    description: "Reconstrucción total de la dentición con sistemas implantosoportados de última generación.",
+    image: "/lovable-uploads/8bf46b38-df0a-45d2-aaf1-05964863dc8b.png",
+    link: "/servicios#rehabilitaciones-completas",
   },
 ];
 

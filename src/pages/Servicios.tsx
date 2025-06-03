@@ -293,6 +293,7 @@ const Servicios = () => {
                 {category.services.map((service, index) => (
                   <div 
                     key={service.id} 
+                    id={getServiceId(service.title)}
                     className={`reveal flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center`}
                   >
                     <div className="lg:w-1/2">
@@ -414,5 +415,20 @@ const Servicios = () => {
     </>
   );
 };
+
+// Helper function to generate service IDs
+function getServiceId(title: string): string {
+  const serviceIds: { [key: string]: string } = {
+    "Coronas de Disilicato de Litio": "corona-disilicato",
+    "Carillas de Porcelana": "carillas-porcelana",
+    "Incrustaciones": "incrustaciones",
+    "Puentes sobre Dientes": "puentes-dientes",
+    "Sobredentaduras": "sobredentaduras",
+    "Coronas sobre Implantes": "coronas-implantes",
+    "Rehabilitaciones Completas": "rehabilitaciones-completas"
+  };
+  
+  return serviceIds[title] || title.toLowerCase().replace(/\s+/g, '-');
+}
 
 export default Servicios;

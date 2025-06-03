@@ -932,10 +932,25 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
   const handleButtonClick = () => {
     if (!activeItem?.link) return;
+    
     if (activeItem.link.startsWith('http')) {
       window.open(activeItem.link, '_blank');
     } else {
-      console.log('Internal route:', activeItem.link);
+      // Handle internal navigation to service sections
+      if (activeItem.link.includes('#')) {
+        const [path, hash] = activeItem.link.split('#');
+        window.location.href = activeItem.link;
+        
+        // Small delay to ensure navigation happens first
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        window.location.href = activeItem.link;
+      }
     }
   };
 
