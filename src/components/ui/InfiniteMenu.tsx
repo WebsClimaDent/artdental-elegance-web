@@ -934,105 +934,146 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
     if (activeItem.link.startsWith('http')) {
       window.open(activeItem.link, '_blank');
     } else {
-      // Para rutas internas, puedes usar React Router
       console.log('Internal route:', activeItem.link);
     }
   };
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full overflow-hidden bg-gradient-to-br from-dental-dark via-gray-900 to-black">
+      {/* Canvas */}
       <canvas
         ref={canvasRef}
-        className="cursor-grab w-full h-full overflow-hidden relative outline-none active:cursor-grabbing"
+        className="cursor-grab w-full h-full relative outline-none active:cursor-grabbing"
       />
+
+      {/* Background overlay with subtle pattern */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
+
+      {/* Instructions */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+        <div className={`
+          bg-black/60 backdrop-blur-md rounded-full px-6 py-3 border border-white/20
+          transition-all duration-300 ease-out
+          ${isMoving 
+            ? 'opacity-0 translate-y-4 scale-95' 
+            : 'opacity-100 translate-y-0 scale-100'
+          }
+        `}>
+          <p className="text-white/80 text-sm font-medium">
+            Arrastra para explorar • Haz clic en el centro para continuar
+          </p>
+        </div>
+      </div>
 
       {activeItem && (
         <>
-          {/* Title */}
-          <h2
+          {/* Title with elegant typography */}
+          <div
             className={`
-              select-none
               absolute
-              font-black
-              text-4xl md:text-6xl lg:text-7xl
-              left-4 md:left-8
-              top-1/3
-              transform
-              translate-x-[20%]
-              -translate-y-1/2
+              left-8 lg:left-16
+              top-1/4
+              z-30
+              max-w-md lg:max-w-lg
               transition-all
+              duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-              text-white
-              font-playfair
-              z-20
-              drop-shadow-2xl
-              text-shadow-lg
               ${isMoving
-                ? 'opacity-0 pointer-events-none duration-[100ms]'
-                : 'opacity-100 pointer-events-auto duration-[500ms]'
+                ? 'opacity-0 pointer-events-none translate-x-[-40px] translate-y-[20px]'
+                : 'opacity-100 pointer-events-auto translate-x-0 translate-y-0'
               }
             `}
-            style={{
-              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5)'
-            }}
           >
-            {activeItem.title}
-          </h2>
+            <div className="bg-gradient-to-r from-black/60 via-black/40 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-3">
+                {activeItem.title}
+              </h2>
+              <div className="w-20 h-1 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
+            </div>
+          </div>
 
-          {/* Description */}
-          <p
+          {/* Description with better layout */}
+          <div
             className={`
-              select-none
               absolute
-              max-w-xs md:max-w-sm
-              text-lg md:text-xl
+              right-8 lg:right-16
               bottom-1/3
-              right-4 md:right-8
+              z-30
+              max-w-sm lg:max-w-md
               transition-all
+              duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-              text-white
-              z-20
-              drop-shadow-xl
               ${isMoving
-                ? 'opacity-0 pointer-events-none duration-[100ms] translate-x-[-60%] translate-y-1/2'
-                : 'opacity-100 pointer-events-auto duration-[500ms] translate-x-[-90%] translate-y-1/2'
+                ? 'opacity-0 pointer-events-none translate-x-[40px] translate-y-[-20px]'
+                : 'opacity-100 pointer-events-auto translate-x-0 translate-y-0'
               }
             `}
-            style={{
-              textShadow: '1px 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.5)'
-            }}
           >
-            {activeItem.description}
-          </p>
+            <div className="bg-gradient-to-l from-black/60 via-black/40 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+              <p className="text-white/90 text-lg leading-relaxed font-inter">
+                {activeItem.description}
+              </p>
+            </div>
+          </div>
 
-          {/* Action Button */}
+          {/* Enhanced action button */}
           <div
             onClick={handleButtonClick}
             className={`
               absolute
               left-1/2
-              z-30
-              w-12 h-12 md:w-16 md:h-16
-              grid
-              place-items-center
-              bg-white
-              border-4
-              border-dental-dark
-              rounded-full
-              cursor-pointer
+              bottom-12 lg:bottom-20
+              z-40
+              w-16 h-16 lg:w-20 lg:h-20
+              transform -translate-x-1/2
               transition-all
+              duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-              hover:scale-110
-              shadow-2xl
+              cursor-pointer
+              group
               ${isMoving
-                ? 'bottom-[-80px] opacity-0 pointer-events-none duration-[100ms] scale-0 -translate-x-1/2'
-                : 'bottom-8 md:bottom-16 opacity-100 pointer-events-auto duration-[500ms] scale-100 -translate-x-1/2'
+                ? 'opacity-0 pointer-events-none scale-0 translate-y-8'
+                : 'opacity-100 pointer-events-auto scale-100 translate-y-0'
               }
             `}
           >
-            <p className="select-none relative text-dental-dark top-[1px] text-xl md:text-2xl">
-              &#x2197;
-            </p>
+            <div className="relative w-full h-full">
+              {/* Outer ring with pulse effect */}
+              <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-pulse"></div>
+              
+              {/* Main button */}
+              <div className="absolute inset-2 bg-white rounded-full shadow-2xl border-4 border-dental-dark group-hover:scale-110 group-hover:shadow-3xl transition-all duration-300 flex items-center justify-center">
+                <span className="text-dental-dark text-2xl lg:text-3xl font-bold transform group-hover:scale-110 transition-transform duration-300">
+                  →
+                </span>
+              </div>
+              
+              {/* Hover glow effect */}
+              <div className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
+            </div>
+          </div>
+
+          {/* Service indicator */}
+          <div
+            className={`
+              absolute
+              top-8 lg:top-12
+              right-8 lg:right-16
+              z-30
+              transition-all
+              duration-500
+              ease-out
+              ${isMoving
+                ? 'opacity-0 translate-x-4'
+                : 'opacity-100 translate-x-0'
+              }
+            `}
+          >
+            <div className="bg-white/10 backdrop-blur-md rounded-full px-4 py-2 border border-white/20">
+              <p className="text-white/80 text-sm font-medium uppercase tracking-wider">
+                Servicio
+              </p>
+            </div>
           </div>
         </>
       )}
