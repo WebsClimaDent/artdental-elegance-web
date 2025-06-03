@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -354,10 +355,10 @@ function resizeCanvasToDisplaySize(canvas: HTMLCanvasElement) {
   return needResize;
 }
 
-function makeBuffer(gl: WebGL2RenderingContext, sizeOrData: BufferSource | number, usage: number) {
+function makeBuffer(gl: WebGL2RenderingContext, data: BufferSource, usage: number) {
   const buf = gl.createBuffer();
   gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-  gl.bufferData(gl.ARRAY_BUFFER, sizeOrData, usage);
+  gl.bufferData(gl.ARRAY_BUFFER, data, usage);
   gl.bindBuffer(gl.ARRAY_BUFFER, null);
   return buf;
 }
