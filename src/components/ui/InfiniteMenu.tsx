@@ -1,5 +1,3 @@
-
-
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -958,7 +956,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               font-black
               text-4xl md:text-6xl lg:text-7xl
               left-4 md:left-8
-              top-1/2
+              top-1/3
               transform
               translate-x-[20%]
               -translate-y-1/2
@@ -988,7 +986,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               absolute
               max-w-xs md:max-w-sm
               text-lg md:text-xl
-              top-1/2
+              bottom-1/3
               right-4 md:right-8
               transition-all
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -996,8 +994,8 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               z-20
               drop-shadow-xl
               ${isMoving
-                ? 'opacity-0 pointer-events-none duration-[100ms] translate-x-[-60%] -translate-y-1/2'
-                : 'opacity-100 pointer-events-auto duration-[500ms] translate-x-[-90%] -translate-y-1/2'
+                ? 'opacity-0 pointer-events-none duration-[100ms] translate-x-[-60%] translate-y-1/2'
+                : 'opacity-100 pointer-events-auto duration-[500ms] translate-x-[-90%] translate-y-1/2'
               }
             `}
             style={{
@@ -1041,4 +1039,3 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
     </div>
   );
 }
-
