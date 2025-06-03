@@ -967,16 +967,16 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Left Side */}
+          {/* Content Container - Left Side with proper spacing */}
           <div
             className={`
               absolute
-              left-8 lg:left-16
+              left-4 md:left-8 lg:left-12
               top-1/2
               transform -translate-y-1/2
               z-30
-              max-w-md lg:max-w-lg
-              space-y-6
+              w-72 md:w-80 lg:w-96
+              space-y-4
               transition-all
               duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -987,16 +987,16 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             `}
           >
             {/* Title */}
-            <div className="bg-gradient-to-r from-black/80 via-black/60 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <h2 className="font-playfair font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-3">
+            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-2xl p-4 lg:p-6 border border-white/20 shadow-2xl">
+              <h2 className="font-playfair font-bold text-2xl md:text-3xl lg:text-4xl text-white leading-tight mb-3">
                 {activeItem.title}
               </h2>
-              <div className="w-16 h-1 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
+              <div className="w-12 h-1 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
             </div>
 
             {/* Description */}
-            <div className="bg-gradient-to-r from-black/70 via-black/50 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <p className="text-white/90 text-base lg:text-lg leading-relaxed font-inter">
+            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-2xl p-4 lg:p-6 border border-white/20 shadow-2xl">
+              <p className="text-white/90 text-sm md:text-base lg:text-lg leading-relaxed font-inter">
                 {activeItem.description}
               </p>
             </div>
