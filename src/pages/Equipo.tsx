@@ -5,13 +5,7 @@ import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import BackButton from "@/components/ui/back-button";
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext 
-} from "@/components/ui/carousel";
+import InfiniteTeamCarousel from "@/components/ui/infinite-team-carousel";
 
 const teamMembers = [
   {
@@ -108,37 +102,12 @@ const Equipo = () => {
           </div>
         </section>
 
-        {/* Team Members Carousel */}
+        {/* Team Members Infinite Carousel */}
         <section className="section-padding">
           <div className="container-custom">
-            <Carousel className="w-full reveal">
-              <CarouselContent>
-                {teamMembers.map((member) => (
-                  <CarouselItem key={member.id} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="h-full bg-dental-dark border border-gray-700 rounded-lg overflow-hidden card-hover">
-                      <div className="h-72 overflow-hidden">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-semibold mb-1 font-playfair text-white">
-                          {member.name}
-                        </h3>
-                        <p className="text-gray-300 mb-4 font-medium">{member.role}</p>
-                        <p className="text-gray-400 mb-4 text-sm">{member.bio}</p>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <div className="flex justify-center gap-4 mt-8">
-                <CarouselPrevious className="relative -left-0 top-0 translate-y-0" />
-                <CarouselNext className="relative -right-0 top-0 translate-y-0" />
-              </div>
-            </Carousel>
+            <div className="reveal">
+              <InfiniteTeamCarousel members={teamMembers} />
+            </div>
           </div>
         </section>
 
