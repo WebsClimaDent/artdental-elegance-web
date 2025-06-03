@@ -967,50 +967,36 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Title with elegant typography */}
+          {/* Content Container - Left Side */}
           <div
             className={`
               absolute
               left-8 lg:left-16
-              top-1/4
+              top-1/2
+              transform -translate-y-1/2
               z-30
               max-w-md lg:max-w-lg
+              space-y-6
               transition-all
               duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
               ${isMoving
-                ? 'opacity-0 pointer-events-none translate-x-[-40px] translate-y-[20px]'
-                : 'opacity-100 pointer-events-auto translate-x-0 translate-y-0'
+                ? 'opacity-0 pointer-events-none translate-x-[-40px]'
+                : 'opacity-100 pointer-events-auto translate-x-0'
               }
             `}
           >
-            <div className="bg-gradient-to-r from-black/60 via-black/40 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-3">
+            {/* Title */}
+            <div className="bg-gradient-to-r from-black/80 via-black/60 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+              <h2 className="font-playfair font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-3">
                 {activeItem.title}
               </h2>
-              <div className="w-20 h-1 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
+              <div className="w-16 h-1 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
             </div>
-          </div>
 
-          {/* Description with better layout */}
-          <div
-            className={`
-              absolute
-              right-8 lg:right-16
-              bottom-1/3
-              z-30
-              max-w-sm lg:max-w-md
-              transition-all
-              duration-700
-              ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
-              ${isMoving
-                ? 'opacity-0 pointer-events-none translate-x-[40px] translate-y-[-20px]'
-                : 'opacity-100 pointer-events-auto translate-x-0 translate-y-0'
-              }
-            `}
-          >
-            <div className="bg-gradient-to-l from-black/60 via-black/40 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-              <p className="text-white/90 text-lg leading-relaxed font-inter">
+            {/* Description */}
+            <div className="bg-gradient-to-r from-black/70 via-black/50 to-transparent backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+              <p className="text-white/90 text-base lg:text-lg leading-relaxed font-inter">
                 {activeItem.description}
               </p>
             </div>
