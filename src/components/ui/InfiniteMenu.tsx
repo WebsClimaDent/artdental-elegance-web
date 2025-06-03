@@ -967,12 +967,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Moved further down to give more space for corona image */}
+          {/* Content Container - Moved even further down to give maximum space for images */}
           <div
             className={`
               absolute
               left-4 md:left-6 lg:left-8
-              bottom-24 md:bottom-28 lg:bottom-32
+              bottom-28 md:bottom-32 lg:bottom-36
               z-30
               w-64 md:w-72 lg:w-80
               space-y-2
