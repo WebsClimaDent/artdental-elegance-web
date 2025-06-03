@@ -23,6 +23,7 @@ interface TiltedCardProps {
   overlayContent?: React.ReactNode;
   displayOverlayContent?: boolean;
   className?: string;
+  objectFit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
 }
 
 export default function TiltedCard({
@@ -40,6 +41,7 @@ export default function TiltedCard({
   overlayContent = null,
   displayOverlayContent = false,
   className = "",
+  objectFit = "cover",
 }) {
   const ref = useRef<HTMLElement>(null);
 
@@ -124,8 +126,9 @@ export default function TiltedCard({
           alt={altText}
           className="tilted-card-img"
           style={{
-            width: imageWidth,
-            height: imageHeight,
+            width: "100%",
+            height: "100%",
+            objectFit: objectFit,
           }}
         />
 

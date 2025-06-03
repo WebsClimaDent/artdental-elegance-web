@@ -304,13 +304,15 @@ const Servicios = () => {
                         <TiltedCard
                           imageSrc={service.image}
                           altText={service.title}
-                          captionText={service.title}
+                          captionText=""
                           containerWidth="100%"
                           containerHeight="100%"
                           imageWidth="100%"
                           imageHeight="100%"
                           scaleOnHover={1.08}
                           rotateAmplitude={12}
+                          showTooltip={false}
+                          objectFit="cover"
                           className={service.id === 6 ? 'object-cover object-center' : 'object-cover'}
                         />
                       </div>
@@ -344,13 +346,15 @@ const Servicios = () => {
                   <TiltedCard
                     imageSrc="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
                     altText="Disilicato de Litio"
-                    captionText="Disilicato de Litio"
+                    captionText=""
                     containerWidth="100%"
                     containerHeight="100%"
                     imageWidth="100%"
                     imageHeight="100%"
                     scaleOnHover={1.1}
                     rotateAmplitude={10}
+                    showTooltip={false}
+                    objectFit="cover"
                   />
                 </div>
                 <div className="p-6">
@@ -366,13 +370,15 @@ const Servicios = () => {
                   <TiltedCard
                     imageSrc="/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png"
                     altText="Zirconio"
-                    captionText="Zirconio"
+                    captionText=""
                     containerWidth="100%"
                     containerHeight="100%"
                     imageWidth="100%"
                     imageHeight="100%"
                     scaleOnHover={1.1}
                     rotateAmplitude={10}
+                    showTooltip={false}
+                    objectFit="cover"
                   />
                 </div>
                 <div className="p-6">
@@ -388,13 +394,15 @@ const Servicios = () => {
                   <TiltedCard
                     imageSrc="/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png"
                     altText="Composite"
-                    captionText="Composite Avanzado"
+                    captionText=""
                     containerWidth="100%"
                     containerHeight="100%"
                     imageWidth="100%"
                     imageHeight="100%"
                     scaleOnHover={1.1}
                     rotateAmplitude={10}
+                    showTooltip={false}
+                    objectFit="cover"
                   />
                 </div>
                 <div className="p-6">

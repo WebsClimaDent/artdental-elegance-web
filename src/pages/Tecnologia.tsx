@@ -80,7 +80,7 @@ const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
         <TiltedCard
           imageSrc={tech.image}
           altText={tech.title}
-          captionText={tech.title}
+          captionText=""
           containerWidth="100%"
           containerHeight="100%"
           imageWidth="100%"
@@ -88,6 +88,7 @@ const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
           scaleOnHover={1.05}
           rotateAmplitude={8}
           showTooltip={false}
+          objectFit="cover"
           className="w-full h-full"
         />
       </div>
@@ -190,13 +191,15 @@ const Tecnologia = () => {
                   <TiltedCard
                     imageSrc="/lovable-uploads/1db6d1c9-9179-4b43-bc6c-b74bc7353c1d.png"
                     altText="Tecnología dental avanzada"
-                    captionText="Tecnología de Precisión"
+                    captionText=""
                     containerWidth="100%"
                     containerHeight="400px"
                     imageWidth="100%"
                     imageHeight="400px"
                     scaleOnHover={1.08}
                     rotateAmplitude={12}
+                    showTooltip={false}
+                    objectFit="cover"
                   />
                 </div>
               </div>
@@ -238,7 +241,7 @@ const Tecnologia = () => {
                               <TiltedCard
                                 imageSrc={tech.image}
                                 altText={tech.title}
-                                captionText={tech.title}
+                                captionText=""
                                 containerWidth="100%"
                                 containerHeight="100%"
                                 imageWidth="100%"
@@ -246,6 +249,7 @@ const Tecnologia = () => {
                                 scaleOnHover={1.1}
                                 rotateAmplitude={10}
                                 showTooltip={false}
+                                objectFit="cover"
                               />
                             </div>
                             <CardHeader>
