@@ -121,7 +121,7 @@ export default function TiltedCard({
           scale,
         }}
       >
-        <motion.img
+        <img
           src={imageSrc}
           alt={altText}
           className="tilted-card-img"
