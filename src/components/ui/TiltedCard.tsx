@@ -128,7 +128,7 @@ export default function TiltedCard({
           style={{
             width: "100%",
             height: "100%",
-            objectFit: objectFit,
+            objectFit: objectFit as React.CSSProperties['objectFit'],
           }}
         />
 
