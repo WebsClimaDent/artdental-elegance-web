@@ -967,16 +967,15 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Left Side with proper spacing */}
+          {/* Content Container - Moved to bottom left to avoid covering 3D images */}
           <div
             className={`
               absolute
-              left-4 md:left-8 lg:left-12
-              top-1/2
-              transform -translate-y-1/2
+              left-4 md:left-6 lg:left-8
+              bottom-16 md:bottom-20 lg:bottom-24
               z-30
               w-64 md:w-72 lg:w-80
-              space-y-3
+              space-y-2
               transition-all
               duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -987,15 +986,15 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             `}
           >
             {/* Title */}
-            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
-              <h2 className="font-playfair font-bold text-xl md:text-2xl lg:text-3xl text-white leading-tight mb-2">
+            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-xl p-2 lg:p-3 border border-white/20 shadow-2xl">
+              <h2 className="font-playfair font-bold text-lg md:text-xl lg:text-2xl text-white leading-tight mb-1">
                 {activeItem.title}
               </h2>
-              <div className="w-10 h-0.5 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
+              <div className="w-8 h-0.5 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
             </div>
 
             {/* Description */}
-            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
+            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-xl p-2 lg:p-3 border border-white/20 shadow-2xl">
               <p className="text-white/90 text-xs md:text-sm lg:text-base leading-relaxed font-inter">
                 {activeItem.description}
               </p>
@@ -1007,11 +1006,10 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             onClick={handleButtonClick}
             className={`
               absolute
-              left-1/2
+              right-6 lg:right-12
               bottom-12 lg:bottom-20
               z-40
               w-16 h-16 lg:w-20 lg:h-20
-              transform -translate-x-1/2
               transition-all
               duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -1039,12 +1037,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             </div>
           </div>
 
-          {/* Service indicator */}
+          {/* Service indicator - moved to top left */}
           <div
             className={`
               absolute
-              top-8 lg:top-12
-              right-8 lg:right-16
+              top-6 lg:top-8
+              left-6 lg:left-8
               z-30
               transition-all
               duration-500
@@ -1055,8 +1053,8 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               }
             `}
           >
-            <div className="bg-white/10 backdrop-blur-md rounded-full px-4 py-2 border border-white/20">
-              <p className="text-white/80 text-sm font-medium uppercase tracking-wider">
+            <div className="bg-white/10 backdrop-blur-md rounded-full px-3 py-1 border border-white/20">
+              <p className="text-white/80 text-xs font-medium uppercase tracking-wider">
                 Servicio
               </p>
             </div>
