@@ -964,17 +964,17 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
       {/* Background overlay with subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
 
-      {/* Instructions - Moved much lower with more spacing */}
-      <div className="absolute bottom-16 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 px-4">
+      {/* Instructions - Positioned at bottom with better mobile spacing */}
+      <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 z-10 px-4">
         <div className={`
-          bg-black/60 backdrop-blur-md rounded-full px-4 py-2 border border-white/20
+          bg-black/60 backdrop-blur-md rounded-full px-3 py-1.5 md:px-4 md:py-2 border border-white/20
           transition-all duration-300 ease-out
           ${isMoving 
             ? 'opacity-0 translate-y-4 scale-95' 
             : 'opacity-100 translate-y-0 scale-100'
           }
         `}>
-          <p className="text-white/80 text-xs font-medium text-center">
+          <p className="text-white/80 text-[10px] md:text-xs font-medium text-center leading-tight">
             Arrastra para explorar • Haz clic en el centro para continuar
           </p>
         </div>
@@ -982,15 +982,16 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
 
       {activeItem && (
         <>
-          {/* Content Container - Better spacing for mobile */}
+          {/* Content Container - Better mobile positioning */}
           <div
             className={`
               absolute
-              left-4 md:left-6 lg:left-8
-              bottom-32 md:bottom-28 lg:bottom-32
+              left-2 md:left-6 lg:left-8
+              bottom-16 md:bottom-20 lg:bottom-32
               z-30
-              w-64 md:w-72 lg:w-80
-              space-y-2
+              w-[calc(100vw-5rem)] md:w-72 lg:w-80
+              max-w-[280px] md:max-w-none
+              space-y-1.5 md:space-y-2
               transition-all
               duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -1001,30 +1002,30 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             `}
           >
             {/* Title */}
-            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
-              <h2 className="font-playfair font-bold text-lg md:text-xl lg:text-2xl text-white leading-tight mb-1">
+            <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-3 lg:p-4 border border-white/20 shadow-2xl">
+              <h2 className="font-playfair font-bold text-sm md:text-lg lg:text-xl xl:text-2xl text-white leading-tight mb-0.5 md:mb-1">
                 {activeItem.title}
               </h2>
-              <div className="w-8 h-0.5 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
+              <div className="w-6 md:w-8 h-0.5 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
             </div>
 
             {/* Description */}
-            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-xl p-3 lg:p-4 border border-white/20 shadow-2xl">
-              <p className="text-white/90 text-xs md:text-sm lg:text-base leading-relaxed font-inter">
+            <div className="bg-gradient-to-r from-black/80 via-black/60 to-black/20 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-3 lg:p-4 border border-white/20 shadow-2xl">
+              <p className="text-white/90 text-[11px] md:text-sm lg:text-base leading-relaxed font-inter">
                 {activeItem.description}
               </p>
             </div>
           </div>
 
-          {/* Enhanced action button - Better spacing */}
+          {/* Enhanced action button - Better mobile positioning */}
           <div
             onClick={handleButtonClick}
             className={`
               absolute
-              right-6 lg:right-12
-              bottom-24 lg:bottom-20
+              right-2 md:right-6 lg:right-12
+              bottom-16 md:bottom-20 lg:bottom-20
               z-40
-              w-16 h-16 lg:w-20 lg:h-20
+              w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20
               transition-all
               duration-700
               ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -1038,11 +1039,11 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
           >
             <div className="relative w-full h-full">
               {/* Outer ring with pulse effect */}
-              <div className="absolute inset-0 rounded-full border-2 border-white/30 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full border border-white/30 md:border-2 animate-pulse"></div>
               
               {/* Main button */}
-              <div className="absolute inset-2 bg-white rounded-full shadow-2xl border-4 border-dental-dark group-hover:scale-110 group-hover:shadow-3xl transition-all duration-300 flex items-center justify-center">
-                <span className="text-dental-dark text-2xl lg:text-3xl font-bold transform group-hover:scale-110 transition-transform duration-300">
+              <div className="absolute inset-1 md:inset-2 bg-white rounded-full shadow-2xl border-2 md:border-4 border-dental-dark group-hover:scale-110 group-hover:shadow-3xl transition-all duration-300 flex items-center justify-center">
+                <span className="text-dental-dark text-lg md:text-2xl lg:text-3xl font-bold transform group-hover:scale-110 transition-transform duration-300">
                   →
                 </span>
               </div>
@@ -1052,12 +1053,12 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             </div>
           </div>
 
-          {/* Service indicator - moved to top left */}
+          {/* Service indicator - better mobile positioning */}
           <div
             className={`
               absolute
-              top-6 lg:top-8
-              left-6 lg:left-8
+              top-2 md:top-6 lg:top-8
+              left-2 md:left-6 lg:left-8
               z-30
               transition-all
               duration-500
@@ -1068,8 +1069,8 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
               }
             `}
           >
-            <div className="bg-white/10 backdrop-blur-md rounded-full px-3 py-1 border border-white/20">
-              <p className="text-white/80 text-xs font-medium uppercase tracking-wider">
+            <div className="bg-white/10 backdrop-blur-md rounded-full px-2 py-0.5 md:px-3 md:py-1 border border-white/20">
+              <p className="text-white/80 text-[9px] md:text-xs font-medium uppercase tracking-wider">
                 Servicio
               </p>
             </div>
