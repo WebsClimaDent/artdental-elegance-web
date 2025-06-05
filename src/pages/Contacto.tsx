@@ -1,9 +1,9 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import BackButton from "@/components/ui/back-button";
+import { useContactForm } from "@/hooks/useContactForm";
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -14,26 +14,21 @@ const Contacto = () => {
     message: "",
     type: "consulta"
   });
-  
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitResult, setSubmitResult] = useState<{success?: boolean; message?: string} | null>(null);
+
+  const { submitForm, isSubmitting } = useContactForm();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
     
-    // Simulated form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitResult({
-        success: true,
-        message: "¡Gracias por contactarnos! Nos pondremos en contacto con usted a la mayor brevedad."
-      });
+    const result = await submitForm(formData);
+    
+    if (result.success) {
+      // Limpiar formulario solo si el envío fue exitoso
       setFormData({
         name: "",
         email: "",
@@ -42,7 +37,7 @@ const Contacto = () => {
         message: "",
         type: "consulta"
       });
-    }, 1500);
+    }
   };
 
   useEffect(() => {
@@ -96,12 +91,6 @@ const Contacto = () => {
               {/* Contact Form */}
               <div className="reveal">
                 <h2 className="text-2xl font-playfair font-semibold mb-6 text-white">Envíenos un mensaje</h2>
-                
-                {submitResult && (
-                  <div className={`p-4 rounded-md mb-6 ${submitResult.success ? 'bg-green-900 text-green-100' : 'bg-red-900 text-red-100'}`}>
-                    {submitResult.message}
-                  </div>
-                )}
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

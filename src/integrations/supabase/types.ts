@@ -43,45 +43,33 @@ export type Database = {
       }
       airtable_clients: {
         Row: {
-          airtable_id: string
-          company: string | null
+          brand_color_1: string | null
+          brand_color_2: string | null
+          brand_color_3: string | null
+          client_name: string
           created_at: string | null
-          email: string | null
           id: string
-          industry: string | null
-          name: string
-          notes: string | null
-          phone: string | null
-          status: string | null
-          synced_at: string | null
+          logo_url: string | null
           updated_at: string | null
         }
         Insert: {
-          airtable_id: string
-          company?: string | null
+          brand_color_1?: string | null
+          brand_color_2?: string | null
+          brand_color_3?: string | null
+          client_name: string
           created_at?: string | null
-          email?: string | null
           id?: string
-          industry?: string | null
-          name: string
-          notes?: string | null
-          phone?: string | null
-          status?: string | null
-          synced_at?: string | null
+          logo_url?: string | null
           updated_at?: string | null
         }
         Update: {
-          airtable_id?: string
-          company?: string | null
+          brand_color_1?: string | null
+          brand_color_2?: string | null
+          brand_color_3?: string | null
+          client_name?: string
           created_at?: string | null
-          email?: string | null
           id?: string
-          industry?: string | null
-          name?: string
-          notes?: string | null
-          phone?: string | null
-          status?: string | null
-          synced_at?: string | null
+          logo_url?: string | null
           updated_at?: string | null
         }
         Relationships: []
@@ -889,6 +877,45 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      web_contacts: {
+        Row: {
+          clinic: string | null
+          created_at: string | null
+          email: string
+          id: string
+          message: string
+          name: string
+          phone: string | null
+          status: string | null
+          type: string
+          updated_at: string | null
+        }
+        Insert: {
+          clinic?: string | null
+          created_at?: string | null
+          email: string
+          id?: string
+          message: string
+          name: string
+          phone?: string | null
+          status?: string | null
+          type?: string
+          updated_at?: string | null
+        }
+        Update: {
+          clinic?: string | null
+          created_at?: string | null
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          phone?: string | null
+          status?: string | null
+          type?: string
+          updated_at?: string | null
+        }
+        Relationships: []
       }
     }
     Views: {
