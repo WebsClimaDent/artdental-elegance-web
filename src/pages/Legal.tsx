@@ -34,7 +34,7 @@ const Legal = () => {
               Aviso Legal
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Información legal del sitio web www.artdentalvlc.com
+              Información legal del sitio web
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Legal = () => {
                   AVISO LEGAL DEL SITIO WEB
                 </h2>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  El presente aviso legal regula el uso del sitio web www.artdentalvlc.com, propiedad de ARTDENTAL – Laboratorio Estética Dental.
+                  El presente aviso legal regula el uso del sitio web, propiedad de ARTDENTAL – Laboratorio Estética Dental.
                 </p>
               </div>
 
@@ -82,7 +82,7 @@ const Legal = () => {
                     III. USO DEL SITIO WEB
                   </h3>
                   <p className="text-gray-300 mb-6 leading-relaxed">
-                    www.artdentalvlc.com proporciona acceso a información, servicios, datos y contenidos (en adelante, "los contenidos") propiedad de ARTDENTAL. El Usuario asume la responsabilidad del uso del sitio web. Esta responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos.
+                    Este sitio web proporciona acceso a información, servicios, datos y contenidos (en adelante, "los contenidos") propiedad de ARTDENTAL. El Usuario asume la responsabilidad del uso del sitio web. Esta responsabilidad se extiende al registro que fuese necesario para acceder a determinados servicios o contenidos.
                   </p>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     El Usuario se compromete a hacer un uso adecuado de los contenidos y servicios que ARTDENTAL ofrece a través de su sitio web y, con carácter enunciativo pero no limitativo, a no emplearlos para:
@@ -152,7 +152,7 @@ const Legal = () => {
                       VII. ENLACES
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
-                      En el caso de que en www.artdentalvlc.com se dispusiesen enlaces o hipervínculos hacia otros sitios de internet, ARTDENTAL no ejercerá ningún tipo de control sobre dichos sitios y contenidos. En ningún caso asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno.
+                      En el caso de que en este sitio web se dispusiesen enlaces o hipervínculos hacia otros sitios de internet, ARTDENTAL no ejercerá ningún tipo de control sobre dichos sitios y contenidos. En ningún caso asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno.
                     </p>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ const Legal = () => {
             <section className="bg-gradient-to-r from-dental-dark to-dental-primary rounded-lg p-8 text-white border border-dental-primary/20">
               <div className="text-center">
                 <p className="text-white/90 leading-relaxed mb-4">
-                  Este aviso legal tiene carácter informativo y regula las condiciones de acceso y uso del sitio web www.artdentalvlc.com
+                  Este aviso legal tiene carácter informativo y regula las condiciones de acceso y uso del sitio web
                 </p>
                 <div className="bg-white/10 p-4 rounded-lg">
                   <p className="text-white font-semibold">
