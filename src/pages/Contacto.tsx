@@ -196,8 +196,8 @@ const Contacto = () => {
                       <div>
                         <h4 className="font-semibold text-white mb-1">Dirección</h4>
                         <p className="text-gray-300">
-                          Av. de Joan XXIII, 48, bajo<br/>
-                          Benicalap, 46025 Valencia<br/>
+                          Avda Juan XIII, N° 48 B<br/>
+                          46025, Valencia<br/>
                           España
                         </p>
                       </div>

@@ -1,5 +1,4 @@
 
-
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 
 const corsHeaders = {
@@ -53,7 +52,7 @@ const handler = async (req: Request): Promise<Response> => {
       <p style="background-color: #f5f5f5; padding: 15px; border-radius: 5px;">${contactData.message.replace(/\n/g, '<br>')}</p>
       <hr>
       <h3>Información de contacto</h3>
-      <p><strong>Dirección:</strong> Av. de Joan XXIII, 48, bajo - Benicalap, 46025 Valencia</p>
+      <p><strong>Dirección:</strong> Avda Juan XIII, N° 48 B, 46025, Valencia</p>
       <p><strong>Teléfono:</strong> +34 963 587 411 | +34 609 976 027</p>
       <p><strong>Email:</strong> artdental@gmx.es</p>
       <p><strong>Horario:</strong> Lunes - Viernes: 7:00 - 19:30</p>
@@ -96,4 +95,3 @@ const handler = async (req: Request): Promise<Response> => {
 };
 
 serve(handler);
-

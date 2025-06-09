@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/layout/Header";
@@ -87,8 +86,8 @@ const Privacidad = () => {
                   </p>
                   <div className="bg-gradient-to-r from-dental-primary/20 to-dental-primary/10 p-6 rounded-lg border-l-4 border-dental-primary">
                     <p className="font-bold text-white text-lg mb-2">ARTDENTAL – Laboratorio Estética Dental</p>
-                    <p className="text-gray-300 mb-2">📍 Av. de Joan XXIII, 48, bajo, Benicalap, 46025 Valencia</p>
-                    <p className="text-gray-300">✉️ info@artdentalvlc.com</p>
+                    <p className="text-gray-300 mb-2">📍 Avda Juan XIII, N° 48 B, 46025, Valencia</p>
+                    <p className="text-gray-300">✉️ artdental@gmx.es</p>
                   </div>
                 </div>
 
@@ -248,8 +247,8 @@ const Privacidad = () => {
                     </ul>
                     <div className="bg-dental-dark/30 p-4 rounded-lg border border-dental-primary/30">
                       <p className="font-semibold text-white mb-2">Datos de contacto:</p>
-                      <p className="text-gray-300">📍 Av. de Joan XXIII, 48, bajo, Benicalap, 46025 Valencia</p>
-                      <p className="text-gray-300">✉️ info@artdentalvlc.com</p>
+                      <p className="text-gray-300">📍 Avda Juan XIII, N° 48 B, 46025, Valencia</p>
+                      <p className="text-gray-300">✉️ artdental@gmx.es</p>
                     </div>
                   </div>
                 </div>
