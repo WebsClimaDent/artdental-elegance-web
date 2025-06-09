@@ -22,10 +22,20 @@ export const useContactForm = () => {
     try {
       console.log('Enviando formulario de contacto:', formData);
       
+      // Mapear los datos del formulario a los campos de la tabla Artdental
+      const artdentalData = {
+        Name: formData.name,
+        Email: formData.email,
+        Phone: formData.phone ? parseFloat(formData.phone) : 0,
+        "Clínica name": formData.clinic || null,
+        Message: formData.message || null,
+        Type: formData.type || null
+      };
+
       // Insertar en la base de datos
       const { data, error } = await supabase
-        .from('web_contacts')
-        .insert([formData])
+        .from('Artdental')
+        .insert([artdentalData])
         .select()
         .single();
 
