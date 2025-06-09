@@ -41,39 +41,6 @@ export type Database = {
           },
         ]
       }
-      airtable_clients: {
-        Row: {
-          brand_color_1: string | null
-          brand_color_2: string | null
-          brand_color_3: string | null
-          client_name: string
-          created_at: string | null
-          id: string
-          logo_url: string | null
-          updated_at: string | null
-        }
-        Insert: {
-          brand_color_1?: string | null
-          brand_color_2?: string | null
-          brand_color_3?: string | null
-          client_name: string
-          created_at?: string | null
-          id?: string
-          logo_url?: string | null
-          updated_at?: string | null
-        }
-        Update: {
-          brand_color_1?: string | null
-          brand_color_2?: string | null
-          brand_color_3?: string | null
-          client_name?: string
-          created_at?: string | null
-          id?: string
-          logo_url?: string | null
-          updated_at?: string | null
-        }
-        Relationships: []
-      }
       appointments: {
         Row: {
           assigned_employee_id: string | null
@@ -140,6 +107,155 @@ export type Database = {
             columns: ["contact_id"]
             isOneToOne: false
             referencedRelation: "contacts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      calendarapp_clients: {
+        Row: {
+          address: string | null
+          airtable_id: string | null
+          brand_color_1: string | null
+          brand_color_2: string | null
+          brand_color_3: string | null
+          city: string | null
+          client_name: string
+          company: string | null
+          created_at: string | null
+          email: string | null
+          facebook: string | null
+          id: string
+          img_generate_prompt: string | null
+          industry: string | null
+          instagram: string | null
+          logo_url: string | null
+          name: string | null
+          notes: string | null
+          phone: string | null
+          status: string | null
+          synced_at: string | null
+          text_generate_prompt: string | null
+          updated_at: string | null
+          website: string | null
+        }
+        Insert: {
+          address?: string | null
+          airtable_id?: string | null
+          brand_color_1?: string | null
+          brand_color_2?: string | null
+          brand_color_3?: string | null
+          city?: string | null
+          client_name: string
+          company?: string | null
+          created_at?: string | null
+          email?: string | null
+          facebook?: string | null
+          id?: string
+          img_generate_prompt?: string | null
+          industry?: string | null
+          instagram?: string | null
+          logo_url?: string | null
+          name?: string | null
+          notes?: string | null
+          phone?: string | null
+          status?: string | null
+          synced_at?: string | null
+          text_generate_prompt?: string | null
+          updated_at?: string | null
+          website?: string | null
+        }
+        Update: {
+          address?: string | null
+          airtable_id?: string | null
+          brand_color_1?: string | null
+          brand_color_2?: string | null
+          brand_color_3?: string | null
+          city?: string | null
+          client_name?: string
+          company?: string | null
+          created_at?: string | null
+          email?: string | null
+          facebook?: string | null
+          id?: string
+          img_generate_prompt?: string | null
+          industry?: string | null
+          instagram?: string | null
+          logo_url?: string | null
+          name?: string | null
+          notes?: string | null
+          phone?: string | null
+          status?: string | null
+          synced_at?: string | null
+          text_generate_prompt?: string | null
+          updated_at?: string | null
+          website?: string | null
+        }
+        Relationships: []
+      }
+      calendarapp_posts: {
+        Row: {
+          client_id: string
+          content: string | null
+          created_at: string | null
+          cta: string | null
+          h1: string | null
+          h2: string | null
+          id: string
+          media_description: string | null
+          media_url: string | null
+          p: string | null
+          platform: string
+          post_copy: string | null
+          scheduled_date: string
+          scheduled_time: string
+          status: string | null
+          title: string
+          updated_at: string | null
+        }
+        Insert: {
+          client_id: string
+          content?: string | null
+          created_at?: string | null
+          cta?: string | null
+          h1?: string | null
+          h2?: string | null
+          id?: string
+          media_description?: string | null
+          media_url?: string | null
+          p?: string | null
+          platform: string
+          post_copy?: string | null
+          scheduled_date: string
+          scheduled_time: string
+          status?: string | null
+          title: string
+          updated_at?: string | null
+        }
+        Update: {
+          client_id?: string
+          content?: string | null
+          created_at?: string | null
+          cta?: string | null
+          h1?: string | null
+          h2?: string | null
+          id?: string
+          media_description?: string | null
+          media_url?: string | null
+          p?: string | null
+          platform?: string
+          post_copy?: string | null
+          scheduled_date?: string
+          scheduled_time?: string
+          status?: string | null
+          title?: string
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "calendarapp_posts_client_id_fkey"
+            columns: ["client_id"]
+            isOneToOne: false
+            referencedRelation: "calendarapp_clients"
             referencedColumns: ["id"]
           },
         ]

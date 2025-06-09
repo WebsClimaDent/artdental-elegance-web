@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import Header from "@/components/layout/Header";
@@ -64,7 +63,7 @@ const Legal = () => {
                   <div className="bg-gradient-to-r from-dental-primary/20 to-dental-primary/10 p-6 rounded-lg border-l-4 border-dental-primary">
                     <p className="font-bold text-white text-lg mb-2">ARTDENTAL – Laboratorio Estética Dental</p>
                     <p className="text-gray-300 mb-2">📍 Av. de Joan XXIII, 48, bajo, Benicalap, 46025 Valencia</p>
-                    <p className="text-gray-300">✉️ info@artdentalvlc.com</p>
+                    <p className="text-gray-300">✉️ artdental@gmx.es</p>
                   </div>
                 </div>
 
