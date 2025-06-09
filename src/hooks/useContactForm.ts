@@ -46,6 +46,29 @@ export const useContactForm = () => {
 
       console.log('Contacto insertado exitosamente:', data);
 
+      // Enviar datos al webhook de Zapier
+      try {
+        console.log('Enviando datos a Zapier webhook...');
+        const zapierResponse = await fetch('https://hooks.zapier.com/hooks/catch/3875058/uy47p8g/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          mode: 'no-cors',
+          body: JSON.stringify({
+            ...formData,
+            contactId: data.id,
+            timestamp: new Date().toISOString(),
+            source: 'artdental_website'
+          }),
+        });
+
+        console.log('Datos enviados a Zapier webhook');
+      } catch (zapierError) {
+        console.error('Error al enviar a Zapier:', zapierError);
+        // No fallar el formulario por error de Zapier, solo registrar
+      }
+
       // Enviar notificación por email
       try {
         const { error: emailError } = await supabase.functions.invoke('send-contact-notification', {
