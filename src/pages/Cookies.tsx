@@ -46,7 +46,7 @@ const Cookies = () => {
             <section className="mb-16">
               <div className="bg-dental-primary/10 rounded-lg p-8 mb-12 border border-dental-primary/20">
                 <h2 className="text-3xl font-playfair font-bold text-white mb-6 border-b-2 border-dental-primary pb-4">
-                  POLÍTICA DE COOKIES
+                  Política de Cookies
                 </h2>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   Esta Política de Cookies explica qué son las cookies, cómo las utilizamos en nuestro sitio web 
@@ -57,7 +57,7 @@ const Cookies = () => {
               <div className="space-y-12">
                 <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                   <h3 className="text-2xl font-playfair font-bold text-white mb-6">
-                    ¿QUÉ SON LAS COOKIES?
+                    ¿Qué son las cookies?
                   </h3>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita 
@@ -74,12 +74,12 @@ const Cookies = () => {
 
                 <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                   <h3 className="text-2xl font-playfair font-bold text-white mb-6">
-                    TIPOS DE COOKIES QUE UTILIZAMOS
+                    Tipos de cookies que utilizamos
                   </h3>
                   
                   <div className="space-y-6">
                     <div className="bg-dental-primary/10 p-6 rounded-lg border border-dental-primary/20">
-                      <h4 className="text-xl font-semibold text-white mb-3">🔧 Cookies Técnicas</h4>
+                      <h4 className="text-xl font-semibold text-white mb-3">🔧 Cookies técnicas</h4>
                       <p className="text-gray-300 leading-relaxed">
                         Son estrictamente necesarias para el funcionamiento del sitio web. Sin estas cookies, 
                         el sitio web no puede funcionar correctamente.
@@ -87,7 +87,7 @@ const Cookies = () => {
                     </div>
 
                     <div className="bg-dental-primary/10 p-6 rounded-lg border border-dental-primary/20">
-                      <h4 className="text-xl font-semibold text-white mb-3">📊 Cookies Analíticas</h4>
+                      <h4 className="text-xl font-semibold text-white mb-3">📊 Cookies analíticas</h4>
                       <p className="text-gray-300 leading-relaxed">
                         Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio web 
                         recopilando y reportando información de forma anónima.
@@ -95,7 +95,7 @@ const Cookies = () => {
                     </div>
 
                     <div className="bg-dental-primary/10 p-6 rounded-lg border border-dental-primary/20">
-                      <h4 className="text-xl font-semibold text-white mb-3">⚙️ Cookies de Funcionalidad</h4>
+                      <h4 className="text-xl font-semibold text-white mb-3">⚙️ Cookies de funcionalidad</h4>
                       <p className="text-gray-300 leading-relaxed">
                         Permiten que el sitio web recuerde las opciones que hace (como su nombre de usuario, 
                         idioma o región) y proporcione características mejoradas y más personales.
@@ -106,7 +106,7 @@ const Cookies = () => {
 
                 <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                   <h3 className="text-2xl font-playfair font-bold text-white mb-6">
-                    COOKIES ESPECÍFICAS QUE UTILIZAMOS
+                    Cookies específicas que utilizamos
                   </h3>
                   
                   <div className="overflow-x-auto">
@@ -141,7 +141,7 @@ const Cookies = () => {
 
                 <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                   <h3 className="text-2xl font-playfair font-bold text-white mb-6">
-                    CÓMO GESTIONAR LAS COOKIES
+                    Cómo gestionar las cookies
                   </h3>
                   <p className="text-gray-300 mb-6 leading-relaxed">
                     Puede controlar y/o eliminar las cookies como desee. Para obtener detalles, 
@@ -182,7 +182,7 @@ const Cookies = () => {
 
                 <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                   <h3 className="text-2xl font-playfair font-bold text-white mb-6">
-                    CONSENTIMIENTO Y ACEPTACIÓN
+                    Consentimiento y aceptación
                   </h3>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     Al utilizar nuestro sitio web, usted consiente el uso de cookies de acuerdo con 
@@ -200,7 +200,7 @@ const Cookies = () => {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                     <h3 className="text-xl font-playfair font-bold text-white mb-4">
-                      COOKIES DE TERCEROS
+                      Cookies de terceros
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
                       En algunos casos especiales, también utilizamos cookies proporcionadas por 
@@ -211,7 +211,7 @@ const Cookies = () => {
 
                   <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                     <h3 className="text-xl font-playfair font-bold text-white mb-4">
-                      ACTUALIZACIONES
+                      Actualizaciones
                     </h3>
                     <p className="text-gray-300 leading-relaxed">
                       Esta Política de Cookies puede actualizarse ocasionalmente. 
@@ -223,7 +223,7 @@ const Cookies = () => {
 
                 <div className="bg-dental-dark/50 border border-dental-primary/20 rounded-lg p-8 shadow-sm">
                   <h3 className="text-2xl font-playfair font-bold text-white mb-6">
-                    CONTACTO
+                    Contacto
                   </h3>
                   <p className="text-gray-300 mb-4 leading-relaxed">
                     Si tiene alguna pregunta sobre esta Política de Cookies, puede contactarnos:
