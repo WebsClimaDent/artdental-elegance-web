@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 
@@ -36,7 +35,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-dental-light" />
-                <span className="text-sm">artdental@gmx.es</span>
+                <span className="text-sm">Info@artdentalvlc.com</span>
               </li>
             </ul>
           </div>

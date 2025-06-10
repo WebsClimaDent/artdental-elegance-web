@@ -54,7 +54,7 @@ const handler = async (req: Request): Promise<Response> => {
       <h3>Información de contacto</h3>
       <p><strong>Dirección:</strong> Avda Juan XIII, N° 48 B, 46025, Valencia</p>
       <p><strong>Teléfono:</strong> +34 963 587 411 | +34 609 976 027</p>
-      <p><strong>Email:</strong> artdental@gmx.es</p>
+      <p><strong>Email:</strong> Info@artdentalvlc.com</p>
       <p><strong>Horario:</strong> Lunes - Viernes: 7:00 - 19:30</p>
       <br>
       <p>Gracias por su confianza,</p>
