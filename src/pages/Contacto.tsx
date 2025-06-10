@@ -196,7 +196,7 @@ const Contacto = () => {
                       <div>
                         <h4 className="font-semibold text-white mb-1">Dirección</h4>
                         <p className="text-gray-300">
-                          Avda Juan XIII, N° 48 B<br/>
+                          Avda Juan XXIII, N° 48 B<br/>
                           46025, Valencia<br/>
                           España
                         </p>
