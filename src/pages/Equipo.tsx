@@ -90,7 +90,7 @@ const Equipo = () => {
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" style={{ 
           backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/e86db206-2534-4707-a749-2b0034245c6b.png)',
-          backgroundPosition: 'center 40%'
+          backgroundPosition: 'center 30%'
         }}>
           <div className="container-custom">
             <div className="mb-6">
