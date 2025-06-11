@@ -1,4 +1,3 @@
-
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -17,7 +16,7 @@ const services = [
   {
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
+    image: "/lovable-uploads/5dcab949-b0be-4a44-bb30-79ba9f0ce6dd.png",
     link: "/servicios#carillas-porcelana",
   },
   {
