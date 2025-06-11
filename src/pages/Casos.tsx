@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -25,8 +24,8 @@ const cases = [
     challenge: "Diastemas, forma irregular de los dientes y tinción del esmalte resistente al blanqueamiento.",
     solution: "Carillas ultrafinas con mínima preparación dental, preservando la mayor cantidad de esmalte posible.",
     materials: "Porcelana feldespática estratificada a mano, espesor de 0.3mm.",
-    before: "/lovable-uploads/c4cf566d-2328-48e1-b231-33556c92e7a1.png",
-    after: "/lovable-uploads/ad874c0d-0400-46d7-adae-294ab063ef29.png",
+    before: "/lovable-uploads/b2a89a74-e8b0-4ee4-bac8-7693d6f123b7.png",
+    after: "/lovable-uploads/1dd61794-b5be-4910-b4e8-5ffb48b9e55b.png",
   },
   {
     id: 3,
