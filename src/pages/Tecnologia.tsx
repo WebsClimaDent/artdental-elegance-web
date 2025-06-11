@@ -37,7 +37,7 @@ const technologies = [
       "Captura en color para registro de detalles",
       "Reducción del tiempo de trabajo"
     ],
-    image: "/lovable-uploads/1a03ebf9-cc99-404d-a0d0-c58cb8360d8f.png",
+    image: "/lovable-uploads/8de8a836-10e5-4ac3-a606-d335e93d5362.png",
     icon: <Zap className="h-12 w-12" />,
     color: "from-blue-500 to-indigo-700",
   },
@@ -50,7 +50,7 @@ const technologies = [
       "Diseño de sonrisa digital",
       "Planificación de casos complejos"
     ],
-    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1770&auto=format&fit=crop",
+    image: "/lovable-uploads/e82f8a4f-9d43-41bb-8827-40fa223abcd8.png",
     icon: <Layers className="h-12 w-12" />,
     color: "from-purple-500 to-pink-700",
   },
@@ -63,7 +63,7 @@ const technologies = [
       "Procesado de todos los materiales modernos",
       "Producción rápida y consistente"
     ],
-    image: "/lovable-uploads/069ad0c7-077a-490b-99f6-baf811d9ad74.png",
+    image: "/lovable-uploads/82b05c2e-bfb3-4592-824f-6d2b759287ad.png",
     icon: <Gauge className="h-12 w-12" />,
     color: "from-green-500 to-emerald-700",
   },
@@ -145,7 +145,7 @@ const Tecnologia = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center z-0" 
             style={{ 
-              backgroundImage: 'url(/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)',
+              backgroundImage: 'url(/lovable-uploads/8de8a836-10e5-4ac3-a606-d335e93d5362.png)',
               filter: 'blur(2px) brightness(0.4)'
             }}
           />

@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -87,7 +86,7 @@ const Equipo = () => {
       <Header />
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
-        <section className="py-16 bg-cover bg-center relative" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1615109398623-41219dca10a3?q=80&w=1974&auto=format&fit=crop)' }}>
+        <section className="py-16 bg-cover bg-center relative" style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(/lovable-uploads/e86db206-2534-4707-a749-2b0034245c6b.png)' }}>
           <div className="container-custom">
             <div className="mb-6">
               <BackButton className="text-white hover:text-dental-light" />

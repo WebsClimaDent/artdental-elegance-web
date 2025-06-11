@@ -265,7 +265,7 @@ const Servicios = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" 
-                style={{ backgroundImage: 'url(/lovable-uploads/6a622db5-244e-4a95-8f73-97d3f318efe8.png)' }}>
+                style={{ backgroundImage: 'url(/lovable-uploads/64763ca7-0e44-40b1-9584-d0dd71db69ed.png)' }}>
           {/* Dark overlay for opacity */}
           <div className="absolute inset-0 bg-black bg-opacity-80 z-0"></div>
           
@@ -276,7 +276,7 @@ const Servicios = () => {
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4 text-white">Nuestros Servicios</h1>
               <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto text-white">
-                Soluciones dentales de precisión que combinan artesanía tradicional con 
+                Soluciones dentales de precisión que combinan concepto tradicional con 
                 tecnología avanzada para resultados excepcionales.
               </p>
             </div>
