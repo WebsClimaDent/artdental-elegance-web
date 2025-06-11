@@ -27,6 +27,9 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6">
             Laboratorio de estetica dental
           </h1>
+          <h2 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-dental-light">
+            Aesthetics of high quality
+          </h2>
           <p className="text-lg md:text-xl opacity-90 mb-8">
             Nuestro laboratorio dental en Valencia crea sonrisas perfectas combinando artesanía tradicional y tecnología de vanguardia para resultados excepcionales que impresionarán a sus pacientes.
           </p>
