@@ -16,7 +16,7 @@ const services = [
   {
     title: "Carillas de Porcelana",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "/lovable-uploads/5dcab949-b0be-4a44-bb30-79ba9f0ce6dd.png",
+    image: "/lovable-uploads/4a05785d-92cf-4c83-87e4-a1ce0cf81469.png",
     link: "/servicios#carillas-porcelana",
   },
   {
