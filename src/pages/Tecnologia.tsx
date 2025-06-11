@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -145,7 +146,7 @@ const Tecnologia = () => {
           <div 
             className="absolute inset-0 bg-cover bg-center z-0" 
             style={{ 
-              backgroundImage: 'url(/lovable-uploads/8de8a836-10e5-4ac3-a606-d335e93d5362.png)',
+              backgroundImage: 'url(/lovable-uploads/82b05c2e-bfb3-4592-824f-6d2b759287ad.png)',
               filter: 'blur(2px) brightness(0.4)'
             }}
           />
