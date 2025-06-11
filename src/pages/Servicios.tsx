@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -265,7 +266,10 @@ const Servicios = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" 
-                style={{ backgroundImage: 'url(/lovable-uploads/64763ca7-0e44-40b1-9584-d0dd71db69ed.png)' }}>
+                style={{ 
+                  backgroundImage: 'url(/lovable-uploads/64763ca7-0e44-40b1-9584-d0dd71db69ed.png)',
+                  backgroundPosition: 'center 30%'
+                }}>
           {/* Dark overlay for opacity */}
           <div className="absolute inset-0 bg-black bg-opacity-80 z-0"></div>
           
