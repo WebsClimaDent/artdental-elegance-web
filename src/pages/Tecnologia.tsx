@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -64,7 +63,7 @@ const technologies = [
       "Procesado de todos los materiales modernos",
       "Producción rápida y consistente"
     ],
-    image: "/lovable-uploads/82b05c2e-bfb3-4592-824f-6d2b759287ad.png",
+    image: "/lovable-uploads/eb7a173d-0658-406c-b93e-14227c1f338b.png",
     icon: <Gauge className="h-12 w-12" />,
     color: "from-green-500 to-emerald-700",
   },
