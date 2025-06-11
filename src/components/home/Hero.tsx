@@ -21,11 +21,11 @@ const Hero = () => {
         <div className="max-w-2xl md:max-w-3xl animate-fade-in">
           <div className="text-left mb-4">
             <span className="text-3xl md:text-4xl font-playfair font-bold text-white">
-              Artdental
+              ARTDENTAL
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6">
-            Elegancia y precisión en laboratorio dental
+            Laboratorio de estetica dental
           </h1>
           <p className="text-lg md:text-xl opacity-90 mb-8">
             Nuestro laboratorio dental en Valencia crea sonrisas perfectas combinando artesanía tradicional y tecnología de vanguardia para resultados excepcionales que impresionarán a sus pacientes.

@@ -1,4 +1,5 @@
 
+
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 
@@ -11,11 +12,11 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center">
               <span className="text-2xl font-playfair font-bold text-white">
-                Art<span className="text-dental-light">Dental</span>
+                ART<span className="text-dental-light">DENTAL</span>
               </span>
             </Link>
             <p className="text-sm text-gray-300">
-              Elegancia y precisión en cada trabajo dental. Creamos sonrisas perfectas combinando artesanía tradicional con tecnología de vanguardia.
+              Laboratorio de estetica dental. Creamos sonrisas perfectas combinando artesanía tradicional con tecnología de vanguardia.
             </p>
           </div>
 
