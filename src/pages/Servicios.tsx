@@ -101,68 +101,6 @@ const serviceCategories = [
     ]
   },
   {
-    id: 2,
-    title: "Rehabilitación Funcional",
-    services: [
-      {
-        id: 4,
-        title: "Puentes sobre Dientes",
-        description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
-        image: "/lovable-uploads/0f1e5858-3a69-4c4e-9e0f-70e10e48b3ce.png",
-        detailedDescription: "Nuestros puentes dentales combinan ingeniería de precisión con artesanía estética para reemplazar dientes ausentes de forma permanente. Utilizando tecnología CAD/CAM y materiales de última generación, creamos estructuras de soporte invisible que sostienen piezas de reemplazo indistinguibles de los dientes naturales. El resultado es una restauración que devuelve la función masticatoria y la estética sin compromisos.",
-        benefits: [
-          "Restauración completa de la función masticatoria",
-          "Prevención del desplazamiento dental",
-          "Distribución equilibrada de fuerzas oclusales",
-          "Estética natural en el sector anterior",
-          "Solución permanente y duradera"
-        ],
-        materials: [
-          "Estructura de zirconio de alta resistencia",
-          "Cerámica estratificada para máxima estética",
-          "Conectores reforzados para mayor durabilidad"
-        ],
-        testimonial: {
-          quote: "Los puentes que ArtDental fabrica para mis pacientes son obras maestras de funcionalidad y estética. La capacidad técnica y artística de su equipo es extraordinaria.",
-          author: "Dr. Alejandro Sánchez",
-          clinic: "Instituto Dental Especializado"
-        },
-        additionalImages: [
-          "/lovable-uploads/0f1e5858-3a69-4c4e-9e0f-70e10e48b3ce.png",
-          "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
-        ]
-      },
-      {
-        id: 5,
-        title: "Sobredentaduras",
-        description: "Prótesis completas con sistemas de retención sobre implantes para mayor estabilidad y confort.",
-        image: "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
-        detailedDescription: "Las sobredentaduras representan la evolución de las prótesis removibles tradicionales. Mediante sistemas de anclaje precisos sobre implantes, ofrecemos soluciones que combinan la estabilidad de restauraciones fijas con la facilidad de mantenimiento de las removibles. En ArtDental, cada sobredentadura es diseñada considerando la anatomía facial, la fonética y la estética para devolver confianza y calidad de vida a los pacientes.",
-        benefits: [
-          "Mayor estabilidad que prótesis convencionales",
-          "Prevención de reabsorción ósea",
-          "Facilidad de higiene",
-          "Mejora significativa de la función masticatoria",
-          "Restauración del perfil facial"
-        ],
-        materials: [
-          "Base acrílica de alta densidad",
-          "Dientes de composite multicapa",
-          "Sistemas de retención de precisión en titanio"
-        ],
-        testimonial: {
-          quote: "Las sobredentaduras de ArtDental han devuelto la calidad de vida a muchos de mis pacientes. La precisión en los sistemas de retención y la naturalidad estética son excepcionales.",
-          author: "Dra. Carmen Rodríguez",
-          clinic: "Clínica Odontológica Integral"
-        },
-        additionalImages: [
-          "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
-          "/lovable-uploads/ffea444a-33f5-4622-be46-fb3bb47eb5d3.png"
-        ]
-      }
-    ]
-  },
-  {
     id: 3,
     title: "Soluciones sobre Implantes",
     services: [
@@ -302,7 +240,6 @@ const Servicios = () => {
                   >
                     <div className="lg:w-1/2">
                       <div className={`rounded-lg overflow-hidden shadow-2xl ${
-                        category.id === 2 ? 'h-[500px]' : 
                         service.id === 6 ? 'h-[420px]' : 'h-96'
                       }`}>
                         <TiltedCard
@@ -457,8 +394,6 @@ function getServiceId(title: string): string {
     "Coronas de Disilicato de Litio": "corona-disilicato",
     "Carillas de Porcelana": "carillas-porcelana",
     "Incrustaciones": "incrustaciones",
-    "Puentes sobre Dientes": "puentes-dientes",
-    "Sobredentaduras": "sobredentaduras",
     "Coronas sobre Implantes": "coronas-implantes",
     "Rehabilitaciones Completas": "rehabilitaciones-completas"
   };

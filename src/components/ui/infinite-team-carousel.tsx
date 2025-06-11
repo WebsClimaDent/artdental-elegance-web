@@ -114,12 +114,12 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
                 onClick={() => goToSlide(index)}
               >
                 <div className="w-full h-full bg-dental-dark border border-gray-700 rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300">
-                  <div className="h-56 overflow-hidden">
+                  <div className="h-48 overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover object-center transition-transform duration-500"
-                      style={{ objectFit: 'cover' }}
+                      className="w-full h-full object-cover object-top transition-transform duration-500"
+                      style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
                     />
                   </div>
                   <div className="p-4 text-center">
