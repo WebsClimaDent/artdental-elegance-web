@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-black to-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 z-10"></div>
         <img
           src="/lovable-uploads/e552cee1-8cdd-4021-a525-ef268f242ac8.png"
           alt="Laboratorio dental ARTDENTAL"
