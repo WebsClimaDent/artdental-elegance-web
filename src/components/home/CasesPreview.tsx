@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -20,10 +21,10 @@ const cases = [
   },
   {
     id: 3,
-    title: "Implantes con circonio",
-    description: "Solución permanente con implantes de titanio y coronas de circonio para una estética natural.",
-    before: "/lovable-uploads/b44b9bcc-1d0d-43da-a6b6-c1525792fdc9.png",
-    after: "/lovable-uploads/e2080422-f897-4e44-89cb-fe17b4ccecbc.png",
+    title: "Rehabilitación estética - Diseño de sonrisa",
+    description: "Rehabilitación estética integral con diseño de sonrisa adaptado, utilizando carillas y rehabilitación en ausencias de molares con coronas de circonio.",
+    before: "/lovable-uploads/036303dc-8b5c-432b-b222-d800c2e5a509.png",
+    after: "/lovable-uploads/c7ce5a57-2e63-45bf-b2bc-6fceafe74898.png",
     link: "/casos",
   },
   {
