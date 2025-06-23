@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -11,7 +10,7 @@ const cases = [
   {
     id: 1,
     title: "Carillas e implantes - Solución integral",
-    description: "Paciente que requería carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales. Se combinaron ambos tratamientos para lograr una sonrisa armoniosa y funcional.",
+    description: "Carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales. Se combinaron ambos tratamientos para lograr una sonrisa armoniosa y funcional.",
     challenge: "Ausencias dentales y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
     solution: "Carillas ultrafinas en dientes anteriores e implante dental con corona en zona de ausencia, planificación digital integral.",
     materials: "Carillas de porcelana ultrafinas, implante de titanio, corona de circonio.",
@@ -30,13 +29,13 @@ const cases = [
   },
   {
     id: 3,
-    title: "Implantes dentales con coronas de circonio",
-    description: "Paciente con pérdida de varios dientes. Se colocaron implantes de titanio con coronas de circonio para una solución permanente y estéticamente natural.",
-    challenge: "Pérdida de múltiples piezas dentales, necesidad de restaurar función masticatoria y estética.",
-    solution: "Colocación de implantes de titanio con coronas de circonio, planificación digital previa.",
-    materials: "Implantes de titanio, coronas de circonio, pilares personalizados.",
-    before: "/lovable-uploads/b44b9bcc-1d0d-43da-a6b6-c1525792fdc9.png",
-    after: "/lovable-uploads/e2080422-f897-4e44-89cb-fe17b4ccecbc.png",
+    title: "Rehabilitación estética - Diseño de sonrisa",
+    description: "Rehabilitación estética integral con diseño de sonrisa adaptado, utilizando carillas y rehabilitación en ausencias de molares con coronas de circonio para una transformación completa.",
+    challenge: "Múltiples problemas estéticos y funcionales, ausencias de molares y necesidad de armonización completa de la sonrisa.",
+    solution: "Diseño de sonrisa personalizado con carillas estéticas en dientes anteriores y coronas de circonio en molares ausentes.",
+    materials: "Carillas de porcelana, coronas de circonio, planificación digital del diseño de sonrisa.",
+    before: "/lovable-uploads/036303dc-8b5c-432b-b222-d800c2e5a509.png",
+    after: "/lovable-uploads/c7ce5a57-2e63-45bf-b2bc-6fceafe74898.png",
   },
 ];
 
