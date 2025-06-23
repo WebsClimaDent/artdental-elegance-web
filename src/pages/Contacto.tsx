@@ -20,24 +20,38 @@ const Contacto = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
+    console.log(`Campo ${name} actualizado con valor:`, value);
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log('Intentando enviar formulario con datos:', formData);
     
-    const result = await submitForm(formData);
+    // Validación básica en el frontend
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      console.error('Validación falló: campos obligatorios vacíos');
+      return;
+    }
     
-    if (result.success) {
-      // Limpiar formulario solo si el envío fue exitoso
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        clinic: "",
-        message: "",
-        type: "consulta"
-      });
+    try {
+      const result = await submitForm(formData);
+      console.log('Resultado del envío:', result);
+      
+      if (result.success) {
+        // Limpiar formulario solo si el envío fue exitoso
+        console.log('Limpiando formulario después de envío exitoso');
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          clinic: "",
+          message: "",
+          type: "consulta"
+        });
+      }
+    } catch (error) {
+      console.error('Error no capturado en handleSubmit:', error);
     }
   };
 
@@ -96,7 +110,7 @@ const Contacto = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="name" className="block text-white mb-2">Nombre completo</label>
+                      <label htmlFor="name" className="block text-white mb-2">Nombre completo *</label>
                       <input
                         type="text"
                         id="name"
@@ -108,7 +122,7 @@ const Contacto = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-white mb-2">Email</label>
+                      <label htmlFor="email" className="block text-white mb-2">Email *</label>
                       <input
                         type="email"
                         id="email"
@@ -163,7 +177,7 @@ const Contacto = () => {
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-white mb-2">Mensaje</label>
+                    <label htmlFor="message" className="block text-white mb-2">Mensaje *</label>
                     <textarea
                       id="message"
                       name="message"
@@ -178,7 +192,7 @@ const Contacto = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="btn-primary w-full"
+                    className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                   </button>

@@ -18,19 +18,27 @@ export const useContactForm = () => {
 
   const submitForm = async (formData: ContactFormData) => {
     setIsSubmitting(true);
+    console.log('Iniciando envío de formulario con datos:', formData);
     
     try {
-      console.log('Enviando formulario de contacto:', formData);
+      // Validar datos requeridos
+      if (!formData.name || !formData.email || !formData.message) {
+        throw new Error('Los campos nombre, email y mensaje son obligatorios');
+      }
+
+      console.log('Validación exitosa, enviando formulario de contacto:', formData);
       
       // Mapear los datos del formulario a los campos de la tabla Artdental
       const artdentalData = {
         Name: formData.name,
         Email: formData.email,
-        Phone: formData.phone ? parseFloat(formData.phone) : 0,
+        Phone: formData.phone ? parseFloat(formData.phone) : null,
         "Clínica name": formData.clinic || null,
         Message: formData.message || null,
         Type: formData.type || null
       };
+
+      console.log('Datos mapeados para Supabase:', artdentalData);
 
       // Insertar en la base de datos
       const { data, error } = await supabase
@@ -40,13 +48,13 @@ export const useContactForm = () => {
         .single();
 
       if (error) {
-        console.error('Error al insertar contacto:', error);
-        throw error;
+        console.error('Error de Supabase al insertar contacto:', error);
+        throw new Error(`Error de base de datos: ${error.message}`);
       }
 
-      console.log('Contacto insertado exitosamente:', data);
+      console.log('Contacto insertado exitosamente en Supabase:', data);
 
-      // Enviar datos al webhook de Zapier
+      // Enviar datos al webhook de Zapier (sin fallar si hay error)
       try {
         console.log('Enviando datos a Zapier webhook...');
         const zapierResponse = await fetch('https://hooks.zapier.com/hooks/catch/3875058/uy47p8g/', {
@@ -63,24 +71,26 @@ export const useContactForm = () => {
           }),
         });
 
-        console.log('Datos enviados a Zapier webhook');
+        console.log('Datos enviados a Zapier webhook exitosamente');
       } catch (zapierError) {
-        console.error('Error al enviar a Zapier:', zapierError);
+        console.warn('Error al enviar a Zapier (no crítico):', zapierError);
         // No fallar el formulario por error de Zapier, solo registrar
       }
 
-      // Enviar notificación por email
+      // Enviar notificación por email (sin fallar si hay error)
       try {
+        console.log('Enviando notificación por email...');
         const { error: emailError } = await supabase.functions.invoke('send-contact-notification', {
           body: { ...formData, contactId: data.id }
         });
 
         if (emailError) {
-          console.error('Error al enviar notificación:', emailError);
-          // No fallar el formulario por error de email, solo registrar
+          console.warn('Error al enviar notificación (no crítico):', emailError);
+        } else {
+          console.log('Notificación por email enviada exitosamente');
         }
       } catch (emailError) {
-        console.error('Error en función de email:', emailError);
+        console.warn('Error en función de email (no crítico):', emailError);
         // Continuar sin fallar
       }
 
@@ -89,19 +99,32 @@ export const useContactForm = () => {
         description: "Gracias por contactarnos. Nos pondremos en contacto con usted a la mayor brevedad.",
       });
 
+      console.log('Formulario enviado exitosamente');
       return { success: true, data };
     } catch (error: any) {
-      console.error('Error en submitForm:', error);
+      console.error('Error completo en submitForm:', error);
+      
+      let errorMessage = "Ha ocurrido un error. Por favor, inténtelo de nuevo o contáctenos directamente.";
+      
+      // Proporcionar mensajes de error más específicos
+      if (error.message.includes('obligatorios')) {
+        errorMessage = error.message;
+      } else if (error.message.includes('base de datos')) {
+        errorMessage = "Error al guardar los datos. Por favor, inténtelo de nuevo.";
+      } else if (error.message.includes('network') || error.message.includes('fetch')) {
+        errorMessage = "Error de conexión. Por favor, verifique su conexión a internet.";
+      }
       
       toast({
         title: "Error al enviar mensaje",
-        description: "Ha ocurrido un error. Por favor, inténtelo de nuevo o contáctenos directamente.",
+        description: errorMessage,
         variant: "destructive",
       });
 
       return { success: false, error: error.message };
     } finally {
       setIsSubmitting(false);
+      console.log('Finalizando proceso de envío de formulario');
     }
   };
 
