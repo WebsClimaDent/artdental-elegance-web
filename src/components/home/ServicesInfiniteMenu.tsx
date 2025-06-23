@@ -62,11 +62,11 @@ const ServicesInfiniteMenu = () => {
           precisión y estética para resultados excepcionales.
         </p>
 
-        <div className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] bg-dental-dark rounded-lg overflow-hidden">
+        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-dental-dark rounded-lg overflow-hidden">
           <InfiniteMenu items={services} />
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <p className="text-gray-400 text-sm mb-4">
             Arrastra para explorar nuestros servicios en 3D
           </p>
