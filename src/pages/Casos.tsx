@@ -155,9 +155,9 @@ const Casos = () => {
         </section>
 
         {/* Cases Section */}
-        <section className="section-padding">
+        <section className="py-16 md:py-20">
           <div className="container-custom">
-            <div className="space-y-24">
+            <div className="space-y-20">
               {cases.map((caseItem, index) => (
                 <div key={caseItem.id} className="reveal">
                   <h2 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-white">{caseItem.title}</h2>
@@ -212,7 +212,7 @@ const Casos = () => {
                   </div>
                   
                   {index < cases.length - 1 && (
-                    <hr className="border-gray-700 my-12" />
+                    <hr className="border-gray-700 mt-16" />
                   )}
                 </div>
               ))}
@@ -221,7 +221,7 @@ const Casos = () => {
         </section>
 
         {/* Reviews Section */}
-        <section className="section-padding bg-gradient-to-b from-dental-dark to-black relative overflow-hidden">
+        <section className="py-16 md:py-20 bg-gradient-to-b from-dental-dark to-black relative overflow-hidden">
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6 text-white">
@@ -303,7 +303,7 @@ const Casos = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-black">
+        <section className="py-16 md:py-20 bg-black">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6">
               ¿Tiene un caso similar?
