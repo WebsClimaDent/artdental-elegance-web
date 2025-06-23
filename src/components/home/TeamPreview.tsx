@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import InfiniteTeamCarousel from "@/components/ui/infinite-team-carousel";
@@ -29,7 +28,7 @@ const teamMembers = [
 
 const TeamPreview = () => {
   return (
-    <section className="section-padding bg-dental-dark" id="equipo">
+    <section className="py-12 md:py-16 lg:py-20 bg-dental-dark" id="equipo">
       <div className="container-custom">
         <h2 className="section-title text-center">Nuestro Equipo</h2>
         <p className="section-subtitle text-center">
