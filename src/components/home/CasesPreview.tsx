@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -39,7 +38,7 @@ const cases = [
 
 const CasesPreview = () => {
   return (
-    <section className="section-padding bg-dental-dark" id="casos">
+    <section className="py-12 md:py-16 lg:py-20 bg-dental-dark" id="casos">
       <div className="container-custom">
         <h2 className="section-title text-center">Casos de Éxito</h2>
         <p className="section-subtitle text-center">
