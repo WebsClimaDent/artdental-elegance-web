@@ -31,8 +31,8 @@ const cases = [
     id: 4,
     title: "Carillas de porcelana estéticas",
     description: "Corrección de forma y color con carillas de porcelana feldespática para una sonrisa perfecta.",
-    before: "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
-    after: "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png",
+    before: "/lovable-uploads/ccadcdea-79b9-4d00-b33a-84e673e14c41.png",
+    after: "/lovable-uploads/debb49cd-f012-4e3a-8dae-31675e361477.png",
     link: "/casos",
   },
 ];
