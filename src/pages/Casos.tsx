@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -162,8 +163,8 @@ const Casos = () => {
                 <div key={caseItem.id} className="reveal">
                   <h2 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-white">{caseItem.title}</h2>
                   
-                  {/* Usar componente especial para carillas (id: 2) e implantes (id: 3) */}
-                  {(caseItem.id === 2 || caseItem.id === 3) ? (
+                  {/* Usar componente especial solo para carillas (id: 2) */}
+                  {caseItem.id === 2 ? (
                     <div className="mb-8">
                       <ImageComparison
                         beforeImage={caseItem.before}
