@@ -5,7 +5,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section className="relative h-[70vh] md:h-[80vh] flex items-center pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 z-10"></div>
