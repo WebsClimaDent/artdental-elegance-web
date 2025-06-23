@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -24,6 +25,14 @@ const cases = [
     description: "Solución permanente con implantes de titanio y coronas de circonio para una estética natural.",
     before: "/lovable-uploads/b44b9bcc-1d0d-43da-a6b6-c1525792fdc9.png",
     after: "/lovable-uploads/e2080422-f897-4e44-89cb-fe17b4ccecbc.png",
+    link: "/casos",
+  },
+  {
+    id: 4,
+    title: "Carillas de porcelana estéticas",
+    description: "Corrección de forma y color con carillas de porcelana feldespática para una sonrisa perfecta.",
+    before: "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
+    after: "/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png",
     link: "/casos",
   },
 ];
