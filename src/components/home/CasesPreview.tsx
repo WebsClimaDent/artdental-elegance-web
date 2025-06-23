@@ -4,10 +4,10 @@ import { ArrowRight } from "lucide-react";
 const cases = [
   {
     id: 1,
-    title: "Rehabilitación completa",
-    description: "Restauración completa de la dentición con coronas de disilicato de litio para un resultado estético y funcional óptimo.",
-    before: "/lovable-uploads/d689cf97-8199-44bb-ae83-8f97311e4112.png",
-    after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
+    title: "Carillas e implantes",
+    description: "Carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales para una solución integral y estética.",
+    before: "/lovable-uploads/6f68288b-b5da-4f3f-bec9-b308e6fd8cf6.png",
+    after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
     link: "/casos",
   },
   {

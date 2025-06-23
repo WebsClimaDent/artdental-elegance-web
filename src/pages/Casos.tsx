@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -10,13 +9,13 @@ import ImageComparison from "@/components/ui/image-comparison";
 const cases = [
   {
     id: 1,
-    title: "Rehabilitación completa con disilicato de litio",
-    description: "Paciente con desgaste severo y pérdida de dimensión vertical. Se realizó una rehabilitación completa con coronas de disilicato de litio e.max para restaurar la función y la estética.",
-    challenge: "Desgaste dental severo por bruxismo, compromiso estético significativo y pérdida de dimensión vertical.",
-    solution: "Rehabilitación oral completa con coronas de disilicato de litio, previo análisis funcional y aumento de dimensión vertical.",
-    materials: "Disilicato de litio e.max, sistema adhesivo de última generación.",
-    before: "/lovable-uploads/d689cf97-8199-44bb-ae83-8f97311e4112.png",
-    after: "/lovable-uploads/a42daec9-b827-4b51-b1bc-2f27dd0cdd9b.png",
+    title: "Carillas e implantes - Solución integral",
+    description: "Paciente que requería carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales. Se combinaron ambos tratamientos para lograr una sonrisa armoniosa y funcional.",
+    challenge: "Ausencias dentales y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
+    solution: "Carillas ultrafinas en dientes anteriores e implante dental con corona en zona de ausencia, planificación digital integral.",
+    materials: "Carillas de porcelana ultrafinas, implante de titanio, corona de circonio.",
+    before: "/lovable-uploads/6f68288b-b5da-4f3f-bec9-b308e6fd8cf6.png",
+    after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
   },
   {
     id: 2,
