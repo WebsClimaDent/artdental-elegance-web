@@ -1,12 +1,18 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center pt-20">
+  return (
+    <section className="relative min-h-screen flex items-center pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 z-10 py-[13px]"></div>
-        <img src="/lovable-uploads/824efabc-bdab-44d9-8b7b-93ed807de7a2.png" alt="Laboratorio dental ARTDENTAL - Tecnología avanzada" className="w-full h-full object-cover object-center opacity-70" />
+        <img 
+          src="/lovable-uploads/39b03144-6211-4984-8a6c-54951e3cae06.png" 
+          alt="Laboratorio dental ARTDENTAL - Tecnología avanzada" 
+          className="w-full h-full object-cover object-center opacity-70" 
+        />
       </div>
 
       {/* Content */}
@@ -37,6 +43,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
