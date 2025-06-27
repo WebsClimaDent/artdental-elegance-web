@@ -41,7 +41,7 @@ export default function TiltedCard({
   overlayContent = null,
   displayOverlayContent = false,
   className = "",
-  objectFit = "cover",
+  objectFit = "contain",
 }) {
   const ref = useRef<HTMLElement>(null);
 
@@ -93,7 +93,7 @@ export default function TiltedCard({
     rotateFigcaption.set(0);
   }
 
-  // Create style object with proper typing and improved aspect ratio handling
+  // Create style object with proper typing
   const imageStyles: React.CSSProperties = {
     width: "100%",
     height: "100%",
@@ -159,4 +159,3 @@ export default function TiltedCard({
     </figure>
   );
 }
-
