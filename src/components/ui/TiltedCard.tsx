@@ -93,11 +93,12 @@ export default function TiltedCard({
     rotateFigcaption.set(0);
   }
 
-  // Create style object with proper typing
+  // Create style object with proper typing and improved aspect ratio handling
   const imageStyles: React.CSSProperties = {
     width: "100%",
     height: "100%",
-    objectFit: objectFit as React.CSSProperties['objectFit'],
+    objectFit: 'cover' as React.CSSProperties['objectFit'],
+    objectPosition: 'center',
   };
 
   return (
