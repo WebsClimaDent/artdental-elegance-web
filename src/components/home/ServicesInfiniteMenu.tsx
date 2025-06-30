@@ -20,12 +20,6 @@ const services = [
     link: "/servicios#carillas-porcelana",
   },
   {
-    title: "Prótesis Removibles",
-    description: "Soluciones funcionales y estéticas para reemplazar piezas dentales con comodidad y naturalidad.",
-    image: "/lovable-uploads/af154a7d-1db9-44d6-9be8-0c11031d96e0.png",
-    link: "/servicios#sobredentaduras",
-  },
-  {
     title: "Coronas de Disilicato de Litio",
     description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
     image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
