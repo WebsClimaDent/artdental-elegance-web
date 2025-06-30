@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -253,7 +254,10 @@ const Servicios = () => {
                           rotateAmplitude={12}
                           showTooltip={false}
                           objectFit={service.title === 'Carillas de Porcelana' ? 'contain' : 'cover'}
-                          className={service.id === 6 ? 'object-cover object-center' : 'object-cover'}
+                          className={`
+                            ${service.id === 6 ? 'object-cover object-center' : 'object-cover'}
+                            ${service.title === 'Carillas de Porcelana' ? '[&_.tilted-card-img]:!transform [&_.tilted-card-img]:!scale-[0.45] [&_.tilted-card-img]:!object-contain' : ''}
+                          `}
                         />
                       </div>
                     </div>
