@@ -80,11 +80,11 @@ void main() {
     // Rotate 180 degrees
     vec2 st = vec2(vUvs.x, 1.0 - vUvs.y);
     
-    // Special handling for carillas image (index 1) - show original size without scaling
+    // Special handling for carillas image (index 1) - show original size without any scaling
     if (itemIndex == 1) {
-        // Center the UVs and use original size
-        st = (st - 0.5) + 0.5;
-        st = clamp(st, 0.0, 1.0);
+        // Use original UV coordinates without any scaling or transformation
+        // This will show the image in its natural size within the container
+        st = st;
     } else {
         // For other images, apply cover scaling as before
         ivec2 texSize = textureSize(uTex, 0);
