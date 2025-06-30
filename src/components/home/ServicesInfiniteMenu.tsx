@@ -1,9 +1,8 @@
-
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
   {
-    title: "Puentes",
+    title: "Coronas de Zirconio",
     description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
     image: "/lovable-uploads/b733e484-2f98-47ad-861a-7651eaab8342.png",
     link: "/servicios#puentes-dientes",
