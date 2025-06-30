@@ -16,12 +16,6 @@ const services = [
     scale: 0.2,
   },
   {
-    title: "Coronas de Disilicato de Litio",
-    description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
-    image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
-    link: "/servicios#corona-disilicato",
-  },
-  {
     title: "Zirconio",
     description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
     image: "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
