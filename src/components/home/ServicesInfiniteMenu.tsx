@@ -1,3 +1,4 @@
+
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -10,8 +11,9 @@ const services = [
   {
     title: "Carillas mínimamente invasivas",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "/lovable-uploads/f0a302da-9492-427f-895a-85a5f043a371.png",
+    image: "/lovable-uploads/ecf13542-da1e-453c-8a6e-f3e3bcf67f12.png",
     link: "/servicios#carillas-porcelana",
+    objectFit: "contain" as const,
   },
   {
     title: "Coronas de Disilicato de Litio",
