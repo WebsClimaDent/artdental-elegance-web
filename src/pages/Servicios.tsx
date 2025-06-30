@@ -254,7 +254,10 @@ const Servicios = () => {
                           rotateAmplitude={12}
                           showTooltip={false}
                           objectFit="cover"
-                          className={service.id === 6 ? 'object-cover object-center' : 'object-cover'}
+                          className={`
+                            ${service.id === 6 ? 'object-cover object-center' : 'object-cover'}
+                            ${service.title === 'Carillas de Porcelana' ? '[&_.tilted-card-img]:!transform [&_.tilted-card-img]:!scale-[0.3] [&_.tilted-card-img]:!object-contain' : ''}
+                          `}
                         />
                       </div>
                     </div>
