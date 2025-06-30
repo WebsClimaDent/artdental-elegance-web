@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
 
@@ -954,8 +953,8 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
     }
   };
 
-  // Check if current item is "Coronas de Zirconio"
-  const isCoronasService = activeItem?.title === "Coronas de Zirconio";
+  // Check if current item is "Coronas de Disilicato de Litio"
+  const isCoronasService = activeItem?.title === "Coronas de Disilicato de Litio";
 
   return (
     <div className="relative w-full h-full overflow-hidden bg-gradient-to-br from-dental-dark via-gray-900 to-black">
