@@ -1,3 +1,4 @@
+
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -12,19 +13,13 @@ const services = [
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
     image: "/lovable-uploads/f0a302da-9492-427f-895a-85a5f043a371.png",
     link: "/servicios#carillas-porcelana",
-    objectFit: "contain", // Add this property to fix the image proportions
+    objectFit: "contain" as const, // Fix the type by using 'as const'
   },
   {
     title: "Coronas de Disilicato de Litio",
     description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
     image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
     link: "/servicios#corona-disilicato",
-  },
-  {
-    title: "Zirconio",
-    description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-    image: "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
-    link: "/servicios#incrustaciones",
   },
   {
     title: "Prótesis sobre Implantes Blender",
