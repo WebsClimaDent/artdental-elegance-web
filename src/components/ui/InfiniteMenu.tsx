@@ -1014,7 +1014,7 @@ export default function InfiniteMenu({ items = [] }: InfiniteMenuProps) {
             {/* Title */}
             <div className="bg-gradient-to-r from-black/90 via-black/70 to-black/30 backdrop-blur-md rounded-lg md:rounded-xl p-2 md:p-3 lg:p-4 border border-white/20 shadow-2xl">
               <h2 className="font-playfair font-bold text-sm md:text-lg lg:text-xl xl:text-2xl text-white leading-tight mb-0.5 md:mb-1">
-                Prótesis sobre implantes Blender
+                {activeItem.title}
               </h2>
               <div className="w-6 md:w-8 h-0.5 bg-gradient-to-r from-white to-white/50 rounded-full"></div>
             </div>
