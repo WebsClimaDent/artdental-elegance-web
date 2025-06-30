@@ -2,7 +2,7 @@ import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
   {
-    title: "Coronas",
+    title: "Coronas de Zirconio",
     description: "Restauraciones unitarias personalizadas con materiales de alta calidad y precisión inigualable.",
     image: "/lovable-uploads/c1bcb91a-1fa3-4566-a5b3-80f6435e153f.png",
     link: "/servicios#corona-disilicato",
