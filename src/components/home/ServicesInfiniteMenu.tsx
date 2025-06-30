@@ -12,6 +12,7 @@ const services = [
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
     image: "/lovable-uploads/f0a302da-9492-427f-895a-85a5f043a371.png",
     link: "/servicios#carillas-porcelana",
+    objectFit: "contain", // Add this property to fix the image proportions
   },
   {
     title: "Coronas de Disilicato de Litio",
