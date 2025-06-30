@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -14,36 +15,8 @@ const serviceCategories = [
     title: "Restauraciones Estéticas",
     services: [
       {
-        id: 1,
-        title: "Coronas de Disilicato de Litio",
-        description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
-        image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
-        detailedDescription: "Las coronas de disilicato de litio representan la fusión perfecta entre estética y funcionalidad. Fabricadas con materiales de última generación, estas restauraciones ofrecen una translucidez natural que imita perfectamente el esmalte dental, mientras mantienen una resistencia excepcional para soportar las fuerzas masticatorias. En ArtDental, personalizamos cada corona considerando la morfología dental del paciente y la armonía con el resto de su sonrisa.",
-        benefits: [
-          "Estética superior con apariencia natural",
-          "Alta resistencia a la fractura",
-          "Excelente adaptación marginal",
-          "Biocompatibilidad óptima",
-          "Mínima preparación dental"
-        ],
-        materials: [
-          "Disilicato de litio de alta densidad",
-          "Cerámicas estratificadas para personalización",
-          "Sistemas adhesivos de última generación"
-        ],
-        testimonial: {
-          quote: "Las coronas que ArtDental fabricó para mi paciente revitalizaron completamente su sonrisa. La precisión y el acabado estético son simplemente impecables.",
-          author: "Dr. Miguel Fernández",
-          clinic: "Clínica Dental Avanza"
-        },
-        additionalImages: [
-          "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
-          "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
-        ]
-      },
-      {
         id: 2,
-        title: "Carillas de Porcelana",
+        title: "Carillas mínimamente invasivas",
         description: "Finas láminas de porcelana que transforman la apariencia dental con mínima invasión.",
         image: "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png",
         detailedDescription: "Nuestras carillas de porcelana son verdaderas joyas dentales, diseñadas para transformar sonrisas con la mínima invasión posible. Cada lámina es meticulosamente elaborada, capa por capa, para lograr efectos de profundidad, translucidez y color que emulan perfectamente la naturaleza. En ArtDental nos especializamos en conseguir resultados imperceptibles que realzan la belleza natural de cada paciente.",
@@ -71,7 +44,7 @@ const serviceCategories = [
       },
       {
         id: 3,
-        title: "Incrustaciones",
+        title: "Zirconio",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
         image: "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
         detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
@@ -239,7 +212,7 @@ const Servicios = () => {
                   >
                     <div className="lg:w-1/2">
                       <div className={`rounded-lg overflow-hidden shadow-2xl ${
-                        service.id === 6 ? 'h-[420px]' : 'h-96'
+                        service.id === 6 ? 'h-[320px]' : service.id === 7 ? 'h-[320px]' : service.id === 3 ? 'h-[320px]' : 'h-96'
                       }`}>
                         <TiltedCard
                           imageSrc={service.image}
@@ -252,8 +225,8 @@ const Servicios = () => {
                           scaleOnHover={1.08}
                           rotateAmplitude={12}
                           showTooltip={false}
-                          objectFit={service.title === 'Carillas de Porcelana' ? 'contain' : 'cover'}
-                          className={service.title === 'Carillas de Porcelana' ? 'scale-[0.4]' : (service.id === 6 ? 'object-cover object-center' : 'object-cover')}
+                          objectFit="cover"
+                          className={service.id === 6 ? 'object-cover object-center' : service.id === 7 ? 'object-cover object-center' : service.id === 3 ? 'object-cover object-center' : 'object-cover'}
                         />
                       </div>
                     </div>
@@ -390,9 +363,8 @@ const Servicios = () => {
 // Helper function to generate service IDs
 function getServiceId(title: string): string {
   const serviceIds: { [key: string]: string } = {
-    "Coronas de Disilicato de Litio": "corona-disilicato",
-    "Carillas de Porcelana": "carillas-porcelana",
-    "Incrustaciones": "incrustaciones",
+    "Carillas mínimamente invasivas": "carillas-porcelana",
+    "Zirconio": "incrustaciones",
     "Coronas sobre Implantes": "coronas-implantes",
     "Rehabilitaciones Completas": "rehabilitaciones-completas"
   };
