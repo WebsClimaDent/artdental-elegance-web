@@ -2,12 +2,6 @@ import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
   {
-    title: "Coronas de Zirconio",
-    description: "Restauraciones unitarias personalizadas con materiales de alta calidad y precisión inigualable.",
-    image: "/lovable-uploads/2e28dac4-6fce-4256-916f-cfb225f46000.png",
-    link: "/servicios#corona-disilicato",
-  },
-  {
     title: "Puentes",
     description: "Estructuras fijas para reemplazar piezas dentales ausentes con alta estética y funcionalidad.",
     image: "/lovable-uploads/b733e484-2f98-47ad-861a-7651eaab8342.png",
