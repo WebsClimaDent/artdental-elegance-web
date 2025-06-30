@@ -1,4 +1,3 @@
-
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -11,7 +10,7 @@ const services = [
   {
     title: "Carillas mínimamente invasivas",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "/lovable-uploads/ecf13542-da1e-453c-8a6e-f3e3bcf67f12.png",
+    image: "/lovable-uploads/85bc05ab-82d5-4ae8-bbc0-405357796e59.png",
     link: "/servicios#carillas-porcelana",
     objectFit: "contain" as const,
     scale: 0.2,
