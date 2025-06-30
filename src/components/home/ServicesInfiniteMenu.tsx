@@ -1,3 +1,4 @@
+
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -13,6 +14,7 @@ const services = [
     image: "/lovable-uploads/ecf13542-da1e-453c-8a6e-f3e3bcf67f12.png",
     link: "/servicios#carillas-porcelana",
     objectFit: "contain" as const,
+    scale: 0.2,
   },
   {
     title: "Coronas de Disilicato de Litio",
