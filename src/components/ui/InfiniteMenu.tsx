@@ -77,29 +77,21 @@ void main() {
     vec2 cellSize = vec2(1.0) / vec2(float(cellsPerRow));
     vec2 cellOffset = vec2(float(cellX), float(cellY)) * cellSize;
 
-    // Rotate 180 degrees
-    vec2 st = vec2(vUvs.x, 1.0 - vUvs.y);
+    // Get texture dimensions and calculate aspect ratio
+    ivec2 texSize = textureSize(uTex, 0);
+    float imageAspect = float(texSize.x) / float(texSize.y);
+    float containerAspect = 1.0; // Assuming square container
     
-    // Special handling for "Carillas mínimamente invasivas" (index 1)
-    if (itemIndex == 1) {
-        // Apply contain-like behavior with better centering and scaling
-        float scale = 0.6; // Reduce the image size significantly
-        st = (st - 0.5) * scale + 0.5;
-        
-        // Ensure we don't go outside bounds
-        st = clamp(st, 0.0, 1.0);
-    } else {
-        // Default cover behavior for other images
-        ivec2 texSize = textureSize(uTex, 0);
-        float imageAspect = float(texSize.x) / float(texSize.y);
-        float containerAspect = 1.0;
-        
-        float scale = max(imageAspect / containerAspect, 
-                         containerAspect / imageAspect);
-        
-        st = (st - 0.5) * scale + 0.5;
-        st = clamp(st, 0.0, 1.0);
-    }
+    // Calculate cover scale factor
+    float scale = max(imageAspect / containerAspect, 
+                     containerAspect / imageAspect);
+    
+    // Rotate 180 degrees and adjust UVs for cover
+    vec2 st = vec2(vUvs.x, 1.0 - vUvs.y);
+    st = (st - 0.5) * scale + 0.5;
+    
+    // Clamp coordinates to prevent repeating
+    st = clamp(st, 0.0, 1.0);
     
     // Map to the correct cell in the atlas
     st = st * cellSize + cellOffset;
