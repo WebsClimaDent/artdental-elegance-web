@@ -1,3 +1,4 @@
+
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -32,7 +33,7 @@ const services = [
     link: "/servicios#corona-disilicato",
   },
   {
-    title: "Zirconio",
+    title: "Coronas de Zirconio",
     description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
     image: "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
     link: "/servicios#incrustaciones",
