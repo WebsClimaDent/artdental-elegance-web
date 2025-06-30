@@ -522,7 +522,6 @@ interface MenuItem {
   link: string;
   title: string;
   description: string;
-  objectFit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
 }
 
 class InfiniteGridMenu {
@@ -703,40 +702,7 @@ class InfiniteGridMenu {
       images.forEach((img, i) => {
         const x = (i % this.atlasSize) * cellSize;
         const y = Math.floor(i / this.atlasSize) * cellSize;
-        
-        const item = this.items[i];
-        const objectFit = item.objectFit || 'cover';
-        
-        if (objectFit === 'contain') {
-          // Calculate dimensions to fit image while maintaining aspect ratio
-          const imgAspect = img.width / img.height;
-          const cellAspect = 1; // cellSize is square
-          
-          let drawWidth, drawHeight, drawX, drawY;
-          
-          if (imgAspect > cellAspect) {
-            // Image is wider than cell
-            drawWidth = cellSize;
-            drawHeight = cellSize / imgAspect;
-            drawX = x;
-            drawY = y + (cellSize - drawHeight) / 2;
-          } else {
-            // Image is taller than cell
-            drawWidth = cellSize * imgAspect;
-            drawHeight = cellSize;
-            drawX = x + (cellSize - drawWidth) / 2;
-            drawY = y;
-          }
-          
-          // Fill with background color first (optional)
-          ctx.fillStyle = '#000000';
-          ctx.fillRect(x, y, cellSize, cellSize);
-          
-          ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
-        } else {
-          // Default cover behavior
-          ctx.drawImage(img, x, y, cellSize, cellSize);
-        }
+        ctx.drawImage(img, x, y, cellSize, cellSize);
       });
 
       gl.bindTexture(gl.TEXTURE_2D, this.tex);

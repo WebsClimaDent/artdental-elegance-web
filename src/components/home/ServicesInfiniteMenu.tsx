@@ -10,15 +10,20 @@ const services = [
   {
     title: "Carillas mínimamente invasivas",
     description: "Láminas ultrafinas que transforman la estética dental con resultados naturales y duraderos.",
-    image: "/lovable-uploads/0c2ea7a9-8970-4f2e-80d4-172a8a87a90d.png",
+    image: "/lovable-uploads/f0a302da-9492-427f-895a-85a5f043a371.png",
     link: "/servicios#carillas-porcelana",
-    objectFit: "contain" as const,
   },
   {
     title: "Coronas de Disilicato de Litio",
     description: "Restauraciones completas que combinan estética y resistencia. Ideales para sectores anteriores y posteriores.",
     image: "/lovable-uploads/a9f43105-d66d-429f-8974-d05472ea5b4d.png",
     link: "/servicios#corona-disilicato",
+  },
+  {
+    title: "Zirconio",
+    description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
+    image: "/lovable-uploads/e6bd1da7-814e-4083-a2ab-7c7b9d5b94be.png",
+    link: "/servicios#incrustaciones",
   },
   {
     title: "Prótesis sobre Implantes Blender",
