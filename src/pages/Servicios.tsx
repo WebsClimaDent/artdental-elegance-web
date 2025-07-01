@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -46,7 +45,7 @@ const serviceCategories = [
         id: 3,
         title: "Zirconio",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-        image: "/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png",
+        image: "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
         detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
         benefits: [
           "Preservación máxima de estructura dental sana",
@@ -66,7 +65,7 @@ const serviceCategories = [
           clinic: "Centro Odontológico Valencia"
         },
         additionalImages: [
-          "/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png",
+          "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       }
