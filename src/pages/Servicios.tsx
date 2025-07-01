@@ -257,7 +257,7 @@ const Servicios = () => {
                 <div className="h-72 overflow-hidden">
                   <TiltedCard
                     imageSrc="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
-                    altText="Disilicato de Litio"
+                    altText="Carillas mínimamente invasivas"
                     captionText=""
                     containerWidth="100%"
                     containerHeight="100%"
@@ -270,7 +270,7 @@ const Servicios = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Disilicato de Litio</h3>
+                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Carillas mínimamente invasivas</h3>
                   <p className="text-gray-300 mb-4">
                     Material cerámico de alta resistencia que ofrece una estética excepcional. Ideal para restauraciones en zonas visibles.
                   </p>
@@ -281,7 +281,7 @@ const Servicios = () => {
                 <div className="h-72 overflow-hidden">
                   <TiltedCard
                     imageSrc="/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png"
-                    altText="Zirconio"
+                    altText="Prótesis sobre Implantes Blender"
                     captionText=""
                     containerWidth="100%"
                     containerHeight="100%"
@@ -294,7 +294,7 @@ const Servicios = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Zirconio</h3>
+                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Prótesis sobre Implantes Blender</h3>
                   <p className="text-gray-300 mb-4">
                     Material de última generación que combina resistencia superior con excelente estética. Perfecto para rehabilitaciones completas.
                   </p>
