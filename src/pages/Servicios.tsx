@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -174,7 +175,7 @@ const Servicios = () => {
       <Header />
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
-        <section className="py-16 bg-cover bg-center relative" 
+        <section className="py-12 bg-cover bg-center relative" 
                 style={{ 
                   backgroundImage: 'url(/lovable-uploads/64763ca7-0e44-40b1-9584-d0dd71db69ed.png)',
                   backgroundPosition: 'center 30%'
@@ -198,11 +199,11 @@ const Servicios = () => {
 
         {/* Services by Category */}
         {serviceCategories.map((category) => (
-          <section key={category.id} className="section-padding" id={`category-${category.id}`}>
+          <section key={category.id} className="py-12 md:py-14" id={`category-${category.id}`}>
             <div className="container-custom">
-              <h2 className="text-3xl font-playfair font-semibold mb-12 text-white text-center">{category.title}</h2>
+              <h2 className="text-3xl font-playfair font-semibold mb-8 text-white text-center">{category.title}</h2>
               
-              <div className="space-y-16">
+              <div className="space-y-12">
                 {category.services.map((service, index) => (
                   <div 
                     key={service.id} 
@@ -248,9 +249,9 @@ const Servicios = () => {
         ))}
 
         {/* Materials Section */}
-        <section className="section-padding bg-black">
+        <section className="py-12 md:py-14 bg-black">
           <div className="container-custom">
-            <h2 className="text-3xl font-playfair font-semibold mb-12 text-white text-center">Materiales Premium</h2>
+            <h2 className="text-3xl font-playfair font-semibold mb-8 text-white text-center">Materiales Premium</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
@@ -329,7 +330,7 @@ const Servicios = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-black">
+        <section className="py-12 md:py-14 bg-black">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6 text-white">
               ¿Necesita una solución personalizada?
