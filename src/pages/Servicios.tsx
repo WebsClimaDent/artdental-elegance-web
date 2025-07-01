@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -225,7 +226,7 @@ const Servicios = () => {
                           rotateAmplitude={12}
                           showTooltip={false}
                           objectFit="cover"
-                          className={service.id === 6 ? 'object-cover object-center' : service.id === 7 ? 'object-cover object-[50%_35%]' : service.id === 3 ? 'object-cover object-[50%_70%]' : 'object-cover'}
+                          className={service.id === 6 ? 'object-cover object-center' : service.id === 7 ? 'object-cover object-[50%_35%]' : service.id === 3 ? 'object-cover object-[50%_80%]' : 'object-cover'}
                         />
                       </div>
                     </div>
