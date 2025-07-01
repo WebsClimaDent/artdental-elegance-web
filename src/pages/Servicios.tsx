@@ -226,7 +226,7 @@ const Servicios = () => {
                           rotateAmplitude={12}
                           showTooltip={false}
                           objectFit="cover"
-                          className={service.id === 6 ? 'object-cover object-center' : service.id === 7 ? 'object-cover object-[50%_35%]' : service.id === 3 ? 'object-cover object-[50%_20%]' : 'object-cover'}
+                          className={service.id === 6 ? 'object-cover object-center' : service.id === 7 ? 'object-cover object-[50%_35%]' : service.id === 3 ? 'object-cover object-[50%_5%]' : 'object-cover'}
                         />
                       </div>
                     </div>
