@@ -107,7 +107,7 @@ const serviceCategories = [
         id: 7,
         title: "Rehabilitaciones Completas",
         description: "Reconstrucción total de la dentición con sistemas implantosoportados de última generación.",
-        image: "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
+        image: "/lovable-uploads/24dcc657-382e-4b26-98a0-40afbb400a15.png",
         detailedDescription: "Las rehabilitaciones completas sobre implantes representan la cumbre de la odontología restauradora moderna. Combinando planificación quirúrgica 3D, diseño digital avanzado y materiales de vanguardia, ofrecemos soluciones definitivas para pacientes con pérdida dental extensa. Cada caso es abordado como un proyecto integral donde función, estética y longevidad se consideran en cada detalle del proceso.",
         benefits: [
           "Restauración completa de función masticatoria",
@@ -127,7 +127,7 @@ const serviceCategories = [
           clinic: "Centro de Implantología Avanzada"
         },
         additionalImages: [
-          "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
+          "/lovable-uploads/24dcc657-382e-4b26-98a0-40afbb400a15.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       }
