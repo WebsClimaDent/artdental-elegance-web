@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -46,7 +45,7 @@ const serviceCategories = [
         id: 3,
         title: "Zirconio",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-        image: "/lovable-uploads/b54f8a88-0b86-4470-920b-a3fe927ae4ac.png",
+        image: "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
         detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
         benefits: [
           "Preservación máxima de estructura dental sana",
@@ -66,7 +65,7 @@ const serviceCategories = [
           clinic: "Centro Odontológico Valencia"
         },
         additionalImages: [
-          "/lovable-uploads/b54f8a88-0b86-4470-920b-a3fe927ae4ac.png",
+          "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       }
@@ -78,9 +77,9 @@ const serviceCategories = [
     services: [
       {
         id: 6,
-        title: "Coronas sobre Implantes",
+        title: "Prótesis sobre Implantes Blender",
         description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
-        image: "/lovable-uploads/79c58425-63b9-4c29-968f-0a91936b1160.png",
+        image: "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
         detailedDescription: "Las coronas sobre implantes representan el estándar más alto en la reposición de dientes unitarios. Diseñadas con precisión digital y fabricadas con materiales de última generación, estas restauraciones se integran perfectamente con la dentición natural, tanto en forma como en función. En ArtDental, prestamos especial atención al perfil de emergencia y la interfaz con el tejido gingival para lograr resultados que desafían la detección.",
         benefits: [
           "Reemplazo dental sin afectar dientes adyacentes",
@@ -100,7 +99,7 @@ const serviceCategories = [
           clinic: "Clínica Implantológica Avanzada"
         },
         additionalImages: [
-          "/lovable-uploads/79c58425-63b9-4c29-968f-0a91936b1160.png",
+          "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       },
