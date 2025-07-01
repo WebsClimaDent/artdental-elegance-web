@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -46,7 +45,7 @@ const serviceCategories = [
         id: 3,
         title: "Zirconio",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-        image: "/lovable-uploads/45b1cc3a-8930-4825-b68c-61f604be6015.png",
+        image: "/lovable-uploads/b54f8a88-0b86-4470-920b-a3fe927ae4ac.png",
         detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
         benefits: [
           "Preservación máxima de estructura dental sana",
@@ -66,7 +65,7 @@ const serviceCategories = [
           clinic: "Centro Odontológico Valencia"
         },
         additionalImages: [
-          "/lovable-uploads/45b1cc3a-8930-4825-b68c-61f604be6015.png",
+          "/lovable-uploads/b54f8a88-0b86-4470-920b-a3fe927ae4ac.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       }
@@ -226,7 +225,7 @@ const Servicios = () => {
                           rotateAmplitude={12}
                           showTooltip={false}
                           objectFit="cover"
-                          className={service.id === 6 ? 'object-cover object-center' : service.id === 7 ? 'object-cover object-[50%_35%]' : service.id === 3 ? 'object-cover object-[50%_100%]' : 'object-cover'}
+                          className={service.id === 6 ? 'object-cover object-center' : service.id === 7 ? 'object-cover object-[50%_35%]' : service.id === 3 ? 'object-cover object-center' : 'object-cover'}
                         />
                       </div>
                     </div>
