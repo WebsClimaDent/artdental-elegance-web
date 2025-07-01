@@ -45,7 +45,7 @@ const serviceCategories = [
         id: 3,
         title: "Zirconio",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
-        image: "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
+        image: "/lovable-uploads/33f19cab-a7ba-41be-8791-7779d844bc96.png",
         detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
         benefits: [
           "Preservación máxima de estructura dental sana",
@@ -65,7 +65,7 @@ const serviceCategories = [
           clinic: "Centro Odontológico Valencia"
         },
         additionalImages: [
-          "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
+          "/lovable-uploads/33f19cab-a7ba-41be-8791-7779d844bc96.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
         ]
       }
@@ -198,11 +198,11 @@ const Servicios = () => {
 
         {/* Services by Category */}
         {serviceCategories.map((category) => (
-          <section key={category.id} className="py-12 md:py-14" id={`category-${category.id}`}>
+          <section key={category.id} className="py-8 md:py-10" id={`category-${category.id}`}>
             <div className="container-custom">
-              <h2 className="text-3xl font-playfair font-semibold mb-8 text-white text-center">{category.title}</h2>
+              <h2 className="text-3xl font-playfair font-semibold mb-6 text-white text-center">{category.title}</h2>
               
-              <div className="space-y-12">
+              <div className="space-y-8">
                 {category.services.map((service, index) => (
                   <div 
                     key={service.id} 
@@ -248,9 +248,9 @@ const Servicios = () => {
         ))}
 
         {/* Materials Section */}
-        <section className="py-12 md:py-14 bg-black">
+        <section className="py-8 md:py-10 bg-black">
           <div className="container-custom">
-            <h2 className="text-3xl font-playfair font-semibold mb-8 text-white text-center">Materiales Premium</h2>
+            <h2 className="text-3xl font-playfair font-semibold mb-6 text-white text-center">Materiales Premium</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
@@ -329,7 +329,7 @@ const Servicios = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-14 bg-black">
+        <section className="py-8 md:py-10 bg-black">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6 text-white">
               ¿Necesita una solución personalizada?
@@ -364,7 +364,7 @@ function getServiceId(title: string): string {
   const serviceIds: { [key: string]: string } = {
     "Carillas mínimamente invasivas": "carillas-porcelana",
     "Zirconio": "incrustaciones",
-    "Coronas sobre Implantes": "coronas-implantes",
+    "Prótesis sobre Implantes Blender": "coronas-implantes",
     "Rehabilitaciones Completas": "rehabilitaciones-completas"
   };
   
