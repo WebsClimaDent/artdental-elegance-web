@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import InfiniteTeamCarousel from "@/components/ui/infinite-team-carousel";
@@ -5,24 +6,24 @@ import InfiniteTeamCarousel from "@/components/ui/infinite-team-carousel";
 const teamMembers = [
   {
     id: 1,
-    name: "Dr. Leopoldo Romance",
+    name: "Pol Romance",
     role: "Director Técnico",
     image: "/lovable-uploads/4ff54fe0-8806-4880-8c6f-fb5b5cd34025.png",
-    bio: "Dr. Leopoldo Romance lidera nuestro equipo técnico con un enfoque en la precisión y la excelencia. Especializado en restauraciones complejas y estética avanzada.",
+    bio: "Pol Romance lidera nuestro equipo técnico con un enfoque en la precisión y la excelencia. Especializado en restauraciones complejas y estética avanzada.",
   },
   {
     id: 2,
-    name: "Dra. Laura Sánchez",
-    role: "Especialista CAD/CAM",
+    name: "David Ruiz Muñoz",
+    role: "Director Técnico",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1770&auto=format&fit=crop",
-    bio: "Experta en tecnología digital y diseño asistido por ordenador. La Dra. Sánchez transforma conceptos en realidad con precisión micrométrica.",
+    bio: "Director técnico. Experto en tecnología digital y diseño asistido por ordenador, así como en implantología. David Ruiz Muñoz transforma conceptos en realidades con precisión micrométrica, especializándose en rehabilitaciones completas y sonrisas personalizadas.",
   },
   {
     id: 3,
-    name: "Dr. Miguel Fernández",
-    role: "Técnico de Cerámica",
+    name: "Natalia Moreno",
+    role: "Responsable de Gestión Operativa",
     image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop",
-    bio: "Artista de la cerámica dental con un ojo excepcional para el detalle y el color. Crea restauraciones indistinguibles de los dientes naturales.",
+    bio: "Responsable de gestión operativa y atención al cliente. Planificación de trabajos protésicos, coordinadora de los flujos internos del laboratorio y gestora administrativa, garantizando eficiencia en cada proceso y una comunicación fluida con las clínicas.",
   },
 ];
 
