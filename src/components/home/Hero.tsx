@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -24,7 +25,7 @@ const Hero = () => {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6">
-            Laboratorio de estetica dental
+            Laboratorio de estética dental
           </h1>
           <h2 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-dental-light">
             Aesthetics of high quality
