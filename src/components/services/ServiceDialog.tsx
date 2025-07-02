@@ -106,21 +106,6 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
             </div>
           )}
           
-          {/* Testimonial */}
-          {service.testimonial && (
-            <div className="bg-black/30 p-6 rounded-lg border border-gray-700">
-              <p className="text-white italic text-lg mb-3">"{service.testimonial.quote}"</p>
-              <div className="flex items-center">
-                <div>
-                  <p className="text-white font-medium">{service.testimonial.author}</p>
-                  {service.testimonial.clinic && (
-                    <p className="text-gray-400 text-sm">{service.testimonial.clinic}</p>
-                  )}
-                </div>
-              </div>
-            </div>
-          )}
-          
           {/* Additional images */}
           {service.additionalImages && service.additionalImages.length > 0 && (
             <div>
