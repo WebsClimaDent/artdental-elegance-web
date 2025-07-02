@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -34,8 +33,7 @@ const serviceCategories = [
         ],
         testimonial: {
           quote: "Mis pacientes quedan maravillados con el resultado de las carillas de ArtDental. La naturalidad y el detalle que consiguen en cada pieza es extraordinario.",
-          author: "Dra. Laura Martínez",
-          clinic: "Estética Dental Barcelona"
+          author: "Dra. Laura Martínez"
         },
         additionalImages: [
           "/lovable-uploads/b45eb243-f90f-4e0d-9621-0b9a09a0c4ba.png",
@@ -68,8 +66,7 @@ const serviceCategories = [
         ],
         testimonial: {
           quote: "La precisión y ajuste de las incrustaciones es impresionante. Los pacientes aprecian la durabilidad y estética natural de estas restauraciones.",
-          author: "Dr. Javier Ruiz",
-          clinic: "Centro Odontológico Valencia"
+          author: "Dr. Javier Ruiz"
         },
         additionalImages: [
           "/lovable-uploads/33f19cab-a7ba-41be-8791-7779d844bc96.png",
@@ -102,8 +99,7 @@ const serviceCategories = [
         ],
         testimonial: {
           quote: "Las coronas sobre implantes de ArtDental son simplemente perfectas. La integración con el tejido gingival y la armonía con los dientes naturales adyacentes es impresionante.",
-          author: "Dr. Ricardo Vega",
-          clinic: "Clínica Implantológica Avanzada"
+          author: "Dr. Ricardo Vega"
         },
         additionalImages: [
           "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
@@ -130,8 +126,7 @@ const serviceCategories = [
         ],
         testimonial: {
           quote: "ArtDental ha sido mi socio clave en los casos más complejos. Su capacidad para coordinar la precisión técnica con la visión artística en rehabilitaciones completas es excepcional.",
-          author: "Dr. Francisco Torres",
-          clinic: "Centro de Implantología Avanzada"
+          author: "Dr. Francisco Torres"
         },
         additionalImages: [
           "/lovable-uploads/24dcc657-382e-4b26-98a0-40afbb400a15.png",
