@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -138,7 +139,7 @@ const Casos = () => {
         <section className="py-16 bg-cover bg-center relative" style={{ 
           backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/lovable-uploads/a2bc06c6-2698-42c5-97af-4077d254dd13.png)',
           backgroundSize: '120%',
-          backgroundPosition: 'center 20%'
+          backgroundPosition: 'center 60%'
         }}>
           <div className="container-custom">
             <div className="mb-6">
