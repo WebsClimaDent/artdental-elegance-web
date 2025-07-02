@@ -1,5 +1,3 @@
-
-
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 
@@ -78,7 +76,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="hover:text-dental-light transition-colors">
+              <a href="https://www.facebook.com/people/Artdental/61577607320071/" target="_blank" rel="noopener noreferrer" className="hover:text-dental-light transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="https://www.instagram.com/polromanceartdental?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="hover:text-dental-light transition-colors">
