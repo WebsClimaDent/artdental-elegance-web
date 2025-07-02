@@ -100,7 +100,7 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
       return {
         objectFit: 'cover' as const,
         objectPosition: 'center 20%',
-        transform: 'scale(1.3)',
+        transform: 'scale(1.6)',
         transformOrigin: 'center center'
       };
     }
