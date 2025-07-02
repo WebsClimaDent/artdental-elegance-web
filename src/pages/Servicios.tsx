@@ -252,7 +252,7 @@ const Servicios = () => {
           <div className="container-custom">
             <h2 className="text-3xl font-playfair font-semibold mb-6 text-white text-center">Materiales Premium</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-72 overflow-hidden">
                   <TiltedCard
@@ -297,30 +297,6 @@ const Servicios = () => {
                   <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Prótesis sobre Implantes Blender</h3>
                   <p className="text-gray-300 mb-4">
                     Material de última generación que combina resistencia superior con excelente estética. Perfecto para rehabilitaciones completas.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
-                <div className="h-72 overflow-hidden">
-                  <TiltedCard
-                    imageSrc="/lovable-uploads/9c267ef9-0497-4708-9d11-9f6f0aadaf93.png"
-                    altText="Composite"
-                    captionText=""
-                    containerWidth="100%"
-                    containerHeight="100%"
-                    imageWidth="100%"
-                    imageHeight="100%"
-                    scaleOnHover={1.1}
-                    rotateAmplitude={10}
-                    showTooltip={false}
-                    objectFit="cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Composite Avanzado</h3>
-                  <p className="text-gray-300 mb-4">
-                    Resinas de alta tecnología que permiten restauraciones estéticas y funcionales con excelente biocompatibilidad.
                   </p>
                 </div>
               </div>
