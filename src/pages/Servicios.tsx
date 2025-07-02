@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -39,6 +40,12 @@ const serviceCategories = [
         additionalImages: [
           "/lovable-uploads/b45eb243-f90f-4e0d-9621-0b9a09a0c4ba.png",
           "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png"
+        ],
+        galleryImages: [
+          "/lovable-uploads/4110736c-2d1a-4097-ad3d-bab7ac4e5d42.png",
+          "/lovable-uploads/3e0d46df-d158-4e77-81ed-1a7bee7437cc.png",
+          "/lovable-uploads/127e32ff-2803-4c00-a26c-3483c9ea1404.png",
+          "/lovable-uploads/b1322028-0f7e-4ad0-a3dc-ba836e8f67a9.png"
         ]
       },
       {

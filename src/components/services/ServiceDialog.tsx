@@ -1,6 +1,7 @@
 
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ArrowRight } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 interface ServiceDialogProps {
   isOpen: boolean;
@@ -19,6 +20,7 @@ interface ServiceDialogProps {
       clinic?: string;
     };
     additionalImages?: string[];
+    galleryImages?: string[];
   };
 }
 
@@ -50,6 +52,32 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
               {service.detailedDescription || service.description}
             </p>
           </div>
+
+          {/* Gallery of cases */}
+          {service.galleryImages && service.galleryImages.length > 0 && (
+            <div>
+              <h3 className="text-xl font-playfair font-semibold mb-4 text-white">Galería de Casos</h3>
+              <div className="relative">
+                <Carousel className="w-full max-w-3xl mx-auto">
+                  <CarouselContent>
+                    {service.galleryImages.map((image, index) => (
+                      <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                        <div className="rounded-lg overflow-hidden shadow-md bg-black/20 border border-gray-700">
+                          <img 
+                            src={image} 
+                            alt={`${service.title} - Caso ${index + 1}`}
+                            className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="bg-white/90 text-dental-dark hover:bg-white border-gray-300" />
+                  <CarouselNext className="bg-white/90 text-dental-dark hover:bg-white border-gray-300" />
+                </Carousel>
+              </div>
+            </div>
+          )}
           
           {/* Materials used */}
           {service.materials && service.materials.length > 0 && (
