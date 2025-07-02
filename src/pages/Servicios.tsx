@@ -103,6 +103,12 @@ const serviceCategories = [
         additionalImages: [
           "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
           "/lovable-uploads/26355edf-566d-4fa7-8b05-f9367fc46a47.png"
+        ],
+        galleryImages: [
+          "/lovable-uploads/bca74c94-aa67-4872-8420-d0bfdb27b2f3.png",
+          "/lovable-uploads/498b69ea-73bb-496b-8512-224a0e11da68.png",
+          "/lovable-uploads/b9a35424-8b41-4dde-ba7f-348c2ebe7044.png",
+          "/lovable-uploads/7eb7f152-098a-4b29-987c-f4862156b8b3.png"
         ]
       },
       {
