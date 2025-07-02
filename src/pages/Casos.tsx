@@ -139,7 +139,7 @@ const Casos = () => {
         <section className="py-16 bg-cover bg-center relative" style={{ 
           backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/lovable-uploads/4e745d88-c07a-46fb-9fbd-92843f85df97.png)',
           backgroundSize: '120%',
-          backgroundPosition: 'center 60%'
+          backgroundPosition: 'center 50%'
         }}>
           <div className="container-custom">
             <div className="mb-6">
