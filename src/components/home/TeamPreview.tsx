@@ -22,7 +22,7 @@ const teamMembers = [
     id: 3,
     name: "Natalia Moreno",
     role: "Responsable de Gestión Operativa",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop",
+    image: "/lovable-uploads/aff44a00-2a88-45fa-8be8-d1d1bb42bf9f.png",
     bio: "Responsable de gestión operativa y atención al cliente. Planificación de trabajos protésicos, coordinadora de los flujos internos del laboratorio y gestora administrativa, garantizando eficiencia en cada proceso y una comunicación fluida con las clínicas.",
   },
 ];
