@@ -40,10 +40,8 @@ const serviceCategories = [
           "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png"
         ],
         galleryImages: [
-          "/lovable-uploads/5ea33b7a-cb4e-4af3-bc22-06723d13727c.png",
-          "/lovable-uploads/eb21f9e5-b0b2-4ffd-90ec-a06ca0694078.png",
-          "/lovable-uploads/69efa2df-fd2a-471a-a022-e65f15789eec.png",
-          "/lovable-uploads/a49d4535-a42d-4210-9b8e-6eda5b11621b.png"
+          "/lovable-uploads/d03c8838-d654-4e41-a466-02e1c9705eca.png",
+          "/lovable-uploads/444845aa-3d07-4987-bc4f-ad69fa1f72a9.png"
         ]
       },
       {
