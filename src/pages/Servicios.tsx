@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -267,6 +268,7 @@ const Servicios = () => {
                     rotateAmplitude={10}
                     showTooltip={false}
                     objectFit="cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="p-6">
