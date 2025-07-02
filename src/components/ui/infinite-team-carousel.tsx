@@ -87,6 +87,13 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
     };
   };
 
+  const formatRole = (role: string) => {
+    if (role === "Responsable de Gestión Operativa") {
+      return "Responsable de Gestión\nOperativa";
+    }
+    return role;
+  };
+
   return (
     <div className="relative w-full">
       {/* Contenedor principal del carrusel */}
@@ -126,7 +133,9 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
                     <h3 className="text-lg font-semibold mb-1 font-playfair text-white truncate">
                       {member.name}
                     </h3>
-                    <p className="text-gray-300 text-sm truncate">{member.role}</p>
+                    <p className="text-gray-300 text-sm leading-tight whitespace-pre-line">
+                      {formatRole(member.role)}
+                    </p>
                   </div>
                 </div>
               </div>
