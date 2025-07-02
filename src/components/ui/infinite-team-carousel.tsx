@@ -94,6 +94,22 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
     return role;
   };
 
+  // Función para obtener el estilo de la imagen según el miembro
+  const getImageStyle = (member: TeamMember) => {
+    if (member.name === "Natalia Moreno") {
+      return {
+        objectFit: 'cover' as const,
+        objectPosition: 'center 20%',
+        transform: 'scale(1.3)',
+        transformOrigin: 'center center'
+      };
+    }
+    return {
+      objectFit: 'cover' as const,
+      objectPosition: 'center 20%'
+    };
+  };
+
   return (
     <div className="relative w-full">
       {/* Contenedor principal del carrusel */}
@@ -125,8 +141,8 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover object-top transition-transform duration-500"
-                      style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+                      className="w-full h-full transition-transform duration-500"
+                      style={getImageStyle(member)}
                     />
                   </div>
                   <div className="p-4 text-center">
