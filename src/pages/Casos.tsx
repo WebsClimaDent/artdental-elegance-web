@@ -136,7 +136,7 @@ const Casos = () => {
       <main className="bg-dental-dark min-h-screen pt-24">
         {/* Hero Section */}
         <section className="py-16 bg-cover bg-center relative" style={{ 
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/lovable-uploads/3184faca-9983-48ad-bda3-6a4f33b6f85f.png)',
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(/lovable-uploads/a2bc06c6-2698-42c5-97af-4077d254dd13.png)',
           backgroundSize: '120%',
           backgroundPosition: 'center 30%'
         }}>
