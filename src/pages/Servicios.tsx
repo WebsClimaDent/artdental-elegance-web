@@ -17,7 +17,7 @@ const serviceCategories = [
         id: 2,
         title: "Carillas mínimamente invasivas",
         description: "Finas láminas de porcelana que transforman la apariencia dental con mínima invasión.",
-        image: "/lovable-uploads/b45eb243-f90f-4e0d-9621-0b9a09a0c4ba.png",
+        image: "/lovable-uploads/a6ac8918-9803-47df-a276-befaad0023c2.png",
         detailedDescription: "Nuestras carillas de porcelana son verdaderas joyas dentales, diseñadas para transformar sonrisas con la mínima invasión posible. Cada lámina es meticulosamente elaborada, capa por capa, para lograr efectos de profundidad, translucidez y color que emulan perfectamente la naturaleza. En ArtDental nos especializamos en conseguir resultados imperceptibles que realzan la belleza natural de cada paciente.",
         benefits: [
           "Transformación estética inmediata",
@@ -37,8 +37,9 @@ const serviceCategories = [
           clinic: "Estética Dental Barcelona"
         },
         additionalImages: [
-          "/lovable-uploads/b45eb243-f90f-4e0d-9621-0b9a09a0c4ba.png",
-          "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png"
+          "/lovable-uploads/e3af3575-ca87-4d27-8f63-93d95735a27f.png",
+          "/lovable-uploads/a6775f42-caaa-455f-a326-e72eb255b376.png",
+          "/lovable-uploads/94090053-2bd6-404e-9fa7-94960d5d51dc.png"
         ]
       },
       {
