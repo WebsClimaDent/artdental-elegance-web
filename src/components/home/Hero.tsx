@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 z-10 py-[13px]"></div>
         <img 
-          src="/lovable-uploads/39b03144-6211-4984-8a6c-54951e3cae06.png" 
+          src="/lovable-uploads/41871228-cb45-4ae4-bd7f-a4f7395c227b.png" 
           alt="Laboratorio dental ARTDENTAL - Tecnología avanzada" 
           className="w-full h-full object-cover object-center opacity-70" 
         />
