@@ -92,7 +92,7 @@ const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
           className="w-full h-full"
         />
       </div>
-      <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center p-6">
+      <div className="absolute inset-0 bg-black bg-opacity-20 flex items-end justify-center p-6">
         <div className="text-white text-center">
           <div className="mb-4 mx-auto bg-white bg-opacity-20 p-4 rounded-full">
             {tech.icon}
