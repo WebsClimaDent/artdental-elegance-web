@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -71,38 +72,42 @@ const technologies = [
 
 const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
   <div 
-    className={`flex flex-col overflow-hidden rounded-xl shadow-xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl`}
+    className={`flex flex-col overflow-hidden rounded-xl shadow-xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl bg-dental-dark`}
   >
-    <div 
-      className={`relative h-64 overflow-hidden bg-gradient-to-r ${tech.color}`}
-    >
-      <div className="absolute inset-0 opacity-30">
-        <TiltedCard
-          imageSrc={tech.image}
-          altText={tech.title}
-          captionText=""
-          containerWidth="100%"
-          containerHeight="100%"
-          imageWidth="100%"
-          imageHeight="100%"
-          scaleOnHover={1.05}
-          rotateAmplitude={8}
-          showTooltip={false}
-          objectFit="cover"
-          className="w-full h-full"
-        />
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-transparent to-transparent p-4">
-        <div className="text-white text-center">
-          <div className="mb-2 mx-auto bg-white bg-opacity-20 p-2 rounded-full">
+    {/* Image Section - Clean without overlays */}
+    <div className="relative h-64 overflow-hidden">
+      <TiltedCard
+        imageSrc={tech.image}
+        altText={tech.title}
+        captionText=""
+        containerWidth="100%"
+        containerHeight="100%"
+        imageWidth="100%"
+        imageHeight="100%"
+        scaleOnHover={1.05}
+        rotateAmplitude={8}
+        showTooltip={false}
+        objectFit="cover"
+        className="w-full h-full"
+      />
+    </div>
+    
+    {/* Content Section - Below the image */}
+    <div className="p-6 flex-grow">
+      {/* Icon and Title */}
+      <div className="text-center mb-4">
+        <div className={`mb-3 mx-auto bg-gradient-to-r ${tech.color} p-3 rounded-full w-fit`}>
+          <div className="text-white">
             {tech.icon}
           </div>
-          <h3 className="text-2xl font-playfair font-bold">{tech.title}</h3>
         </div>
+        <h3 className="text-2xl font-playfair font-bold text-white mb-4">{tech.title}</h3>
       </div>
-    </div>
-    <div className="bg-dental-dark p-6 flex-grow">
+      
+      {/* Description */}
       <p className="text-gray-300 mb-6">{tech.description}</p>
+      
+      {/* Features */}
       <ul className="space-y-2">
         {tech.features.map((feature: string, idx: number) => (
           <li key={idx} className="flex items-center text-gray-300">
