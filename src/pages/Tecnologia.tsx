@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -242,8 +241,9 @@ const Tecnologia = () => {
                     {technologies.map((tech) => (
                       <CarouselItem key={tech.id} className="md:basis-1/2 lg:basis-1/3">
                         <div className="p-2">
-                          <Card className="bg-black border-gray-800 overflow-hidden h-full">
-                            <div className="h-48 overflow-hidden">
+                          <Card className="bg-black border-gray-800 overflow-hidden h-full flex flex-col">
+                            {/* Image Section - Increased height and no overlays */}
+                            <div className="h-64 overflow-hidden flex-shrink-0">
                               <TiltedCard
                                 imageSrc={tech.image}
                                 altText={tech.title}
@@ -258,31 +258,44 @@ const Tecnologia = () => {
                                 objectFit="cover"
                               />
                             </div>
-                            <CardHeader>
-                              <CardTitle className="text-white">{tech.title}</CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                              <p className="text-gray-300">{tech.description}</p>
-                            </CardContent>
-                            <CardFooter>
-                              <HoverCard>
-                                <HoverCardTrigger asChild>
-                                  <button className="text-white underline text-sm flex items-center gap-1">
-                                    Ver características <Info className="h-3 w-3" />
-                                  </button>
-                                </HoverCardTrigger>
-                                <HoverCardContent className="w-80 bg-black text-white border-gray-800">
-                                  <h4 className="font-bold mb-2">Características</h4>
-                                  <ul className="space-y-1">
-                                    {tech.features.map((feature: string, i: number) => (
-                                      <li key={i} className="text-sm flex items-start">
-                                        <span className="mr-2">•</span> {feature}
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </HoverCardContent>
-                              </HoverCard>
-                            </CardFooter>
+                            
+                            {/* Content Section - All text below image */}
+                            <div className="flex flex-col flex-grow">
+                              <CardHeader className="pb-2">
+                                <div className="text-center mb-2">
+                                  <div className={`mb-2 mx-auto bg-gradient-to-r ${tech.color} p-2 rounded-full w-fit`}>
+                                    <div className="text-white">
+                                      {tech.icon}
+                                    </div>
+                                  </div>
+                                </div>
+                                <CardTitle className="text-white text-center">{tech.title}</CardTitle>
+                              </CardHeader>
+                              
+                              <CardContent className="flex-grow">
+                                <p className="text-gray-300 text-sm">{tech.description}</p>
+                              </CardContent>
+                              
+                              <CardFooter className="pt-2">
+                                <HoverCard>
+                                  <HoverCardTrigger asChild>
+                                    <button className="text-white underline text-sm flex items-center gap-1">
+                                      Ver características <Info className="h-3 w-3" />
+                                    </button>
+                                  </HoverCardTrigger>
+                                  <HoverCardContent className="w-80 bg-black text-white border-gray-800">
+                                    <h4 className="font-bold mb-2">Características</h4>
+                                    <ul className="space-y-1">
+                                      {tech.features.map((feature: string, i: number) => (
+                                        <li key={i} className="text-sm flex items-start">
+                                          <span className="mr-2">•</span> {feature}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </HoverCardContent>
+                                </HoverCard>
+                              </CardFooter>
+                            </div>
                           </Card>
                         </div>
                       </CarouselItem>
