@@ -110,6 +110,13 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
     };
   };
 
+  // Función para limpiar la bio eliminando nombres repetidos
+  const cleanBio = (bio: string, name: string) => {
+    // Remover el nombre si aparece al inicio de la bio
+    const namePattern = new RegExp(`^${name}\\.?\\s*`, 'i');
+    return bio.replace(namePattern, '');
+  };
+
   return (
     <div className="relative w-full">
       {/* Contenedor principal del carrusel */}
@@ -207,7 +214,7 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
             </p>
             {members[activeIndex]?.bio && (
               <p className="text-gray-400 leading-relaxed">
-                {members[activeIndex].bio}
+                {cleanBio(members[activeIndex].bio, members[activeIndex].name)}
               </p>
             )}
           </div>

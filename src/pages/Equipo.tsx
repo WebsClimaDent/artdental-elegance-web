@@ -20,7 +20,7 @@ const teamMembers = [
     name: "David Ruiz Muñoz",
     role: "Director Técnico",
     image: "/lovable-uploads/51d98e14-17e8-4b54-924d-febf801ef8be.png",
-    bio: "Director técnico. Experto en tecnología digital y diseño asistido por ordenador, así como en implantología. David Ruiz Muñoz transforma conceptos en realidades con precisión micrométrica, especializándose en rehabilitaciones completas y sonrisas personalizadas.",
+    bio: "Experto en tecnología digital y diseño asistido por ordenador, así como en implantología. Transforma conceptos en realidades con precisión micrométrica, especializándose en rehabilitaciones completas y sonrisas personalizadas.",
   },
   {
     id: 3,
