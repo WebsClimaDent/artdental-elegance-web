@@ -38,8 +38,6 @@ const technologies = [
       "Reducción del tiempo de trabajo"
     ],
     image: "/lovable-uploads/8de8a836-10e5-4ac3-a606-d335e93d5362.png",
-    icon: <Zap className="h-12 w-12" />,
-    color: "from-blue-500 to-indigo-700",
   },
   {
     id: 2,
@@ -51,8 +49,6 @@ const technologies = [
       "Planificación de casos complejos"
     ],
     image: "/lovable-uploads/e82f8a4f-9d43-41bb-8827-40fa223abcd8.png",
-    icon: <Layers className="h-12 w-12" />,
-    color: "from-purple-500 to-pink-700",
   },
   {
     id: 3,
@@ -64,8 +60,6 @@ const technologies = [
       "Producción rápida y consistente"
     ],
     image: "/lovable-uploads/eb7a173d-0658-406c-b93e-14227c1f338b.png",
-    icon: <Gauge className="h-12 w-12" />,
-    color: "from-green-500 to-emerald-700",
   },
 ];
 
@@ -93,13 +87,8 @@ const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
     
     {/* Content Section - Below the image */}
     <div className="p-6 flex-grow">
-      {/* Icon and Title */}
+      {/* Title */}
       <div className="text-center mb-4">
-        <div className={`mb-3 mx-auto bg-gradient-to-r ${tech.color} p-3 rounded-full w-fit`}>
-          <div className="text-white">
-            {tech.icon}
-          </div>
-        </div>
         <h3 className="text-2xl font-playfair font-bold text-white mb-4">{tech.title}</h3>
       </div>
       
@@ -262,13 +251,6 @@ const Tecnologia = () => {
                             {/* Content Section - All text below image */}
                             <div className="flex flex-col flex-grow">
                               <CardHeader className="pb-2">
-                                <div className="text-center mb-2">
-                                  <div className={`mb-2 mx-auto bg-gradient-to-r ${tech.color} p-2 rounded-full w-fit`}>
-                                    <div className="text-white">
-                                      {tech.icon}
-                                    </div>
-                                  </div>
-                                </div>
                                 <CardTitle className="text-white text-center">{tech.title}</CardTitle>
                               </CardHeader>
                               
