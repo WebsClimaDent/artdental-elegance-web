@@ -1,4 +1,3 @@
-
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -27,12 +26,6 @@ const services = [
     description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
     image: "/lovable-uploads/79c58425-63b9-4c29-968f-0a91936b1160.png",
     link: "/servicios#coronas-implantes",
-  },
-  {
-    title: "Rehabilitaciones Completas",
-    description: "Reconstrucción total de la dentición con sistemas implantosoportados de última generación.",
-    image: "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png",
-    link: "/servicios#rehabilitaciones-completas",
   },
 ];
 
