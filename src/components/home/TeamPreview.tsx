@@ -13,7 +13,7 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "David Ruiz Muñoz",
+    name: "David Ruiz",
     role: "Director Técnico",
     image: "/lovable-uploads/51d98e14-17e8-4b54-924d-febf801ef8be.png",
     bio: "Experto en tecnología digital y diseño asistido por ordenador, así como en implantología. Transforma conceptos en realidades con precisión micrométrica, especializándose en rehabilitaciones completas y sonrisas personalizadas.",
