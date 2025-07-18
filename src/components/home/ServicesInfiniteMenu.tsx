@@ -1,3 +1,4 @@
+
 import InfiniteMenu from "../ui/InfiniteMenu";
 
 const services = [
@@ -22,7 +23,7 @@ const services = [
     link: "/servicios#incrustaciones",
   },
   {
-    title: "Prótesis sobre Implantes Blender",
+    title: "Prótesis sobre Implantes",
     description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
     image: "/lovable-uploads/79c58425-63b9-4c29-968f-0a91936b1160.png",
     link: "/servicios#coronas-implantes",

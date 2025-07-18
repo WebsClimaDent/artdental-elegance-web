@@ -84,7 +84,7 @@ const serviceCategories = [
     services: [
       {
         id: 6,
-        title: "Prótesis sobre Implantes Blender",
+        title: "Prótesis sobre Implantes",
         description: "Restauraciones unitarias sobre implantes con perfecta integración estética y funcional.",
         image: "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
         detailedDescription: "Las coronas sobre implantes representan el estándar más alto en la reposición de dientes unitarios. Diseñadas con precisión digital y fabricadas con materiales de última generación, estas restauraciones se integran perfectamente con la dentición natural, tanto en forma como en función. En ArtDental, prestamos especial atención al perfil de emergencia y la interfaz con el tejido gingival para lograr resultados que desafían la detección.",
@@ -348,7 +348,7 @@ function getServiceId(title: string): string {
   const serviceIds: { [key: string]: string } = {
     "Carillas mínimamente invasivas": "carillas-porcelana",
     "Zirconio": "incrustaciones",
-    "Prótesis sobre Implantes Blender": "coronas-implantes",
+    "Prótesis sobre Implantes": "coronas-implantes",
     "Rehabilitaciones Completas": "rehabilitaciones-completas"
   };
   
