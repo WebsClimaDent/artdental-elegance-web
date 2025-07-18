@@ -92,12 +92,12 @@ const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
           className="w-full h-full"
         />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-transparent to-transparent p-4">
         <div className="text-white text-center">
-          <div className="mb-4 mx-auto bg-white bg-opacity-20 p-4 rounded-full">
+          <div className="mb-2 mx-auto bg-white bg-opacity-20 p-2 rounded-full">
             {tech.icon}
           </div>
-          <h3 className="text-3xl font-playfair font-bold">{tech.title}</h3>
+          <h3 className="text-2xl font-playfair font-bold">{tech.title}</h3>
         </div>
       </div>
     </div>
