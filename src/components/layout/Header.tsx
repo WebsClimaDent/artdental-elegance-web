@@ -51,44 +51,17 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
-          <nav className="flex space-x-8">
-            {navigationItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="text-sm font-medium text-white hover:text-dental-light transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-          
-          {/* Auth Section */}
-          <div className="flex items-center space-x-4">
-            {user ? (
-              <div className="flex items-center space-x-2">
-                <User className="h-4 w-4 text-white" />
-                <span className="text-sm text-white">{user.email}</span>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={signOut}
-                  className="text-white hover:text-dental-light hover:bg-white/10"
-                >
-                  <LogOut className="h-4 w-4" />
-                </Button>
-              </div>
-            ) : (
-              <Link to="/auth">
-                <Button variant="outline" size="sm" className="text-white border-white hover:bg-white hover:text-black">
-                  <User className="h-4 w-4 mr-2" />
-                  Acceder
-                </Button>
-              </Link>
-            )}
-          </div>
-        </div>
+        <nav className="hidden md:flex space-x-8">
+          {navigationItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="text-sm font-medium text-white hover:text-dental-light transition-colors"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </nav>
 
         {/* Mobile Navigation Trigger */}
         <button
@@ -117,37 +90,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            
-            {/* Mobile Auth Section */}
-            <div className="pt-4 border-t border-gray-800 mt-4">
-              {user ? (
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-white">
-                    <User className="h-4 w-4" />
-                    <span className="text-sm">{user.email}</span>
-                  </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => {
-                      signOut();
-                      setMobileMenuOpen(false);
-                    }}
-                    className="w-full text-white hover:text-dental-light hover:bg-white/10 justify-start"
-                  >
-                    <LogOut className="h-4 w-4 mr-2" />
-                    Cerrar Sesión
-                  </Button>
-                </div>
-              ) : (
-                <Link to="/auth" onClick={() => setMobileMenuOpen(false)}>
-                  <Button variant="outline" size="sm" className="w-full text-white border-white hover:bg-white hover:text-black">
-                    <User className="h-4 w-4 mr-2" />
-                    Acceder
-                  </Button>
-                </Link>
-              )}
-            </div>
           </div>
         </div>
       )}
