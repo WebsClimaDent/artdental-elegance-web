@@ -2,9 +2,13 @@
 import { useEffect, useState } from "react";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, User } from "lucide-react";
 import BackButton from "@/components/ui/back-button";
 import { useContactForm } from "@/hooks/useContactForm";
+import { useAuth } from "@/hooks/useAuth";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +21,7 @@ const Contacto = () => {
   });
 
   const { submitForm, isSubmitting } = useContactForm();
+  const { user, loading } = useAuth();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -107,7 +112,38 @@ const Contacto = () => {
               <div className="reveal">
                 <h2 className="text-2xl font-playfair font-semibold mb-6 text-white">Envíenos un mensaje</h2>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                {!user && !loading ? (
+                  <Card className="bg-gray-800 border-gray-700">
+                    <CardHeader>
+                      <CardTitle className="text-white flex items-center">
+                        <User className="h-5 w-5 mr-2" />
+                        Autenticación Requerida
+                      </CardTitle>
+                      <CardDescription className="text-gray-300">
+                        Para enviar un mensaje de contacto, debe iniciar sesión en su cuenta.
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-4">
+                        <p className="text-gray-300 text-sm">
+                          Esta medida de seguridad nos ayuda a proteger tanto su información personal como la nuestra, 
+                          y nos permite brindarle un mejor servicio personalizado.
+                        </p>
+                        <Link to="/auth">
+                          <Button className="w-full">
+                            <User className="h-4 w-4 mr-2" />
+                            Iniciar Sesión o Registrarse
+                          </Button>
+                        </Link>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ) : loading ? (
+                  <div className="flex items-center justify-center py-8">
+                    <div className="text-white">Cargando...</div>
+                  </div>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-white mb-2">Nombre completo *</label>
@@ -197,6 +233,7 @@ const Contacto = () => {
                     {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                   </button>
                 </form>
+                )}
               </div>
               
               {/* Contact Information */}

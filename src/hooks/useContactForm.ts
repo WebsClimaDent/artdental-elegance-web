@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
+import { useAuth } from '@/hooks/useAuth';
 
 interface ContactFormData {
   name: string;
@@ -15,12 +16,18 @@ interface ContactFormData {
 export const useContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { user } = useAuth();
 
   const submitForm = async (formData: ContactFormData) => {
     setIsSubmitting(true);
     console.log('Iniciando envío de formulario con datos:', formData);
     
     try {
+      // Verificar que el usuario esté autenticado
+      if (!user) {
+        throw new Error('Debe iniciar sesión para enviar el formulario de contacto');
+      }
+
       // Validar datos requeridos
       if (!formData.name || !formData.email || !formData.message) {
         throw new Error('Los campos nombre, email y mensaje son obligatorios');
