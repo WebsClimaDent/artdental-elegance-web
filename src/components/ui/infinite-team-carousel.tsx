@@ -206,9 +206,6 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
       <div className="flex justify-center">
         <div className="max-w-2xl">
           <div className="bg-black/80 backdrop-blur-sm rounded-lg p-6 text-center border border-white/20">
-            <h3 className="text-2xl font-semibold mb-3 font-playfair text-white">
-              {members[activeIndex]?.name}
-            </h3>
             <p className="text-gray-300 mb-4 font-medium text-lg">
               {members[activeIndex]?.role}
             </p>
