@@ -15,7 +15,6 @@ import Blog from "./pages/Blog";
 import Privacidad from "./pages/Privacidad";
 import Legal from "./pages/Legal";
 import Cookies from "./pages/Cookies";
-import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +32,6 @@ const App = () => (
           <Route path="/casos" element={<Casos />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/auth" element={<Auth />} />
           <Route path="/privacidad" element={<Privacidad />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/cookies" element={<Cookies />} />
