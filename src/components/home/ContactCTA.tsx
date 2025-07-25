@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const ContactCTA = () => {
   return (
     <section 
-      className="py-20 bg-black text-white bg-cover bg-center relative"
+      className="py-12 md:py-16 bg-black text-white bg-cover bg-center relative"
       style={{ 
         backgroundImage: 'linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url(public/lovable-uploads/90f75264-f185-4388-b39e-1766dd53e321.png)',
         backgroundBlendMode: 'overlay',
