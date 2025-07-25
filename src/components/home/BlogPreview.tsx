@@ -33,13 +33,13 @@ const BlogPreview = () => {
   return (
     <section className="section-padding bg-dental-dark" id="blog">
       <div className="container-custom">
-        <h2 className="section-title text-center text-white">Blog dental</h2>
-        <p className="section-subtitle text-center text-gray-300">
+        <h2 className="section-title text-center text-white mb-2">Blog dental</h2>
+        <p className="section-subtitle text-center text-gray-300 mb-8">
           Desde nuestro laboratorio dental Valencia compartimos artículos, casos clínicos 
           y tendencias en prótesis dental. Conocimiento especializado para profesionales del sector.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {featuredPosts.map((post) => (
             <div
               key={post.id}

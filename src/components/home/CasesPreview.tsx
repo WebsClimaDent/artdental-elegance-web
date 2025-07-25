@@ -41,13 +41,13 @@ const CasesPreview = () => {
   return (
     <section className="py-8 md:py-10 lg:py-12 bg-dental-dark" id="casos">
       <div className="container-custom">
-        <h2 className="section-title text-center">Casos de Éxito</h2>
-        <p className="section-subtitle text-center">
+        <h2 className="section-title text-center mb-2">Casos de Éxito</h2>
+        <p className="section-subtitle text-center mb-8">
           Descubra transformaciones reales realizadas con nuestra combinación única de artesanía,
           tecnología de vanguardia y materiales de primera calidad.
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8">
           {cases.map((caseItem) => (
             <div
               key={caseItem.id}

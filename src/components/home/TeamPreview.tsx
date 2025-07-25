@@ -31,13 +31,13 @@ const TeamPreview = () => {
   return (
     <section className="py-8 md:py-10 lg:py-12 bg-dental-dark" id="equipo">
       <div className="container-custom">
-        <h2 className="section-title text-center">Nuestro Equipo</h2>
-        <p className="section-subtitle text-center">
+        <h2 className="section-title text-center mb-2">Nuestro Equipo</h2>
+        <p className="section-subtitle text-center mb-8">
           En nuestro laboratorio dental Valencia contamos con profesionales apasionados 
           y altamente cualificados, dedicados a crear sonrisas perfectas con precisión y elegancia.
         </p>
 
-        <div className="reveal">
+        <div className="reveal mt-8">
           <InfiniteTeamCarousel members={teamMembers} />
         </div>
 

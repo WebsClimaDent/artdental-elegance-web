@@ -40,8 +40,8 @@ const ServicesInfiniteMenu = () => {
   return (
     <section className="section-padding bg-dental-dark" id="servicios">
       <div className="container-custom">
-        <h2 className="section-title text-center text-white mb-4">Nuestros Servicios</h2>
-        <p className="section-subtitle text-center text-gray-300 mb-12">
+        <h2 className="section-title text-center text-white mb-2">Nuestros Servicios</h2>
+        <p className="section-subtitle text-center text-gray-300 mb-8">
           Ofrecemos soluciones dentales avanzadas con un enfoque en la calidad,
           precisión y estética para resultados excepcionales.
         </p>
