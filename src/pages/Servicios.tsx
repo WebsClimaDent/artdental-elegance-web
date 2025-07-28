@@ -260,7 +260,7 @@ const Servicios = () => {
             <h2 className="text-3xl font-playfair font-semibold mb-6 text-white text-center">Materiales Premium</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
+              <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal relative">
                 <div className="h-72 overflow-hidden">
                   <TiltedCard
                     imageSrc="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
@@ -277,7 +277,7 @@ const Servicios = () => {
                     className="object-cover object-center"
                   />
                 </div>
-                <div className="p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6">
                   <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Carillas mínimamente invasivas</h3>
                   <p className="text-gray-300 mb-4">
                     Material cerámico de alta resistencia que ofrece una estética excepcional. Ideal para restauraciones en zonas visibles.
@@ -285,7 +285,7 @@ const Servicios = () => {
                 </div>
               </div>
               
-              <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
+              <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal relative">
                 <div className="h-72 overflow-hidden">
                   <TiltedCard
                     imageSrc="/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png"
@@ -301,7 +301,7 @@ const Servicios = () => {
                     objectFit="cover"
                   />
                 </div>
-                <div className="p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6">
                   <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Prótesis sobre Implantes Blender</h3>
                   <p className="text-gray-300 mb-4">
                     Material de última generación que combina resistencia superior con excelente estética. Perfecto para rehabilitaciones completas.
