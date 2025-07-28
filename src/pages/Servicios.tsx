@@ -263,7 +263,7 @@ const Servicios = () => {
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-72 overflow-hidden">
                   <TiltedCard
-                    imageSrc="/lovable-uploads/9944576a-ee68-4b4e-be73-f2ce3af0fafb.png"
+                    imageSrc="/lovable-uploads/b4fb9586-9767-4aa4-85c0-edd9336d75ee.png"
                     altText="Carillas mínimamente invasivas"
                     captionText=""
                     containerWidth="100%"
