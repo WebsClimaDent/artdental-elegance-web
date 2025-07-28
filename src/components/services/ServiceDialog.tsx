@@ -2,6 +2,7 @@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ArrowRight } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useNavigate } from "react-router-dom";
 
 interface ServiceDialogProps {
   isOpen: boolean;
@@ -25,6 +26,13 @@ interface ServiceDialogProps {
 }
 
 const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    onClose();
+    navigate('/contacto');
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="bg-dental-dark text-white border-gray-700 max-w-4xl max-h-[90vh] overflow-y-auto">
@@ -127,7 +135,7 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
           {/* Call to action */}
           <div className="text-center pt-4">
             <button 
-              onClick={onClose}
+              onClick={handleContactClick}
               className="bg-white text-dental-dark px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300 inline-flex items-center"
             >
               Contactar para más información
