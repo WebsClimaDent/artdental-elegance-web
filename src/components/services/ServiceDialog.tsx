@@ -39,7 +39,7 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
         <DialogHeader>
           <DialogTitle className="text-2xl font-playfair font-semibold text-white">{service.title}</DialogTitle>
           <DialogDescription className="text-gray-300 mt-2">
-            Excelencia y precisión para resultados excepcionales
+            Excelencia y precisión para resultados excepcionales.
           </DialogDescription>
         </DialogHeader>
         
