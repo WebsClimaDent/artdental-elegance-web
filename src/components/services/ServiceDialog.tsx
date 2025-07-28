@@ -57,7 +57,7 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
           <div>
             <h3 className="text-xl font-playfair font-semibold mb-3 text-white">Descripción</h3>
             <p className="text-gray-300 leading-relaxed">
-              Las rehabilitaciones híbridas Blender son la máxima expresión de precisión y tecnología en odontología restauradora. Fabricadas con Zirconio multicapa de última generación, combinan resistencia, estética y biocompatibilidad en una solución definitiva para pacientes con pérdida dental total. La planificación quirúrgica 3D y el diseño digital avanzado permiten abordar cada caso como un proyecto personalizado, en el que cada detalle, desde el ajuste oclusal hasta la armonía estética y se ejecuta con exactitud milimétrica para garantizar funcionalidad, durabilidad e integración perfecta.
+              El zirconio es la máxima expresión de precisión y tecnología en odontología restauradora. Fabricado en su versión multicapa de última generación, este material combina resistencia, estética y biocompatibilidad, ofreciendo una solución avanzada y definitiva para restauraciones dentales de alta exigencia. El zirconio representa la evolución de la estética dental, gracias a su capacidad para imitar de forma natural la translucidez y el color de los dientes, logrando restauraciones altamente realistas. Mediante planificación quirúrgica 3D y diseño digital avanzado, cada caso se aborda como un proyecto personalizado, en el que cada detalle desde el ajuste oclusal hasta la armonía estética— se ejecuta con exactitud milimétrica para garantizar funcionalidad, durabilidad e integración perfecta.
             </p>
           </div>
 
