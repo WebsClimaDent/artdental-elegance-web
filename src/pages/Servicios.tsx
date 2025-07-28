@@ -91,7 +91,7 @@ const serviceCategories = [
         benefits: [
           "Reemplazo dental sin afectar dientes adyacentes.",
           "Preservación del hueso alveolar.",
-          "Estética indistinguible del diente natural.",
+          "Estética mimetizada al diente natural.",
           "Funcionalidad completa y duradera.",
           "Mantenimiento simple como un diente natural."
         ],
