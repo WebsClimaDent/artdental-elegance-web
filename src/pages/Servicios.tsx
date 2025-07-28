@@ -97,7 +97,7 @@ const serviceCategories = [
         ],
         materials: [
           "Pilares personalizados de titanio.",
-          "Coronas de disilicato de litio o zirconio multicapa.",
+          "Coronas de disilicato de litio, zirconio monolítico o multicapa.",
           "Sistemas de conexión de precisión."
         ],
         additionalImages: [
