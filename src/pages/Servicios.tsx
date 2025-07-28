@@ -125,8 +125,8 @@ const serviceCategories = [
           "Solución definitiva y duradera."
         ],
         materials: [
-          "Estructuras de titanio o zirconio monolítico.",
-          "Cerámicas multicapa estratificadas.",
+          "Barras de refuerzo en titanio.",
+          "Zirconio multicapas estetificado.",
           "Sistemas de conexión de alta precisión."
         ],
         testimonial: {
