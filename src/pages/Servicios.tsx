@@ -96,9 +96,9 @@ const serviceCategories = [
           "Mantenimiento simple como un diente natural."
         ],
         materials: [
-          "Pilares personalizados de titanio.",
-          "Coronas de disilicato de litio, zirconio monolítico o multicapa.",
-          "Sistemas de conexión de precisión."
+          "Zirconio monolítico.",
+          "Zirconio multicapa con diferentes capas de translucidez.",
+          "Material base para ambas opciones es biocompatible, resistente y duradero."
         ],
         additionalImages: [
           "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
