@@ -20,16 +20,16 @@ const serviceCategories = [
         image: "/lovable-uploads/b45eb243-f90f-4e0d-9621-0b9a09a0c4ba.png",
         detailedDescription: "Nuestras carillas de porcelana son verdaderas joyas dentales, diseñadas para transformar sonrisas con la mínima invasión posible. Cada lámina es meticulosamente elaborada, capa por capa, para lograr efectos de profundidad, translucidez y color que emulan perfectamente la naturaleza. En ArtDental nos especializamos en conseguir una integración imperceptible que realza la belleza natural de cada paciente.",
         benefits: [
-          "Transformación estética inmediata",
-          "Conservación máxima del diente natural",
-          "Resistencia a las manchas",
-          "Durabilidad excepcional",
-          "Personalización total"
+          "Transformación estética inmediata.",
+          "Conservación máxima del diente natural.",
+          "Resistencia a las manchas.",
+          "Durabilidad excepcional.",
+          "Personalización total."
         ],
         materials: [
-          "Porcelana feldespática de alta calidad",
-          "Cerámicas estratificadas artesanales",
-          "Sistemas de adhesión avanzados"
+          "Porcelana feldespática de alta calidad.",
+          "Cerámicas estratificadas artesanales.",
+          "Sistemas de adhesión avanzados."
         ],
         testimonial: {
           quote: "Mis pacientes quedan maravillados con el resultado de las carillas de ArtDental. La naturalidad y el detalle que consiguen en cada pieza es extraordinario.",
@@ -51,16 +51,16 @@ const serviceCategories = [
         image: "/lovable-uploads/33f19cab-a7ba-41be-8791-7779d844bc96.png",
         detailedDescription: "Las incrustaciones de zirconio representan una alternativa moderna y precisa a las obturaciones tradicionales. Gracias al diseño digital y a la tecnología CAD/CAM, en ArtDental fabricamos restauraciones personalizadas que se ajustan perfectamente a la anatomía del diente. Utilizamos zirconio multicapa, un material cerámico de alta resistencia y gran estética, que permite conservar estructura dental sana y ofrecer una solución duradera, funcional y mínimamente invasiva para dientes con daño moderado.",
         benefits: [
-          "Preservación máxima de estructura dental sana",
-          "Mayor resistencia que las restauraciones directas",
-          "Sellado marginal superior",
-          "Estabilidad de color a largo plazo",
-          "Biocompatibilidad"
+          "Preservación máxima de estructura dental sana.",
+          "Mayor resistencia que las restauraciones directas.",
+          "Sellado marginal superior.",
+          "Estabilidad de color a largo plazo.",
+          "Biocompatibilidad."
         ],
         materials: [
-          "Disilicato de litio monolítico",
-          "Cerámica reforzada con polímeros",
-          "Composite nanohíbrido de alta densidad"
+          "Disilicato de litio monolítico.",
+          "Cerámica reforzada con polímeros.",
+          "Composite nanohíbrido de alta densidad."
         ],
         testimonial: {
           quote: "La precisión y ajuste de las incrustaciones es impresionante. Los pacientes aprecian la durabilidad y estética natural de estas restauraciones.",
@@ -89,16 +89,16 @@ const serviceCategories = [
         image: "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
         detailedDescription: "Las coronas sobre implantes representan el estándar más alto en la reposición de dientes unitarios. Diseñadas con precisión digital y fabricadas con materiales de última generación, estas restauraciones se integran perfectamente con la dentición natural, tanto en forma como en función. En ArtDental, prestamos especial atención al perfil de emergencia y la interfaz con el tejido gingival para lograr resultados que desafían la detección.",
         benefits: [
-          "Reemplazo dental sin afectar dientes adyacentes",
-          "Preservación del hueso alveolar",
-          "Estética indistinguible del diente natural",
-          "Funcionalidad completa y duradera",
-          "Mantenimiento simple como un diente natural"
+          "Reemplazo dental sin afectar dientes adyacentes.",
+          "Preservación del hueso alveolar.",
+          "Estética indistinguible del diente natural.",
+          "Funcionalidad completa y duradera.",
+          "Mantenimiento simple como un diente natural."
         ],
         materials: [
-          "Pilares personalizados de titanio o zirconio",
-          "Coronas de disilicato de litio o zirconio multicapa",
-          "Sistemas de conexión de precisión"
+          "Pilares personalizados de titanio o zirconio.",
+          "Coronas de disilicato de litio o zirconio multicapa.",
+          "Sistemas de conexión de precisión."
         ],
         additionalImages: [
           "/lovable-uploads/023de864-ad84-4b89-8f4e-942d8f3f4367.png",
@@ -118,16 +118,16 @@ const serviceCategories = [
         image: "/lovable-uploads/24dcc657-382e-4b26-98a0-40afbb400a15.png",
         detailedDescription: "Las rehabilitaciones completas sobre implantes representan la cumbre de la odontología restauradora moderna. Combinando planificación quirúrgica 3D, diseño digital avanzado y materiales de vanguardia, ofrecemos soluciones definitivas para pacientes con pérdida dental extensa. Cada caso es abordado como un proyecto integral donde función, estética y longevidad se consideran en cada detalle del proceso.",
         benefits: [
-          "Restauración completa de función masticatoria",
-          "Estabilidad oclusal perfecta",
-          "Rejuvenecimiento facial integral",
-          "Prevención de reabsorción ósea",
-          "Solución definitiva y duradera"
+          "Restauración completa de función masticatoria.",
+          "Estabilidad oclusal perfecta.",
+          "Rejuvenecimiento facial integral.",
+          "Prevención de reabsorción ósea.",
+          "Solución definitiva y duradera."
         ],
         materials: [
-          "Estructuras de titanio o zirconio monolítico",
-          "Cerámicas multicapa estratificadas",
-          "Sistemas de conexión de alta precisión"
+          "Estructuras de titanio o zirconio monolítico.",
+          "Cerámicas multicapa estratificadas.",
+          "Sistemas de conexión de alta precisión."
         ],
         testimonial: {
           quote: "ArtDental ha sido mi socio clave en los casos más complejos. Su capacidad para coordinar la precisión técnica con la visión artística en rehabilitaciones completas es excepcional.",
