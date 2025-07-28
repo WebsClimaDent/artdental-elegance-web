@@ -273,8 +273,8 @@ const Servicios = () => {
                     scaleOnHover={1.1}
                     rotateAmplitude={10}
                     showTooltip={false}
-                    objectFit="cover"
-                    className="object-cover object-center"
+                    objectFit="contain"
+                    className="object-contain object-center"
                   />
                 </div>
                 <div className="p-6">
