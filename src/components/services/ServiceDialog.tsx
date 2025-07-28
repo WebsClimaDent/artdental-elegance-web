@@ -57,7 +57,7 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
           <div>
             <h3 className="text-xl font-playfair font-semibold mb-3 text-white">Descripción</h3>
             <p className="text-gray-300 leading-relaxed">
-              Las rehabilitaciones híbridas Blender combinan estética avanzada, funcionalidad y tecnología de precisión en el tratamiento de pacientes con pérdida dental total. Estas prótesis se diseñan digitalmente y se fabrican con una base de estructura metálica de refuerzo en titanio, lo que garantiza una excelente resistencia mecánica, estabilidad a largo plazo y biocompatibilidad. Sobre esta estructura se coloca una restauración realizada en materiales de alta estética, como el zirconio multicapa, que permite una integración visual natural, con transiciones de color y translucidez similares a los dientes reales. Gracias a la planificación quirúrgica 3D, el uso de tecnología CAD/CAM y la personalización total del diseño, cada rehabilitación Blender se adapta con precisión a las necesidades funcionales y estéticas del paciente, ofreciendo una solución duradera, ligera y altamente confortable.
+              {service.detailedDescription || service.description}
             </p>
           </div>
 
