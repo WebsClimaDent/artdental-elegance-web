@@ -93,7 +93,7 @@ export default function TiltedCard({
       rotateY,
       scale
     }}>
-        <img src={imageSrc} alt={altText} className="tilted-card-img object-scale-down" />
+        <img src={imageSrc} alt={altText} className={`tilted-card-img ${objectFit === 'cover' ? 'object-cover object-top' : 'object-scale-down'}`} />
 
         {displayOverlayContent && overlayContent && <motion.div className="tilted-card-overlay">
             {overlayContent}
