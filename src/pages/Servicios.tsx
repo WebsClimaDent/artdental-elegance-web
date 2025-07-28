@@ -268,8 +268,8 @@ const Servicios = () => {
                     captionText=""
                     containerWidth="100%"
                     containerHeight="100%"
-                    imageWidth="138%"
-                    imageHeight="138%"
+                    imageWidth="100%"
+                    imageHeight="100%"
                     scaleOnHover={1.1}
                     rotateAmplitude={10}
                     showTooltip={false}
