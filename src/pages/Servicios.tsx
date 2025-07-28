@@ -96,7 +96,7 @@ const serviceCategories = [
           "Mantenimiento simple como un diente natural."
         ],
         materials: [
-          "Pilares personalizados de titanio o zirconio.",
+          "Pilares personalizados de titanio.",
           "Coronas de disilicato de litio o zirconio multicapa.",
           "Sistemas de conexión de precisión."
         ],
