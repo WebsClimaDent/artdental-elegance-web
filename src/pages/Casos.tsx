@@ -310,8 +310,8 @@ const Casos = () => {
               ¿Tiene un caso similar?
             </h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Contáctenos para discutir cómo podemos ayudarle a conseguir resultados 
-              excepcionales en sus casos clínicos.
+              Contáctanos para discutir cómo podemos ayudarte a conseguir resultados 
+              excepcionales en tus casos clínicos.
             </p>
             <Link to="/contacto" className="btn-primary">
               Consultar su caso

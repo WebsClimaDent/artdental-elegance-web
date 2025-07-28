@@ -185,9 +185,9 @@ const Cookies = () => {
                     Consentimiento y aceptación
                   </h3>
                   <p className="text-gray-300 mb-4 leading-relaxed">
-                    Al utilizar nuestro sitio web, usted consiente el uso de cookies de acuerdo con 
-                    esta Política de Cookies. Si no está de acuerdo con el uso de cookies, 
-                    puede deshabilitarlas a través de la configuración de su navegador.
+                    Al utilizar nuestro sitio web, consientes el uso de cookies de acuerdo con 
+                    esta Política de Cookies. Si no estás de acuerdo con el uso de cookies, 
+                    puedes deshabilitarlas a través de la configuración de tu navegador.
                   </p>
                   <div className="bg-dental-primary/10 p-4 rounded-lg border-l-4 border-dental-primary">
                     <p className="text-gray-300 leading-relaxed">

@@ -317,8 +317,8 @@ const Tecnologia = () => {
                 Descubra el Futuro del arte dental
               </h2>
               <p className="text-xl text-gray-200 mb-12 max-w-3xl mx-auto">
-                Le invitamos a visitar nuestras instalaciones para conocer de primera mano
-                cómo nuestra tecnología puede transformar la experiencia de sus pacientes.
+                Te invitamos a visitar nuestras instalaciones para conocer de primera mano
+                cómo nuestra tecnología puede transformar la experiencia de tus pacientes.
               </p>
               <div className="flex flex-wrap gap-6 justify-center">
                 <Link to="/contacto" className="btn-primary">

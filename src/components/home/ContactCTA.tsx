@@ -17,7 +17,7 @@ const ContactCTA = () => {
             ¿Listo para colaborar en el siguiente caso?
           </h2>
           <p className="text-lg md:text-xl mb-8 opacity-90">
-            Contáctenos hoy mismo para discutir cómo podemos ayudarle a conseguir los mejores resultados para sus pacientes.
+            Contáctanos hoy mismo para discutir cómo podemos ayudarte a conseguir los mejores resultados para tus pacientes.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/contacto" className="btn-primary">

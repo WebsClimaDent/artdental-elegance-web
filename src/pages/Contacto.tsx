@@ -93,7 +93,7 @@ const Contacto = () => {
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4">Contacto</h1>
               <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
-                Estamos aquí para responder a sus preguntas y ayudarle a conseguir los mejores resultados para sus pacientes.
+                Estamos aquí para responder a tus preguntas y ayudarte a conseguir los mejores resultados para tus pacientes.
               </p>
             </div>
           </div>
