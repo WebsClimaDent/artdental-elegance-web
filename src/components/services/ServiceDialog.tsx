@@ -57,7 +57,7 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
           <div>
             <h3 className="text-xl font-playfair font-semibold mb-3 text-white">Descripción</h3>
             <p className="text-gray-300 leading-relaxed">
-              Las prótesis Blender completas o parciales representan la máxima expresión de precisión, funcionalidad y estética en odontología restauradora. Diseñadas digitalmente y fabricadas con zirconio multicapa de última generación, ofrecen una solución personalizada y duradera tanto para rehabilitaciones totales como parciales sobre implantes. El zirconio no solo proporciona una resistencia excepcional, sino que también representa la evolución de la estética dental, gracias a su acabado natural, su translucidez y su capacidad de integrarse armónicamente en la sonrisa del paciente. Mediante planificación quirúrgica 3D y diseño CAD/CAM avanzado, cada prótesis se desarrolla como un proyecto único en el que cada detalle.
+              Las rehabilitaciones completas Blender representan la máxima expresión de precisión, funcionalidad y estética en odontología restauradora. Diseñadas digitalmente y fabricadas con zirconio multicapa de última generación, ofrecen una solución personalizada y duradera para pacientes con pérdida dental total. El zirconio no solo proporciona una resistencia excepcional, sino que también representa la evolución de la estética dental, gracias a su acabado natural, su translucidez y su capacidad de integrarse armónicamente en la sonrisa del paciente. Mediante planificación quirúrgica 3D y diseño CAD/CAM avanzado, cada prótesis se desarrolla como un proyecto único.
             </p>
           </div>
 
