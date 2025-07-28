@@ -13,7 +13,7 @@ const teamMembers = [
     name: "Pol Romance",
     role: "Director Técnico",
     image: "/lovable-uploads/4ff54fe0-8806-4880-8c6f-fb5b5cd34025.png",
-    bio: "Pol Romance lidera nuestro equipo técnico con un enfoque en la precisión y la excelencia. Especializado en restauraciones complejas y estética avanzada.",
+    bio: "Pol Romance Lidera nuestro equipo técnico con un enfoque en la precisión y la excelencia. Especializado en restauraciones complejas y estética avanzada.",
   },
   {
     id: 2,
