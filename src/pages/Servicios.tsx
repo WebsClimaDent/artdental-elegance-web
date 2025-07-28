@@ -49,7 +49,7 @@ const serviceCategories = [
         title: "Zirconio",
         description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
         image: "/lovable-uploads/33f19cab-a7ba-41be-8791-7779d844bc96.png",
-        detailedDescription: "Las incrustaciones representan la evolución de las obturaciones tradicionales. Fabricadas con precisión digital y materiales cerámicos de alta resistencia, ofrecen una solución conservadora y duradera para restaurar dientes con daño moderado. En ArtDental, cada incrustación es diseñada para adaptarse perfectamente a la anatomía oclusal del paciente, garantizando función y longevidad.",
+        detailedDescription: "Las incrustaciones de circonio representan una alternativa moderna y precisa a las obturaciones tradicionales. Gracias al diseño digital y a la tecnología CAD/CAM, en ArtDental fabricamos restauraciones personalizadas que se ajustan perfectamente a la anatomía del diente. Utilizamos circonio multicapa, un material cerámico de alta resistencia y gran estética, que permite conservar estructura dental sana y ofrecer una solución duradera, funcional y mínimamente invasiva para dientes con daño moderado.",
         benefits: [
           "Preservación máxima de estructura dental sana",
           "Mayor resistencia que las restauraciones directas",
