@@ -51,11 +51,11 @@ const serviceCategories = [
         image: "/lovable-uploads/33f19cab-a7ba-41be-8791-7779d844bc96.png",
         detailedDescription: "Las incrustaciones de zirconio representan una alternativa moderna y precisa a las obturaciones tradicionales. Gracias al diseño digital y a la tecnología CAD/CAM, en ArtDental fabricamos restauraciones personalizadas que se ajustan perfectamente a la anatomía del diente. Utilizamos zirconio multicapa, un material cerámico de alta resistencia y gran estética, que permite conservar estructura dental sana y ofrecer una solución duradera, funcional y mínimamente invasiva para dientes con daño moderado.",
         benefits: [
-          "Preservación máxima de estructura dental sana.",
-          "Mayor resistencia que las restauraciones directas.",
-          "Sellado marginal superior.",
-          "Estabilidad de color a largo plazo.",
-          "Biocompatibilidad."
+          "Estética natural: color y translucidez similares al diente real.",
+          "Alta precisión: ajuste exacto gracias a la tecnología CAD/CAM.",
+          "Gran resistencia: soporta la masticación sin fracturas.",
+          "Durabilidad: mantiene forma y función por muchos años.",
+          "Biocompatibilidad: material hipoalergénico y seguro para los tejidos."
         ],
         materials: [
           "Disilicato de litio monolítico.",
