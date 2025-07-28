@@ -255,7 +255,7 @@ const Servicios = () => {
         ))}
 
         {/* Materials Section */}
-        <section className="py-8 md:py-10 bg-black">
+        <section className="py-4 md:py-6 bg-black">
           <div className="container-custom">
             <h2 className="text-3xl font-playfair font-semibold mb-6 text-white text-center">Materiales Premium</h2>
             
