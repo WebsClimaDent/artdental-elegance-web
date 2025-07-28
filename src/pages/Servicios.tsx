@@ -277,9 +277,9 @@ const Servicios = () => {
                     className="object-cover object-center"
                   />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6">
-                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Carillas mínimamente invasivas</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-6">
+                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white drop-shadow-lg">Carillas mínimamente invasivas</h3>
+                  <p className="text-gray-200 mb-4 drop-shadow-md">
                     Material cerámico de alta resistencia que ofrece una estética excepcional. Ideal para restauraciones en zonas visibles.
                   </p>
                 </div>
@@ -301,9 +301,9 @@ const Servicios = () => {
                     objectFit="cover"
                   />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent p-6">
-                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Prótesis sobre Implantes Blender</h3>
-                  <p className="text-gray-300 mb-4">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent p-6">
+                  <h3 className="text-xl font-playfair font-semibold mb-2 text-white drop-shadow-lg">Prótesis sobre Implantes Blender</h3>
+                  <p className="text-gray-200 mb-4 drop-shadow-md">
                     Material de última generación que combina resistencia superior con excelente estética. Perfecto para rehabilitaciones completas.
                   </p>
                 </div>
