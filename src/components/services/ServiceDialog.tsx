@@ -124,7 +124,7 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
                     <img 
                       src={image} 
                       alt={`${service.title} - imagen ${index + 1}`}
-                      className="w-full h-auto object-cover"
+                      className="w-full h-64 object-cover"
                     />
                   </div>
                 ))}
