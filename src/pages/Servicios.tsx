@@ -164,7 +164,7 @@ const Servicios = () => {
               
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
                 <div className="h-72 overflow-hidden">
-                  <TiltedCard imageSrc="/lovable-uploads/b871d12e-500a-47e5-95dd-f3ccf2da0229.png" altText="Prótesis sobre Implantes Blender" captionText="" containerWidth="100%" containerHeight="100%" imageWidth="100%" imageHeight="100%" scaleOnHover={1.1} rotateAmplitude={10} showTooltip={false} objectFit="cover" />
+                  <TiltedCard imageSrc="/lovable-uploads/b66d5758-5a24-479d-8320-b40d580f5e12.png" altText="Prótesis sobre Implantes" captionText="" containerWidth="100%" containerHeight="100%" imageWidth="100%" imageHeight="100%" scaleOnHover={1.1} rotateAmplitude={10} showTooltip={false} objectFit="cover" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Prótesis sobre Implantes </h3>
