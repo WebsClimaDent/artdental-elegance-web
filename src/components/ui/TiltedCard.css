@@ -41,7 +41,7 @@
   width: auto;
   height: auto;
   object-fit: contain;
-  object-position: center top;
+  object-position: center 30%;
 }
 
 .tilted-card-overlay {
