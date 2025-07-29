@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Info, Layers, Zap, Gauge } from "lucide-react";
 import BackButton from "@/components/ui/back-button";
 import TiltedCard from "@/components/ui/TiltedCard";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -176,21 +176,21 @@ const Tecnologia = () => {
                               
                               
                               <CardFooter className="pt-2">
-                                <HoverCard>
-                                  <HoverCardTrigger asChild>
+                                <Popover>
+                                  <PopoverTrigger asChild>
                                     <button className="text-white underline text-sm flex items-center gap-1">
                                       Ver características <Info className="h-3 w-3" />
                                     </button>
-                                  </HoverCardTrigger>
-                                  <HoverCardContent className="w-80 bg-black text-white border-gray-800">
+                                  </PopoverTrigger>
+                                  <PopoverContent className="w-80 bg-black text-white border-gray-800">
                                     <h4 className="font-bold mb-2">Características</h4>
                                     <ul className="space-y-1">
                                       {tech.features.map((feature: string, i: number) => <li key={i} className="text-sm flex items-start">
                                           <span className="mr-2">•</span> {feature}
                                         </li>)}
                                     </ul>
-                                  </HoverCardContent>
-                                </HoverCard>
+                                  </PopoverContent>
+                                </Popover>
                               </CardFooter>
                             </div>
                           </Card>
