@@ -5,84 +5,39 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Info, Layers, Zap, Gauge } from "lucide-react";
 import BackButton from "@/components/ui/back-button";
 import TiltedCard from "@/components/ui/TiltedCard";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-
-const technologies = [
-  {
-    id: 1,
-    title: "Digitalización y Moldeado",
-    description: "Utilizamos sistemas de escaneado 3D de alta precisión para realizar tomas digitales exactas, que nos permiten planificar cada caso con total fiabilidad. Gracias a nuestro proceso de encerado digital y planificación digital avanzada, conseguimos una reproducción fiel de la anatomía dental y una adaptación perfecta en restauraciones, sin las limitaciones de los métodos tradicionales. Innovación, precisión y estética, al servicio de tu sonrisa.",
-    features: [
-      "Precisión de hasta 10 micras",
-      "Captura en color para registro de detalles",
-      "Reducción del tiempo de trabajo"
-    ],
-    image: "/lovable-uploads/8de8a836-10e5-4ac3-a606-d335e93d5362.png",
-  },
-  {
-    id: 2,
-    title: "Sistema CAD/CAM Avanzado",
-    description: "Utilizamos software de diseño dental avanzado que permite crear restauraciones personalizadas con absoluta precisión, desde incrustaciones simples hasta rehabilitaciones completas sobre implantes.",
-    features: [
-      "Bibliotecas de dientes anatómicamente precisas",
-      "Diseño de sonrisa digital",
-      "Planificación de casos complejos"
-    ],
-    image: "/lovable-uploads/e82f8a4f-9d43-41bb-8827-40fa223abcd8.png",
-  },
-  {
-    id: 3,
-    title: "Fresadoras de 5 Ejes",
-    description: "Nuestras fresadoras de última generación trabajan con precisión excepcional en materiales como zirconio, disilicato de litio y resinas de alto rendimiento para garantizar restauraciones perfectas.",
-    features: [
-      "Precisión de mecanizado submilimétrica",
-      "Procesado de todos los materiales modernos",
-      "Producción rápida y consistente"
-    ],
-    image: "/lovable-uploads/eb7a173d-0658-406c-b93e-14227c1f338b.png",
-  },
-];
-
-const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
-  <div 
-    className={`flex flex-col overflow-hidden rounded-xl shadow-xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl bg-dental-dark`}
-  >
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+const technologies = [{
+  id: 1,
+  title: "Digitalización y Moldeado",
+  description: "Utilizamos sistemas de escaneado 3D de alta precisión para realizar tomas digitales exactas, que nos permiten planificar cada caso con total fiabilidad. Gracias a nuestro proceso de encerado digital y planificación digital avanzada, conseguimos una reproducción fiel de la anatomía dental y una adaptación perfecta en restauraciones, sin las limitaciones de los métodos tradicionales. Innovación, precisión y estética, al servicio de tu sonrisa.",
+  features: ["Precisión de hasta 10 micras", "Captura en color para registro de detalles", "Reducción del tiempo de trabajo"],
+  image: "/lovable-uploads/8de8a836-10e5-4ac3-a606-d335e93d5362.png"
+}, {
+  id: 2,
+  title: "Sistema CAD/CAM Avanzado",
+  description: "Utilizamos software de diseño dental avanzado que permite crear restauraciones personalizadas con absoluta precisión, desde incrustaciones simples hasta rehabilitaciones completas sobre implantes.",
+  features: ["Bibliotecas de dientes anatómicamente precisas", "Diseño de sonrisa digital", "Planificación de casos complejos"],
+  image: "/lovable-uploads/e82f8a4f-9d43-41bb-8827-40fa223abcd8.png"
+}, {
+  id: 3,
+  title: "Fresadoras de 5 Ejes",
+  description: "Nuestras fresadoras de última generación trabajan con precisión excepcional en materiales como zirconio, disilicato de litio y resinas de alto rendimiento para garantizar restauraciones perfectas.",
+  features: ["Precisión de mecanizado submilimétrica", "Procesado de todos los materiales modernos", "Producción rápida y consistente"],
+  image: "/lovable-uploads/eb7a173d-0658-406c-b93e-14227c1f338b.png"
+}];
+const TechnologyCard = ({
+  tech,
+  index
+}: {
+  tech: any;
+  index: number;
+}) => <div className={`flex flex-col overflow-hidden rounded-xl shadow-xl transform transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl bg-dental-dark`}>
     {/* Image Section - Clean without overlays */}
     <div className="relative h-64 overflow-hidden">
-      <TiltedCard
-        imageSrc={tech.image}
-        altText={tech.title}
-        captionText=""
-        containerWidth="100%"
-        containerHeight="100%"
-        imageWidth="100%"
-        imageHeight="100%"
-        scaleOnHover={1.05}
-        rotateAmplitude={8}
-        showTooltip={false}
-        objectFit="cover"
-        className="w-full h-full"
-      />
+      <TiltedCard imageSrc={tech.image} altText={tech.title} captionText="" containerWidth="100%" containerHeight="100%" imageWidth="100%" imageHeight="100%" scaleOnHover={1.05} rotateAmplitude={8} showTooltip={false} objectFit="cover" className="w-full h-full" />
     </div>
     
     {/* Content Section - Below the image */}
@@ -97,52 +52,43 @@ const TechnologyCard = ({ tech, index }: { tech: any; index: number }) => (
       
       {/* Features */}
       <ul className="space-y-2">
-        {tech.features.map((feature: string, idx: number) => (
-          <li key={idx} className="flex items-center text-gray-300">
+        {tech.features.map((feature: string, idx: number) => <li key={idx} className="flex items-center text-gray-300">
             <span className="mr-2 text-white">•</span> {feature}
-          </li>
-        ))}
+          </li>)}
       </ul>
     </div>
-  </div>
-);
-
+  </div>;
 const Tecnologia = () => {
   useEffect(() => {
     document.title = "Nuestra Tecnología - ArtDental";
-    
+
     // Animation for elements
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
         }
       });
-    }, { threshold: 0.1 });
-    
-    document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    }, {
+      threshold: 0.1
+    });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
       observer.observe(el);
     });
-    
     return () => {
       observer.disconnect();
     };
   }, []);
-
-  return (
-    <>
+  return <>
       <Header />
       <main className="bg-black min-h-screen pt-32 overflow-hidden">
         {/* Hero Section */}
         <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center z-0" 
-            style={{ 
-              backgroundImage: 'url(/lovable-uploads/ffcf0fe6-b58b-41ac-abbe-5a9d2a4f0fab.png)',
-              backgroundPosition: 'center 60%',
-              filter: 'blur(2px) brightness(0.6)'
-            }}
-          />
+          <div className="absolute inset-0 bg-cover bg-center z-0" style={{
+          backgroundImage: 'url(/lovable-uploads/ffcf0fe6-b58b-41ac-abbe-5a9d2a4f0fab.png)',
+          backgroundPosition: 'center 60%',
+          filter: 'blur(2px) brightness(0.6)'
+        }} />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 z-10"></div>
           
           <div className="container-custom relative z-20 pt-8">
@@ -182,19 +128,7 @@ const Tecnologia = () => {
               </div>
               <div className="lg:w-1/2 animate-on-scroll opacity-0 transform translate-x-[50px] transition-all duration-1000">
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
-                  <TiltedCard
-                    imageSrc="/lovable-uploads/1db6d1c9-9179-4b43-bc6c-b74bc7353c1d.png"
-                    altText="Tecnología dental avanzada"
-                    captionText=""
-                    containerWidth="100%"
-                    containerHeight="400px"
-                    imageWidth="100%"
-                    imageHeight="400px"
-                    scaleOnHover={1.08}
-                    rotateAmplitude={12}
-                    showTooltip={false}
-                    objectFit="cover"
-                  />
+                  <TiltedCard imageSrc="/lovable-uploads/1db6d1c9-9179-4b43-bc6c-b74bc7353c1d.png" altText="Tecnología dental avanzada" captionText="" containerWidth="100%" containerHeight="400px" imageWidth="100%" imageHeight="400px" scaleOnHover={1.08} rotateAmplitude={12} showTooltip={false} objectFit="cover" />
                 </div>
               </div>
             </div>
@@ -227,36 +161,19 @@ const Tecnologia = () => {
               <TabsContent value="carousel" className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
                 <Carousel className="w-full">
                   <CarouselContent>
-                    {technologies.map((tech) => (
-                      <CarouselItem key={tech.id} className="md:basis-1/2 lg:basis-1/3">
+                    {technologies.map(tech => <CarouselItem key={tech.id} className="md:basis-1/2 lg:basis-1/3">
                         <div className="p-2">
                           <Card className="bg-black border-gray-800 overflow-hidden h-full flex flex-col">
                             {/* Image Section - Increased height and no overlays */}
                             <div className="h-64 overflow-hidden flex-shrink-0">
-                              <TiltedCard
-                                imageSrc={tech.image}
-                                altText={tech.title}
-                                captionText=""
-                                containerWidth="100%"
-                                containerHeight="100%"
-                                imageWidth="100%"
-                                imageHeight="100%"
-                                scaleOnHover={1.1}
-                                rotateAmplitude={10}
-                                showTooltip={false}
-                                objectFit="cover"
-                              />
+                              <TiltedCard imageSrc={tech.image} altText={tech.title} captionText="" containerWidth="100%" containerHeight="100%" imageWidth="100%" imageHeight="100%" scaleOnHover={1.1} rotateAmplitude={10} showTooltip={false} objectFit="cover" />
                             </div>
                             
                             {/* Content Section - All text below image */}
                             <div className="flex flex-col flex-grow">
-                              <CardHeader className="pb-2">
-                                <CardTitle className="text-white text-center">{tech.title}</CardTitle>
-                              </CardHeader>
                               
-                              <CardContent className="flex-grow">
-                                <p className="text-gray-300 text-sm">{tech.description}</p>
-                              </CardContent>
+                              
+                              
                               
                               <CardFooter className="pt-2">
                                 <HoverCard>
@@ -268,11 +185,9 @@ const Tecnologia = () => {
                                   <HoverCardContent className="w-80 bg-black text-white border-gray-800">
                                     <h4 className="font-bold mb-2">Características</h4>
                                     <ul className="space-y-1">
-                                      {tech.features.map((feature: string, i: number) => (
-                                        <li key={i} className="text-sm flex items-start">
+                                      {tech.features.map((feature: string, i: number) => <li key={i} className="text-sm flex items-start">
                                           <span className="mr-2">•</span> {feature}
-                                        </li>
-                                      ))}
+                                        </li>)}
                                     </ul>
                                   </HoverCardContent>
                                 </HoverCard>
@@ -280,8 +195,7 @@ const Tecnologia = () => {
                             </div>
                           </Card>
                         </div>
-                      </CarouselItem>
-                    ))}
+                      </CarouselItem>)}
                   </CarouselContent>
                   <div className="flex justify-center mt-8 gap-4">
                     <CarouselPrevious className="relative static transform-none bg-white text-dental-dark hover:bg-gray-200" />
@@ -292,9 +206,7 @@ const Tecnologia = () => {
               
               <TabsContent value="cards" className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {technologies.map((tech, index) => (
-                    <TechnologyCard key={tech.id} tech={tech} index={index} />
-                  ))}
+                  {technologies.map((tech, index) => <TechnologyCard key={tech.id} tech={tech} index={index} />)}
                 </div>
               </TabsContent>
             </Tabs>
@@ -303,13 +215,10 @@ const Tecnologia = () => {
 
         {/* Final CTA Section */}
         <section className="py-24 relative overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center opacity-30" 
-            style={{ 
-              backgroundImage: "url(https://images.unsplash.com/photo-1606213050828-b7c66510ce51?q=80&w=2070&auto=format&fit=crop)",
-              filter: "blur(3px)"
-            }}
-          />
+          <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{
+          backgroundImage: "url(https://images.unsplash.com/photo-1606213050828-b7c66510ce51?q=80&w=2070&auto=format&fit=crop)",
+          filter: "blur(3px)"
+        }} />
           <div className="absolute inset-0 bg-black bg-opacity-70"></div>
           <div className="container-custom relative z-10 text-center">
             <div className="animate-on-scroll opacity-0 transform translate-y-10 transition-all duration-1000">
@@ -334,8 +243,6 @@ const Tecnologia = () => {
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default Tecnologia;
