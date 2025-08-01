@@ -114,24 +114,6 @@ const ServiceDialog = ({ isOpen, onClose, service }: ServiceDialogProps) => {
             </div>
           )}
           
-          {/* Additional images */}
-          {service.additionalImages && service.additionalImages.length > 0 && (
-            <div>
-              <h3 className="text-xl font-playfair font-semibold mb-3 text-white">Galería</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {service.additionalImages.map((image, index) => (
-                  <div key={index} className="rounded-lg overflow-hidden shadow-md">
-                    <img 
-                      src={image} 
-                      alt={`${service.title} - imagen ${index + 1}`}
-                      className="w-full h-64 object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-          
           {/* Call to action */}
           <div className="text-center pt-4">
             <button 
