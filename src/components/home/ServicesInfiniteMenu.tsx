@@ -31,7 +31,7 @@ const services = [
   {
     title: "Rehabilitaciones Completas",
     description: "Reconstrucción total de la dentición con sistemas implantosoportados de última generación.",
-    image: "/lovable-uploads/84dd33d5-db91-4758-90f8-6aa2fec1f661.png",
+    image: "/lovable-uploads/9e7ec077-ffde-424d-a04f-2622557c3d52.png",
     link: "/servicios#rehabilitaciones-completas",
   },
 ];
