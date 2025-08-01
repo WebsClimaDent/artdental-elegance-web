@@ -19,7 +19,7 @@ const teamMembers = [
     id: 2,
     name: "David Ruiz",
     role: "Director Técnico",
-    image: "/lovable-uploads/b97c52bb-642b-45e4-ab36-4b1c861fc8e3.png",
+    image: "/lovable-uploads/79d03799-554c-4f48-b0de-dbd045f2c12f.png",
     bio: "Experto en tecnología digital y diseño asistido por ordenador, así como en implantología. Transforma conceptos en realidades con precisión micrométrica, especializándose en rehabilitaciones completas y sonrisas personalizadas.",
   },
   {
