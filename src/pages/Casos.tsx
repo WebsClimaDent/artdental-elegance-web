@@ -27,10 +27,6 @@ const cases = [
     materials: "Porcelana feldespática estratificada a mano, espesor de 0.3mm.",
     before: "/lovable-uploads/b2a89a74-e8b0-4ee4-bac8-7693d6f123b7.png",
     after: "/lovable-uploads/1dd61794-b5be-4910-b4e8-5ffb48b9e55b.png",
-    gallery: [
-      "/lovable-uploads/787e50b6-742b-4103-9408-359a537badb1.png",
-      "/lovable-uploads/97149c79-17c8-4224-8bac-bf943becf251.png"
-    ],
   },
   {
     id: 3,
@@ -175,23 +171,6 @@ const Casos = () => {
                         afterImage={caseItem.after}
                         title={caseItem.title}
                       />
-                      {/* Galería adicional para carillas mínimamente invasivas */}
-                      {caseItem.gallery && (
-                        <div className="mt-8">
-                          <h4 className="text-lg font-semibold text-white mb-4">Galería del proceso</h4>
-                          <div className="grid grid-cols-2 gap-4">
-                            {caseItem.gallery.map((image, index) => (
-                              <div key={index} className="rounded-lg overflow-hidden">
-                                <img 
-                                  src={image} 
-                                  alt={`${caseItem.title} - Galería ${index + 1}`}
-                                  className="w-full h-64 object-cover object-center hover:scale-105 transition-transform duration-300"
-                                />
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
                     </div>
                   ) : (
                     <div className="grid grid-cols-2 gap-6 mb-8">
