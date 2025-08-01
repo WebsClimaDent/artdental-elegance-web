@@ -24,7 +24,7 @@ const serviceCategories = [{
       author: "Dra. Laura Martínez"
     },
     additionalImages: ["/lovable-uploads/b45eb243-f90f-4e0d-9621-0b9a09a0c4ba.png", "/lovable-uploads/b2650b57-05ac-4db5-84d8-cd04602b37eb.png"],
-    galleryImages: ["/lovable-uploads/d03c8838-d654-4e41-a466-02e1c9705eca.png", "/lovable-uploads/444845aa-3d07-4987-bc4f-ad69fa1f72a9.png"]
+    galleryImages: ["/lovable-uploads/d03c8838-d654-4e41-a466-02e1c9705eca.png", "/lovable-uploads/444845aa-3d07-4987-bc4f-ad69fa1f72a9.png", "/lovable-uploads/fd627329-7a78-441d-9637-14ddcff5bef1.png", "/lovable-uploads/b81cbbde-2926-4281-b620-5bc75681d18b.png"]
   }, {
     id: 3,
     title: "Zirconio",
