@@ -27,7 +27,7 @@ const serviceCategories = [{
     galleryImages: ["/lovable-uploads/d03c8838-d654-4e41-a466-02e1c9705eca.png", "/lovable-uploads/444845aa-3d07-4987-bc4f-ad69fa1f72a9.png", "/lovable-uploads/fd627329-7a78-441d-9637-14ddcff5bef1.png", "/lovable-uploads/b81cbbde-2926-4281-b620-5bc75681d18b.png"]
   }, {
     id: 3,
-    title: "Zirconio",
+    title: "Coronas de Zirconio",
     description: "Restauraciones parciales para dientes posteriores con daño moderado que preservan estructura dental.",
     image: "/lovable-uploads/33f19cab-a7ba-41be-8791-7779d844bc96.png",
     detailedDescription: "Las incrustaciones de zirconio representan una alternativa moderna y precisa a las obturaciones tradicionales. Gracias al diseño digital y a la tecnología CAD/CAM, en ArtDental fabricamos restauraciones personalizadas que se ajustan perfectamente a la anatomía del diente. Utilizamos zirconio multicapa, un material cerámico de alta resistencia y gran estética, que permite conservar estructura dental sana y ofrecer una solución duradera, funcional y mínimamente invasiva para dientes con daño moderado.",
@@ -205,7 +205,7 @@ function getServiceId(title: string): string {
     [key: string]: string;
   } = {
     "Carillas mínimamente invasivas": "carillas-porcelana",
-    "Zirconio": "incrustaciones",
+    "Coronas de Zirconio": "incrustaciones",
     "Prótesis sobre Implantes": "coronas-implantes",
     "Rehabilitaciones Completas": "rehabilitaciones-completas"
   };
