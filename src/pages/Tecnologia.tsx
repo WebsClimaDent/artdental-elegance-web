@@ -20,7 +20,7 @@ const technologies = [{
   title: "Sistema CAD/CAM Avanzado",
   description: "Utilizamos software de diseño dental avanzado que permite crear restauraciones personalizadas con absoluta precisión, desde incrustaciones simples hasta rehabilitaciones completas sobre implantes.",
   features: ["Bibliotecas de dientes anatómicamente precisas", "Diseño de sonrisa digital", "Planificación de casos complejos"],
-  image: "/lovable-uploads/e82f8a4f-9d43-41bb-8827-40fa223abcd8.png"
+  image: "/lovable-uploads/83216622-92b0-432b-ab92-6b80d045b688.png"
 }, {
   id: 3,
   title: "Fresadoras de 5 Ejes",
