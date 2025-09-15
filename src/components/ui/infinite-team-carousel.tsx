@@ -49,7 +49,7 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
 
   // Auto-play opcional
   useEffect(() => {
-    const interval = setInterval(nextSlide, 8000);
+    const interval = setInterval(nextSlide, 15000);
     return () => clearInterval(interval);
   }, []);
 
