@@ -31,7 +31,7 @@ const Hero = () => {
             Aesthetics of high quality
           </h2>
           <p className="text-lg md:text-xl opacity-90 mb-8">
-            Nuestro laboratorio dental en Valencia crea sonrisas perfectas combinando artesanía tradicional y tecnología de vanguardia para resultados excepcionales que impresionarán a tus pacientes.
+            Nuestro laboratorio dental en Valencia crea sonrisas perfectas combinando conceptos tradicionales y tecnología de vanguardia para resultados excepcionales que impresionaran las expectativas de tus pacientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/servicios" className="btn-primary">
