@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="container-custom relative z-20 text-white">
         <div className="max-w-2xl md:max-w-3xl animate-fade-in">
           <div className="text-left mb-4">
-            <span className="text-3xl md:text-4xl font-playfair font-bold text-white">
+            <span className="text-3xl md:text-4xl font-montserrat font-extrabold text-white">
               ARTDENTAL
             </span>
           </div>
