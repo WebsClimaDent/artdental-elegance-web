@@ -15,7 +15,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-gray-300">
-              Laboratorio de estética dental. Creamos sonrisas perfectas combinando artesanía tradicional con tecnología de vanguardia.
+              Laboratorio de estética dental. Creamos sonrisas perfectas combinando conceptos clásicos con tecnología de vanguardia.
             </p>
           </div>
 
