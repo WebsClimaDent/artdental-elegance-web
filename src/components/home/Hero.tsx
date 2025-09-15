@@ -27,7 +27,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-normal mb-6">
             Laboratorio de estética dental
           </h1>
-          <h2 className="text-2xl md:text-3xl font-playfair font-semibold mb-6 text-dental-light">
+          <h2 className="text-2xl md:text-3xl font-montserrat font-normal mb-6 text-dental-light">
             Aesthetics of high quality
           </h2>
           <p className="text-lg md:text-xl opacity-90 mb-8">
