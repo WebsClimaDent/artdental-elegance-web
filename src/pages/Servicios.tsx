@@ -182,7 +182,7 @@ const Servicios = () => {
               ¿Necesita una solución personalizada?
             </h2>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Contáctanos para discutir casos específicos y desarrollar juntos 
+              Contáctanos para evaluar casos específicos y desarrollar juntos 
               la mejor solución para tus pacientes.
             </p>
             <Link to="/contacto" className="btn-primary">
