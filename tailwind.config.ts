@@ -73,6 +73,7 @@ export default {
 			fontFamily: {
 				playfair: ['Playfair Display', 'serif'],
 				inter: ['Inter', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
