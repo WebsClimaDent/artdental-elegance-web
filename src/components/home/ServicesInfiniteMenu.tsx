@@ -43,8 +43,7 @@ const ServicesInfiniteMenu = () => {
       <div className="container-custom">
         <h2 className="section-title text-center text-white mb-2">Nuestros Servicios</h2>
         <p className="section-subtitle text-center text-gray-300 mb-8">
-          Ofrecemos soluciones dentales avanzadas con un enfoque en la calidad,
-          precisión y estética para resultados excepcionales.
+          Ofrecemos soluciones estéticas de alta precisión que combinan conceptos clásicos de calidad y resultados excepcionales.
         </p>
 
         <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-dental-dark rounded-lg overflow-hidden">
