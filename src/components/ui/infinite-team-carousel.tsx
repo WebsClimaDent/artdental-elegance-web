@@ -43,7 +43,7 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsTransitioning(false);
-    }, 300);
+    }, 600);
     return () => clearTimeout(timer);
   }, [activeIndex]);
 
@@ -134,7 +134,7 @@ const InfiniteTeamCarousel = ({ members }: InfiniteTeamCarouselProps) => {
             return (
               <div
                 key={`${member.id}-${index}`}
-                className={`absolute top-0 left-1/2 w-64 h-80 cursor-pointer transition-all duration-300 ease-out ${
+                className={`absolute top-0 left-1/2 w-64 h-80 cursor-pointer transition-all duration-600 ease-out ${
                   isTransitioning ? 'pointer-events-none' : ''
                 }`}
                 style={{
