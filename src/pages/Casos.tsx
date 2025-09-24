@@ -15,8 +15,8 @@ const cases = [
     challenge: "Dientes desgatados y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
     solution: "Carillas mínimamente invasiva en dientes anteriores, planificación digital integral.",
     materials: "Carillas mínimamente invasivas,creando estética natural.",
-    before: "/lovable-uploads/6f68288b-b5da-4f3f-bec9-b308e6fd8cf6.png",
-    after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
+    before: "/lovable-uploads/FAU_1052.JPG.png",
+    after: "/lovable-uploads/FAU_1610coopy.jpg.png",
   },
   {
     id: 2,
