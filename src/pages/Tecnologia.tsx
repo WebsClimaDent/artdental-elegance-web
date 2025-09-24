@@ -99,10 +99,9 @@ const Tecnologia = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 text-gradient">
                 Innovación Tecnológica
               </h1>
-              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
-                La excelencia de nuestro trabajo está cimentada en la combinación de artesanía 
-                experta y tecnología de vanguardia.
-              </p>
+              <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">Nuestro trabajo aesthetic hight quality de la mano de la innovación y expertos en tecnología de vanguardia.
+
+            </p>
             </div>
           </div>
         </section>
