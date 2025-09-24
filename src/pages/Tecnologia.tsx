@@ -114,16 +114,8 @@ const Tecnologia = () => {
                 <h2 className="text-3xl md:text-4xl font-playfair font-semibold mb-6">
                   Tecnología de Vanguardia para Resultados Excepcionales
                 </h2>
-                <p className="text-gray-300 mb-8 text-lg">
-                  En ArtDental hemos invertido en las más avanzadas tecnologías del sector odontológico 
-                  para garantizar que cada pieza que sale de nuestro laboratorio cumple con los más 
-                  altos estándares de precisión, estética y durabilidad.
-                </p>
-                <p className="text-gray-300 mb-8 text-lg">
-                  Nuestro flujo de trabajo digital integra perfectamente todas las etapas del proceso 
-                  de fabricación, desde el escaneo hasta el acabado final, asegurando resultados consistentes 
-                  que superan las expectativas de clínicos y pacientes.
-                </p>
+                <p className="text-gray-300 mb-8 text-lg">En ArtDental hemos invertido en las más avanzadas tecnologías del sector odontológico para garantizar que cada pieza que sale de nuestro laboratorio c precisión, estética y durabilidad.</p>
+                <p className="text-gray-300 mb-8 text-lg">Nuestro flujo de trabajo digital y conceptos clásicos integran perfectamente todas las etapas del proceso de fabricación, desde el escaneo hasta el acabado final, asegurando resultados consistentes que superan las expectativas de clínicos y pacientes.</p>
               </div>
               <div className="lg:w-1/2 animate-on-scroll opacity-0 transform translate-x-[50px] transition-all duration-1000">
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
