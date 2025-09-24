@@ -147,7 +147,7 @@ const Servicios = () => {
         {/* Materials Section */}
         <section className="py-4 md:py-6 bg-black">
           <div className="container-custom">
-            <h2 className="text-3xl font-playfair font-semibold mb-6 text-white text-center">Materiales Premium</h2>
+            <h2 className="text-3xl font-playfair font-semibold mb-6 text-white text-center">Materiales Biocompatibles</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-dental-dark rounded-lg overflow-hidden shadow-xl card-hover reveal">
