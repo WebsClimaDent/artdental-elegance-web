@@ -10,13 +10,13 @@ import ImageComparison from "@/components/ui/image-comparison";
 const cases = [
   {
     id: 1,
-    title: "Carillas Solución integral",
-    description: "Carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales. Se combinaron ambos tratamientos para lograr una sonrisa armoniosa y funcional.",
-    challenge: "Ausencias dentales y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
-    solution: "Carillas ultrafinas en dientes anteriores e implante dental con corona en zona de ausencia, planificación digital integral.",
-    materials: "Carillas de porcelana ultrafinas, implante de titanio, corona de circonio.",
-    before: "/lovable-uploads/FAU_1052.JPG.png",
-    after: "/lovable-uploads/FAU_1610coopy.jpg.png",
+    title: "Carillas e implantes - Solución integral",
+    description: "Carillas mínimamente invasivas combinadas con planificación digital integral para lograr una sonrisa armónica, natural y funcional, respetando al máximo la estructura dental.",
+    challenge: "Dientes anteriores con desgaste significativo y compromiso estético. Se requería una solución conservadora que devolviera la forma, función y armonía de la sonrisa, minimizando la intervención sobre el tejido dental sano.",
+    solution: "Se realizó una rehabilitación estética mediante carillas mínimamente invasivas, integrando una planificación digital completa para diseñar y previsualizar el resultado final, asegurando precisión y armonía con las características faciales del paciente.",
+    materials: "Carillas de mínima invasión, seleccionadas por su alta estética, durabilidad y capacidad de mimetizarse con la dentición natural.",
+    before: "/lovable-uploads/6f68288b-b5da-4f3f-bec9-b308e6fd8cf6.png",
+    after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
   },
   {
     id: 2,
@@ -179,7 +179,7 @@ const Casos = () => {
                         <img 
                           src={caseItem.before} 
                           alt={`${caseItem.title} - Antes`}
-                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_20%]' : 'object-center'}`}
+                          className="w-full h-72 object-cover object-center"
                         />
                       </div>
                       <div className="relative rounded-lg overflow-hidden">
@@ -187,7 +187,7 @@ const Casos = () => {
                         <img 
                           src={caseItem.after} 
                           alt={`${caseItem.title} - Después`}
-                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_20%]' : 'object-center'}`}
+                          className="w-full h-72 object-cover object-center"
                         />
                       </div>
                     </div>
