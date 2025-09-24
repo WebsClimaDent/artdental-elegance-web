@@ -10,7 +10,7 @@ import ImageComparison from "@/components/ui/image-comparison";
 const cases = [
   {
     id: 1,
-    title: "Carillas e implantes - Solución integral",
+    title: "Carillas Solución integral",
     description: "Carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales. Se combinaron ambos tratamientos para lograr una sonrisa armoniosa y funcional.",
     challenge: "Ausencias dentales y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
     solution: "Carillas ultrafinas en dientes anteriores e implante dental con corona en zona de ausencia, planificación digital integral.",
