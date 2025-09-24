@@ -35,7 +35,7 @@ const cases = [
     challenge: "Múltiples problemas estéticos y funcionales, ausencias de molares y necesidad de armonización completa de la sonrisa.",
     solution: "Diseño de sonrisa personalizado con carillas estéticas en dientes anteriores y coronas de circonio en molares ausentes.",
     materials: "Carillas de porcelana, coronas de circonio, planificación digital del diseño de sonrisa.",
-    before: "/lovable-uploads/036303dc-8b5c-432b-b222-d800c2e5a509.png",
+    before: "/lovable-uploads/660ff1ba-b797-40cb-b113-1b1a216f345b.png",
     after: "/lovable-uploads/c7ce5a57-2e63-45bf-b2bc-6fceafe74898.png",
   },
 ];
