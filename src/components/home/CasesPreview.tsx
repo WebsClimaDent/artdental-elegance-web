@@ -5,7 +5,7 @@ const cases = [{
   title: "Carillas e implantes",
   description: "Carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales para una solución integral y estética.",
   before: "/lovable-uploads/FAU_1052.JPG.png",
-  after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
+  after: "/lovable-uploads/FAU_1610coopy.jpg.png",
   link: "/casos"
 }, {
   id: 2,

@@ -16,7 +16,7 @@ const cases = [
     solution: "Carillas ultrafinas en dientes anteriores e implante dental con corona en zona de ausencia, planificación digital integral.",
     materials: "Carillas de porcelana ultrafinas, implante de titanio, corona de circonio.",
     before: "/lovable-uploads/FAU_1052.JPG.png",
-    after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
+    after: "/lovable-uploads/FAU_1610coopy.jpg.png",
   },
   {
     id: 2,
