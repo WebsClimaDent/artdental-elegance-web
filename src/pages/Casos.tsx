@@ -15,8 +15,8 @@ const cases = [
     challenge: "Dientes anteriores con desgaste significativo y compromiso estético. Se requería una solución conservadora que devolviera la forma, función y armonía de la sonrisa, minimizando la intervención sobre el tejido dental sano.",
     solution: "Se realizó una rehabilitación estética mediante carillas mínimamente invasivas, integrando una planificación digital completa para diseñar y previsualizar el resultado final, asegurando precisión y armonía con las características faciales del paciente.",
     materials: "Carillas de mínima invasión, seleccionadas por su alta estética, durabilidad y capacidad de mimetizarse con la dentición natural.",
-    before: "/lovable-uploads/6f68288b-b5da-4f3f-bec9-b308e6fd8cf6.png",
-    after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
+    before: "/lovable-uploads/FAU_1052.JPG.png",
+    after: "/lovable-uploads/FAU_1610coopy.jpg.png",
   },
   {
     id: 2,
