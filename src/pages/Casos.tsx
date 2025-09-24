@@ -179,7 +179,7 @@ const Casos = () => {
                         <img 
                           src={caseItem.before} 
                           alt={`${caseItem.title} - Antes`}
-                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_25%]' : 'object-center'}`}
+                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_20%]' : 'object-center'}`}
                         />
                       </div>
                       <div className="relative rounded-lg overflow-hidden">
