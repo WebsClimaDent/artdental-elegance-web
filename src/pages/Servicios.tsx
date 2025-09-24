@@ -133,7 +133,7 @@ const Servicios = () => {
                     </div>
                     <div className="lg:w-1/2">
                       <h3 className="text-2xl font-playfair font-semibold mb-4 text-white">{service.title}</h3>
-                      <p className="text-gray-300 mb-6">{service.description}</p>
+                      <p className="text-gray-300 mb-6">Carillas mínimamente invasivas creando una estética natural hight quality hechas con conceptos tradicionales</p>
                       <button onClick={() => openServiceDialog(service)} className="inline-flex items-center bg-transparent border border-white text-white px-4 py-2 rounded-md hover:bg-white hover:text-dental-dark transition-colors">
                         Saber más
                         <ArrowRight className="ml-2 h-4 w-4" />
