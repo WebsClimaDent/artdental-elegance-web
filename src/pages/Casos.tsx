@@ -10,11 +10,11 @@ import ImageComparison from "@/components/ui/image-comparison";
 const cases = [
   {
     id: 1,
-    title: "Carillas e implantes - Solución integral",
-    description: "Carillas mínimamente invasivas y diseño natural con conceptos clásicos. Combinando digitalización y para lograr una sonrisa armoniosa y funcional.",
-    challenge: "Dientes desgatados y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
-    solution: "Carillas mínimamente invasiva en dientes anteriores, planificación digital integral.",
-    materials: "Carillas mínimamente invasivas,creando estética natural.",
+    title: "Carillas Solución integral",
+    description: "Carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales. Se combinaron ambos tratamientos para lograr una sonrisa armoniosa y funcional.",
+    challenge: "Ausencias dentales y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
+    solution: "Carillas ultrafinas en dientes anteriores e implante dental con corona en zona de ausencia, planificación digital integral.",
+    materials: "Carillas de porcelana ultrafinas, implante de titanio, corona de circonio.",
     before: "/lovable-uploads/FAU_1052.JPG.png",
     after: "/lovable-uploads/FAU_1610coopy.jpg.png",
   },
@@ -179,7 +179,7 @@ const Casos = () => {
                         <img 
                           src={caseItem.before} 
                           alt={`${caseItem.title} - Antes`}
-                          className="w-full h-72 object-cover object-center"
+                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_20%]' : 'object-center'}`}
                         />
                       </div>
                       <div className="relative rounded-lg overflow-hidden">
@@ -187,7 +187,7 @@ const Casos = () => {
                         <img 
                           src={caseItem.after} 
                           alt={`${caseItem.title} - Después`}
-                          className="w-full h-72 object-cover object-center"
+                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_20%]' : 'object-center'}`}
                         />
                       </div>
                     </div>
