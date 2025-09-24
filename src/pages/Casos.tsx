@@ -36,7 +36,7 @@ const cases = [
     solution: "Diseño de sonrisa personalizado con carillas estéticas en dientes anteriores y coronas de circonio en molares ausentes.",
     materials: "Carillas de porcelana, coronas de circonio, planificación digital del diseño de sonrisa.",
     before: "/lovable-uploads/660ff1ba-b797-40cb-b113-1b1a216f345b.png",
-    after: "/lovable-uploads/c7ce5a57-2e63-45bf-b2bc-6fceafe74898.png",
+    after: "/lovable-uploads/e2975860-500f-4405-aac8-4b028e5a398c.png",
   },
 ];
 
