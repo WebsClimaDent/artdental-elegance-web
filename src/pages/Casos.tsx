@@ -15,7 +15,7 @@ const cases = [
     challenge: "Ausencias dentales y necesidad de mejora estética en dientes anteriores con mínima preparación dental.",
     solution: "Carillas ultrafinas en dientes anteriores e implante dental con corona en zona de ausencia, planificación digital integral.",
     materials: "Carillas de porcelana ultrafinas, implante de titanio, corona de circonio.",
-    before: "/lovable-uploads/FAU_1052.JPG.png",
+    before: "/lovable-uploads/6f68288b-b5da-4f3f-bec9-b308e6fd8cf6.png",
     after: "/lovable-uploads/c34f3565-9d73-437e-ba46-8f04e98eaafc.png",
   },
   {
@@ -175,7 +175,7 @@ const Casos = () => {
                   ) : (
                     <div className="grid grid-cols-2 gap-6 mb-8">
                       <div className="relative rounded-lg overflow-hidden">
-                        <span className="absolute top-4 left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10">Antes</span>
+                        <span className="absolute top-6 left-4 bg-black text-white text-sm px-3 py-1 rounded-md z-10">Antes</span>
                         <img 
                           src={caseItem.before} 
                           alt={`${caseItem.title} - Antes`}
