@@ -48,7 +48,7 @@ const CasesPreview = () => {
                   <span className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm text-black text-xs px-3 py-1 rounded-md z-10 border border-black/20">
                     Después
                   </span>
-                  <img src={caseItem.after} alt={`${caseItem.title} - Después`} className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105" />
+                  <img src={caseItem.after} alt={`${caseItem.title} - Después`} className={`w-full h-full object-cover transition-transform duration-300 hover:scale-105 ${caseItem.id === 1 ? 'object-[center_20%]' : 'object-center'}`} />
                 </div>
               </div>
               <div className="p-6">
