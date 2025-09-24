@@ -187,7 +187,7 @@ const Casos = () => {
                         <img 
                           src={caseItem.after} 
                           alt={`${caseItem.title} - Después`}
-                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_20%]' : caseItem.id === 3 ? 'object-[center_30%]' : 'object-center'}`}
+                          className={`w-full h-72 object-cover ${caseItem.id === 1 ? 'object-[center_20%]' : caseItem.id === 3 ? 'object-[center_70%]' : 'object-center'}`}
                         />
                       </div>
                     </div>
