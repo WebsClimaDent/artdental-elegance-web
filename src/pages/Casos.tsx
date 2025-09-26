@@ -10,7 +10,7 @@ import ImageComparison from "@/components/ui/image-comparison";
 const cases = [
   {
     id: 1,
-    title: "Carillas e implantes - Solución integral",
+    title: "Carillas y prótesis fija",
     description: "Carillas mínimamente invasivas combinadas con planificación digital integral para lograr una sonrisa armónica, natural y funcional, respetando al máximo la estructura dental.",
     challenge: "Dientes anteriores con desgaste significativo y compromiso estético. Se requería una solución conservadora que devolviera la forma, función y armonía de la sonrisa, minimizando la intervención sobre el tejido dental sano.",
     solution: "Se realizó una rehabilitación estética mediante carillas mínimamente invasivas, integrando una planificación digital completa para diseñar y previsualizar el resultado final, asegurando precisión y armonía con las características faciales del paciente.",
@@ -30,11 +30,11 @@ const cases = [
   },
   {
     id: 3,
-    title: "Rehabilitación prótesis fija",
-    description: "Rehabilitación estética y funcional de prótesis fija, utilizando rehabilitación con coronas para una transformación completa.",
-    challenge: "Paciente con necesidad de una solución que restaurara tanto la función masticatoria como la estética dental",
-    solution: "Caso clínico realizado con precisión, funcionalidad y estética natural. Se logró una transformación integral mediante prótesis fija,planificadas digitalmente y ejecutadas con materiales biocompatibles, respetuosos con los tejidos orales.",
-    materials: "Prótesis fija sobre dientes con ajuste digital, materiales biocompatibles para máxima integración.",
+    title: "Rehabilitación estética - Diseño de sonrisa",
+    description: "Rehabilitación estética integral con diseño de sonrisa adaptado, utilizando carillas y rehabilitación en ausencias de molares con coronas de circonio para una transformación completa.",
+    challenge: "Múltiples problemas estéticos y funcionales, ausencias de molares y necesidad de armonización completa de la sonrisa.",
+    solution: "Diseño de sonrisa personalizado con carillas estéticas en dientes anteriores y coronas de circonio en molares ausentes.",
+    materials: "Carillas de porcelana, coronas de circonio, planificación digital del diseño de sonrisa.",
     before: "/lovable-uploads/660ff1ba-b797-40cb-b113-1b1a216f345b.png",
     after: "/lovable-uploads/e2975860-500f-4405-aac8-4b028e5a398c.png",
   },
