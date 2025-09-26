@@ -11,7 +11,7 @@ const cases = [
   {
     id: 1,
     title: "Carillas y Prótesis fija",
-    description: "Carillas mínimamente invasivas combinadas con planificación digital integral para lograr una sonrisa armónica, natural y funcional, respetando al máximo la estructura dental.",
+    description: "Carillas mínimamente invasivas combinadas con planificación digital y prótesis fija integral para lograr una sonrisa armónica, natural y funcional, respetando al máximo la estructura dental.",
     challenge: "Dientes anteriores con desgaste significativo y compromiso estético. Se requería una solución conservadora que devolviera la forma, función y armonía de la sonrisa, minimizando la intervención sobre el tejido dental sano.",
     solution: "Se realizó una rehabilitación estética mediante carillas mínimamente invasivas, integrando una planificación digital completa para diseñar y previsualizar el resultado final, asegurando precisión y armonía con las características faciales del paciente.",
     materials: "Carillas de mínima invasión, seleccionadas por su alta estética, durabilidad y capacidad de mimetizarse con la dentición natural.",
@@ -30,7 +30,7 @@ const cases = [
   },
   {
     id: 3,
-    title: "Rehabilitación estética - Diseño de sonrisa",
+    title: "Rehabilitación Prótesis fija",
     description: "Rehabilitación estética integral con diseño de sonrisa adaptado, utilizando carillas y rehabilitación en ausencias de molares con coronas de circonio para una transformación completa.",
     challenge: "Múltiples problemas estéticos y funcionales, ausencias de molares y necesidad de armonización completa de la sonrisa.",
     solution: "Diseño de sonrisa personalizado con carillas estéticas en dientes anteriores y coronas de circonio en molares ausentes.",
