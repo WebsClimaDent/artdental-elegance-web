@@ -10,7 +10,7 @@ import ImageComparison from "@/components/ui/image-comparison";
 const cases = [
   {
     id: 1,
-    title: "Carillas e implantes - Solución integral",
+    title: "Carillas y Prótesis fija",
     description: "Carillas mínimamente invasivas combinadas con planificación digital integral para lograr una sonrisa armónica, natural y funcional, respetando al máximo la estructura dental.",
     challenge: "Dientes anteriores con desgaste significativo y compromiso estético. Se requería una solución conservadora que devolviera la forma, función y armonía de la sonrisa, minimizando la intervención sobre el tejido dental sano.",
     solution: "Se realizó una rehabilitación estética mediante carillas mínimamente invasivas, integrando una planificación digital completa para diseñar y previsualizar el resultado final, asegurando precisión y armonía con las características faciales del paciente.",
