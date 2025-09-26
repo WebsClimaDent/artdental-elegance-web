@@ -10,7 +10,7 @@ import ImageComparison from "@/components/ui/image-comparison";
 const cases = [
   {
     id: 1,
-    title: "Carillas y prótesis fija",
+    title: "Carillas e implantes - Solución integral",
     description: "Carillas mínimamente invasivas combinadas con planificación digital integral para lograr una sonrisa armónica, natural y funcional, respetando al máximo la estructura dental.",
     challenge: "Dientes anteriores con desgaste significativo y compromiso estético. Se requería una solución conservadora que devolviera la forma, función y armonía de la sonrisa, minimizando la intervención sobre el tejido dental sano.",
     solution: "Se realizó una rehabilitación estética mediante carillas mínimamente invasivas, integrando una planificación digital completa para diseñar y previsualizar el resultado final, asegurando precisión y armonía con las características faciales del paciente.",
@@ -42,7 +42,7 @@ const cases = [
     id: 4,
     title: "Diseño con carillas mínimamente invasivas",
     description: "Rehabilitación estética integral con diseño de sonrisa adaptado, utilizando carillas mínimamente invasivas elaboradas con materiales biocompatibles, restauradas bajo un enfoque de alta estética natural (high-quality natural aesthetic). Un trabajo preciso que combina digitalización avanzada con conceptos restauradores clásicos para lograr una transformación armónica y conservadora.",
-    challenge: "Dientes anteriores con manchas severas, desgastes y pérdida de armonía en la sonrisa. Se requería una rehabilitación estética completa, manteniendo la estructura dental sana mediante un enfoque mínimamente invasivo y natural.",
+    challenge: "Dientes anteriores con manchas severas de tinción por tetraciclinas, desgastes y pérdida de armonía en la sonrisa. Se requería una rehabilitación estética completa, manteniendo la estructura dental sana mediante un enfoque mínimamente invasivo y natural.",
     solution: "Desarrollamos un diseño digital de sonrisa personalizado, colocando carillas de porcelana ultrafinas, cuidadosamente planificadas para preservar al máximo el tejido dental. El trabajo se realizó combinando tecnología digital de precisión con fundamentos clásicos de la odontología restauradora, logrando un resultado biocompatible, preciso y altamente estético.",
     materials: "Carillas de porcelana de alta estética y mínima invasión, materiales biocompatibles respetuosos con los tejidos dentales, planificación digital de sonrisa con precisión moderna y principios restauradores clásicos.",
     before: "/lovable-uploads/FAU_6540.JPG",
