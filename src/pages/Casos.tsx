@@ -38,6 +38,16 @@ const cases = [
     before: "/lovable-uploads/660ff1ba-b797-40cb-b113-1b1a216f345b.png",
     after: "/lovable-uploads/e2975860-500f-4405-aac8-4b028e5a398c.png",
   },
+  {
+    id: 4,
+    title: "Diseño con carillas mínimamente invasivas",
+    description: "Rehabilitación estética integral con diseño de sonrisa adaptado, utilizando carillas mínimamente invasivas elaboradas con materiales biocompatibles, restauradas bajo un enfoque de alta estética natural (high-quality natural aesthetic). Un trabajo preciso que combina digitalización avanzada con conceptos restauradores clásicos para lograr una transformación armónica y conservadora.",
+    challenge: "Dientes anteriores con manchas severas, desgastes y pérdida de armonía en la sonrisa. Se requería una rehabilitación estética completa, manteniendo la estructura dental sana mediante un enfoque mínimamente invasivo y natural.",
+    solution: "Desarrollamos un diseño digital de sonrisa personalizado, colocando carillas de porcelana ultrafinas, cuidadosamente planificadas para preservar al máximo el tejido dental. El trabajo se realizó combinando tecnología digital de precisión con fundamentos clásicos de la odontología restauradora, logrando un resultado biocompatible, preciso y altamente estético.",
+    materials: "Carillas de porcelana de alta estética y mínima invasión, materiales biocompatibles respetuosos con los tejidos dentales, planificación digital de sonrisa con precisión moderna y principios restauradores clásicos.",
+    before: "/lovable-uploads/FAU_6540.JPG",
+    after: "/lovable-uploads/FAU_7164copy.jpg",
+  },
 ];
 
 const reviews = [
