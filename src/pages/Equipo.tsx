@@ -16,7 +16,7 @@ const teamMembers = [{
   name: "David Ruiz",
   role: "Director Técnico",
   image: "/lovable-uploads/79d03799-554c-4f48-b0de-dbd045f2c12f.png",
-  bio: "Experto en tecnología digital y diseño asistido por ordenador, así como en implantología. Transforma conceptos en realidades con precisión micrométrica, especializándose en rehabilitaciones completas y sonrisas personalizadas."
+  bio: "Experto en Digital Smile Designer e implantología avanzada. Especialista en restauraciones sobre implantes, donde la precisión digital y los principios clásicos se combinan para lograr rehabilitaciones completas y sonrisas únicas, diseñadas a medida de cada paciente."
 }, {
   id: 3,
   name: "Natalia Moreno",
