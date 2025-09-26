@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 const cases = [{
   id: 1,
-  title: "Carillas e implantes",
+  title: "Carillas y Prótesis fija",
   description: "Carillas mínimamente invasivas y rehabilitación con implante en ausencias dentales para una solución integral y estética.",
   before: "/lovable-uploads/FAU_1052.JPG.png",
   after: "/lovable-uploads/FAU_1610coopy.jpg.png",
