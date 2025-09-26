@@ -31,7 +31,7 @@ const cases = [
   {
     id: 3,
     title: "Rehabilitación Prótesis fija",
-    description: "Rehabilitación estética integral con diseño de sonrisa adaptado, utilizando carillas y rehabilitación en ausencias de molares con coronas de circonio para una transformación completa.",
+    description: "Rehabilitación integral con prótesis fija adaptado, utilizando rehabilitación con coronas en ceramica para una transformación completa.",
     challenge: "Múltiples problemas estéticos y funcionales, ausencias de molares y necesidad de armonización completa de la sonrisa.",
     solution: "Diseño de sonrisa personalizado con carillas estéticas en dientes anteriores y coronas de circonio en molares ausentes.",
     materials: "Carillas de porcelana, coronas de circonio, planificación digital del diseño de sonrisa.",
