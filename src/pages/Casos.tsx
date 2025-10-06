@@ -219,6 +219,13 @@ const Casos = () => {
                         <h4 className="text-lg font-semibold text-white mb-2">Materiales Utilizados</h4>
                         <p className="text-gray-300">{caseItem.materials}</p>
                       </div>
+                      {caseItem.id === 1 && (
+                        <div>
+                          <p className="text-gray-400 text-sm italic">
+                            Caso realizado por Dr. Faus, en colaboración con ArtDental Laboratorio.
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                   
