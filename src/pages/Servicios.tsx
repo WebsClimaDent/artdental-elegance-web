@@ -162,7 +162,7 @@ const Servicios = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-playfair font-semibold mb-2 text-white">Carillas mínimamente invasivas</h3>
                   <p className="text-gray-300 mb-4">
-                    Material cerámico de alta resistencia que ofrece una estética excepcional. Ideal para restauraciones en zonas visibles.
+                    Carillas mínimamente invasivas creando una estética natural hight quality hechas con conceptos tradicionales
                   </p>
                 </div>
               </div>
