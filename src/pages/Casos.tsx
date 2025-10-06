@@ -226,6 +226,13 @@ const Casos = () => {
                           </p>
                         </div>
                       )}
+                      {caseItem.id === 2 && (
+                        <div>
+                          <p className="text-gray-400 text-sm italic">
+                            Caso realizado por Dr. Kike Cuñat, en colaboración con ArtDental Laboratorio.
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                   
