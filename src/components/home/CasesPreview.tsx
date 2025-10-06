@@ -56,6 +56,11 @@ const CasesPreview = () => {
                   {caseItem.title}
                 </h3>
                 <p className="text-gray-300 mb-4">{caseItem.description}</p>
+                {caseItem.id === 1 && (
+                  <p className="text-gray-400 text-sm italic mb-4">
+                    Caso realizado por Dr. Faus, en colaboración con ArtDental Laboratorio.
+                  </p>
+                )}
                 <Link to={caseItem.link} className="inline-flex items-center text-white font-medium hover:underline transition-all duration-200 hover:text-gray-300">
                   Ver caso completo
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
