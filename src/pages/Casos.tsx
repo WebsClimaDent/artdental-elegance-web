@@ -236,7 +236,7 @@ const Casos = () => {
                       {caseItem.id === 3 && (
                         <div>
                           <p className="text-gray-400 text-sm italic">
-                            Caso realizado por Dr. Kike Cuñat, en colaboración con ArtDental Laboratorio.
+                            Caso realizado por Dr. Faus, en colaboración con ArtDental Laboratorio.
                           </p>
                         </div>
                       )}
