@@ -25,7 +25,7 @@ const technologies = [{
   id: 3,
   title: "Fresadoras de 5 Ejes",
   description: "Nuestras fresadoras de última generación trabajan con precisión excepcional en materiales como zirconio, disilicato de litio y resinas de alto rendimiento para garantizar restauraciones perfectas.",
-  features: ["Precisión de mecanizado submilimétrica", "Procesado de todos los materiales", "Producción rápida y consistente"],
+  features: ["Precisión de mecanizado submilimétrica", "Procesado de todos los materiales", "Producción de alta precisión"],
   image: "/lovable-uploads/eb7a173d-0658-406c-b93e-14227c1f338b.png"
 }];
 const TechnologyCard = ({
