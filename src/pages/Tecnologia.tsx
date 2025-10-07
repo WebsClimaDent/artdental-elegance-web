@@ -13,7 +13,7 @@ const technologies = [{
   id: 1,
   title: "Digitalización y Moldeado",
   description: "Utilizamos sistemas de escaneado 3D de alta precisión para realizar tomas digitales exactas, que nos permiten planificar cada caso con total fiabilidad. Gracias a nuestro proceso de encerado digital y planificación digital avanzada, conseguimos una reproducción fiel de la anatomía dental y una adaptación perfecta en restauraciones, sin las limitaciones de los métodos tradicionales. Innovación, precisión y estética, al servicio de tu sonrisa.",
-  features: ["Precisión de hasta 10 micras", "Captura en color para registro de detalles", "Reducción del tiempo de trabajo"],
+  features: ["Precisión de hasta 10 micras", "Captura en color para registro de detalles"],
   image: "/lovable-uploads/94fb7b77-38b0-4501-8007-80e31ddc9775.png"
 }, {
   id: 2,
